@@ -8,7 +8,7 @@
               <a href="https://railway.app" target="_blank" rel="noopener">
                 <nuxt-img
                   class="testimonial-logo"
-                  src="~/static/images/landing/railway_logo@2x.webp"
+                  src="/images/landing/railway_logo@2x.webp"
                   alt="railway.app logo"
                   width="170"
                   height="25"
@@ -21,7 +21,7 @@
               </p>
               <div class="testimonial-portrait">
                 <nuxt-img
-                  src="~/static/images/testimonials/railway_portrait.webp"
+                  src="/images/testimonials/railway_portrait.webp"
                   alt="Jake Cooper"
                   width="55"
                   height="55"
@@ -47,7 +47,7 @@
               <a href="http://www.dfuse.io/" target="_blank" rel="noopener">
                 <nuxt-img
                   class="testimonial-logo"
-                  src="~/static/images/landing/1p-wordmark@2x.webp"
+                  src="/images/landing/1p-wordmark@2x.webp"
                   alt="dfuse logo"
                   width="140"
                   height="26"
@@ -61,7 +61,7 @@
               <div class="testimonial-portrait">
                 <nuxt-img
                   alt="customer portrait"
-                  src="~/static/images/testimonials/conner_hicks.png"
+                  src="/images/testimonials/conner_hicks.png"
                   width="55"
                   height="55"
                 />
@@ -86,7 +86,7 @@
               <a href="https://supplypike.com" target="_blank" rel="noopener">
                 <nuxt-img
                   class="testimonial-logo"
-                  src="~/static/images/landing/supplypike_logo@2x.webp"
+                  src="/images/landing/supplypike_logo@2x.webp"
                   alt="supplypike logo"
                   width="150"
                   height="25"
@@ -99,7 +99,7 @@
               </p>
               <div class="testimonial-portrait">
                 <nuxt-img
-                  src="~/static/images/testimonials/supplypike_portrait.webp"
+                  src="/images/testimonials/supplypike_portrait.webp"
                   alt="Kanat Bekterimov"
                   width="55"
                   height="55"

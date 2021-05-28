@@ -18,7 +18,7 @@
         <div class="col-sm-12 text-center">
           <nuxt-img
             class="results-image img-fluid"
-            src="~/static/images/landing/check-results@2x.webp"
+            src="/images/landing/check-results@2x.webp"
             alt="checkly check results"
             width="900"
             height="700"

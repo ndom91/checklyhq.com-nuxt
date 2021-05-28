@@ -26,7 +26,7 @@
         <div class="col-sm-12 text-center">
           <nuxt-img
             class="hero-image big-drop-shadow img-fluid"
-            src="~/static/images/landing/home-hero-screenshot@2x.webp"
+            src="/images/landing/home-hero-screenshot@2x.webp"
             alt="checkly monitoring dashboard"
             immediate
             position="top"

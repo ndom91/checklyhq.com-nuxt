@@ -12,7 +12,7 @@
         <div class="col-sm-12">
           <nuxt-img
             class="trusted-by-image"
-            src="~/static/images/landing/testimonial-logos@2x.webp"
+            src="/images/landing/testimonial-logos@2x.webp"
             alt="trusted by companies for api and synthetic monitoring"
             width="1100"
             height="53.5"

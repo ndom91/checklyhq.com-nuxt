@@ -54,7 +54,7 @@
         <div class="col-sm-12 col-lg-8">
           <nuxt-img
             class="pr-image"
-            src="~/static/images/landing/e2e-screenshot@2x.webp"
+            src="/images/landing/e2e-screenshot@2x.webp"
             alt="checkly e2e screenshot"
             width="687"
             height="324"
@@ -75,14 +75,14 @@
             Works out-of-the-box with
             <nuxt-img
               class="mx-1"
-              src="~/static/images/landing/vercel-logo.png"
+              src="/images/landing/vercel-logo.png"
               alt="Vercel logo"
               width="20"
               height="20"
             />Vercel and
             <nuxt-img
               class="mx-1"
-              src="~/static/images/landing/heroku-logo.png"
+              src="/images/landing/heroku-logo.png"
               alt="Heroku logo"
               width="20"
               height="20"

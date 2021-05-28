@@ -159,9 +159,10 @@
       <div class="row footer-bottom">
         <div class="col-12 flex-wrap">
           <div class="float-left">
-            <img
+            <nuxt-img
               class="logo"
               src="/images/footer-logo.svg"
+              format="svg"
               width="52"
               height="47"
               alt="checkly logo"
@@ -174,8 +175,9 @@
               href="https://github.com/checkly"
               target="_blank"
               rel="noopener"
-              ><img
+              ><nuxt-img
                 src="/images/github.svg"
+                format="svg"
                 alt="github logo"
                 width="24"
                 height="24"
@@ -184,8 +186,9 @@
               href="https://twitter.com/checklyhq"
               target="_blank"
               rel="noopener"
-              ><img
+              ><nuxt-img
                 src="/images/twitter.svg"
+                format="svg"
                 alt="twitter logo"
                 width="26"
                 height="21"

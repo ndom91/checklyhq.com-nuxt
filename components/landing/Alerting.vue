@@ -6,7 +6,7 @@
           <h2 class="section-super-header">Alerting</h2>
           <nuxt-img
             class="alerting-top-image"
-            src="~/static/images/landing/alerting-options@2x.webp"
+            src="/images/landing/alerting-options@2x.webp"
             alt="checkly alerting options"
             width="750"
             height="45"
@@ -26,7 +26,7 @@
         <div class="col-sm-12 text-center">
           <nuxt-img
             class="alertinnuxt-img big-drop-shadow img-fluid"
-            src="~/static/images/landing/alert-settings@2x.webp"
+            src="/images/landing/alert-settings@2x.webp"
             alt="checkly alerting settings"
             fit="inside"
             width="900"

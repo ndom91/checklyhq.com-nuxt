@@ -10,7 +10,11 @@
         <span /><span /><span />
       </button>
       <NuxtLink class="navbar-brand mr-2" to="/">
-        <nuxt-img src="/images/text_racoon_logo.svg" alt="Checkly Logo" />
+        <nuxt-img
+          format="svg"
+          src="/images/text_racoon_logo.svg"
+          alt="Checkly Logo"
+        />
       </NuxtLink>
       <div id="navbarSupportedContent" class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
@@ -31,8 +35,9 @@
               <NuxtLink class="dropdown-item" to="/product/api-monitoring/">
                 <div class="d-flex">
                   <div class="menu-icon">
-                    <img
+                    <nuxt-img
                       src="/images/icons/api.svg"
+                      format="svg"
                       alt="Api monitoring"
                       width="32"
                       height="32"
@@ -53,8 +58,9 @@
               >
                 <div class="d-flex">
                   <div class="menu-icon">
-                    <img
-                      src="~/static/images/icons/chrome.svg"
+                    <nuxt-img
+                      src="/images/icons/chrome.svg"
+                      format="svg"
                       alt="Synthetic Monitoring"
                       width="32"
                       height="32"
@@ -72,8 +78,9 @@
               <NuxtLink class="dropdown-item" to="/product/alerting/">
                 <div class="d-flex">
                   <div class="menu-icon">
-                    <img
-                      src="~/static/images/icons/alert.svg"
+                    <nuxt-img
+                      format="svg"
+                      src="/images/icons/alert.svg"
                       alt="Alerting"
                       width="32"
                       height="32"
@@ -117,8 +124,9 @@
               <NuxtLink class="dropdown-item" to="/learn/headless/">
                 <div class="d-flex">
                   <div class="menu-icon">
-                    <img
-                      src="~/static/images/icons/learn-puppeteer-playwright.svg"
+                    <nuxt-img
+                      format="svg"
+                      src="/images/icons/learn-puppeteer-playwright.svg"
                       alt="Api monitoring"
                       width="32"
                       height="32"
@@ -140,8 +148,9 @@
               >
                 <div class="d-flex">
                   <div class="menu-icon">
-                    <img
-                      src="~/static/images/icons/blog-icon.svg"
+                    <nuxt-img
+                      format="svg"
+                      src="/images/icons/blog-icon.svg"
                       alt="Alerting"
                       width="32"
                       height="32"

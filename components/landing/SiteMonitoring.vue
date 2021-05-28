@@ -24,7 +24,7 @@
           <div class="image-side right">
             <nuxt-img
               class="big-landinnuxt-img big-drop-shadow code fade-in lazy"
-              src="~/static/images/landing/browser-check-1-section-screenshot@2x.webp"
+              src="/images/landing/browser-check-1-section-screenshot@2x.webp"
               alt="checkly browser check"
               fit="inside"
               width="600"
@@ -37,7 +37,7 @@
                 fade-in
                 lazy
               "
-              src="~/static/images/landing/browser-check-2-section-screenshot@2x.webp"
+              src="/images/landing/browser-check-2-section-screenshot@2x.webp"
               alt="checkly browser screenshots"
               fit="inside"
               width="600"

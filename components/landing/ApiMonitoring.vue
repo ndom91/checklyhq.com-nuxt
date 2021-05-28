@@ -22,7 +22,7 @@
           <div class="image-side right">
             <nuxt-img
               class="big-landinnuxt-img big-drop-shadow code fade-in lazy"
-              src="~/static/images/landing/api-check-1-section-screenshot@2x.webp"
+              src="/images/landing/api-check-1-section-screenshot@2x.webp"
               alt="checkly assertions edit"
               fit="inside"
               width="810"
@@ -35,7 +35,7 @@
                 fade-in
                 lazy
               "
-              src="~/static/images/landing/api-check-2-section-screenshot@2x.webp"
+              src="/images/landing/api-check-2-section-screenshot@2x.webp"
               alt="checkly assertions"
               fit="inside"
               width="810"
