@@ -12,10 +12,10 @@ tags:
 icon: e2e.svg
 menu:
   learn:
-    parent: "E2E"
+    parent: 'E2E'
 ---
 
-import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/shortcodes'
+import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/global'
 
 Searching a website is an everyday action for most internet users. For most services, the speed at which their customers are able to get to the products they are looking for is directly tied to revenue. To enable that, a performant and reliable search function is needed.
 
@@ -24,6 +24,7 @@ Searching a website is an everyday action for most internet users. For most serv
 ## Steps
 
 The example below, which is running against our [test webshop](https://danube-webshop.herokuapp.com/), shows how we can verify the correctness of a search's result from an end-to-end perspective. In short, we will:
+
 1. Enter a known search term
 2. Firstly, assert the expected number of results is being shown
 3. If the previous point is true, assert that all expected search results are shown
@@ -57,22 +58,14 @@ Listing search terms and their corresponding expected results in a file could be
 
 ```json
 [
-    {
-        "search": "pen",
-        "results": [
-            "red pen",
-            "blue pen",
-            "fountain pen"
-        ]
-    },
-    {
-        "search": "pencil",
-        "results": [
-            "short pencil",
-            "pencil sharpener",
-            "pencil case"
-        ]
-    }
+  {
+    "search": "pen",
+    "results": ["red pen", "blue pen", "fountain pen"]
+  },
+  {
+    "search": "pencil",
+    "results": ["short pencil", "pencil sharpener", "pencil case"]
+  }
 ]
 ```
 

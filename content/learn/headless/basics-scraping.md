@@ -14,10 +14,10 @@ weight: 6
 
 menu:
   learn:
-    parent: "Scraping"
+    parent: 'Scraping'
 ---
 
-import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/shortcodes'
+import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/global'
 
 We call the action of extracting data from web pages _web scraping_. Scraping is useful for a variety of use cases:
 
@@ -161,6 +161,7 @@ $ node scraping.js
 ```
 
 ## Further reading
+
 1. [Puppeteer](https://pptr.dev/#?product=Puppeteer&version=v5.2.1&show=api-pageevalselector-pagefunction-args)'s and [Playwright](https://playwright.dev/#version=v1.2.1&path=docs%2Fapi.md&q=pageevalselector-pagefunction-arg)'s official API reference on the topic
 2. An [E2E example test](e2e-coupon/) asserting agains an element's `innerText`
 3. An excellent introduction to [scraping with Puppeteer](https://www.toptal.com/puppeteer/headless-browser-puppeteer-tutorial) by Nick Chikovani

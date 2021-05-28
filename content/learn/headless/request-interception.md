@@ -14,10 +14,10 @@ tags:
 icon: best-practices.svg
 menu:
   learn:
-    parent: "Best Practices"
+    parent: 'Best Practices'
 ---
 
-import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/shortcodes'
+import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/global'
 
 When we browse the web, a series of HTTP requests and responses are exchanged between our browser and the pages we are visiting. There are scenarios in which it is useful to monitor or manipulate this traffic, instead of letting it happen as-is.
 
@@ -61,13 +61,13 @@ In the following snippet we are going to abort all requests for images on our te
 </Tab>
 </Tabs>
 
- As a result, you will see the website logo not being loaded.
+As a result, you will see the website logo not being loaded.
 
- ![test site without images](/samples/images/request-interception-image.png)
+![test site without images](/samples/images/request-interception-image.png)
 
- Similarly, switching the `resourceType` to `stylesheet` would result in the target website loading without any CSS styling.
+Similarly, switching the `resourceType` to `stylesheet` would result in the target website loading without any CSS styling.
 
- ![test site without css](/samples/images/request-interception-css.png)
+![test site without css](/samples/images/request-interception-css.png)
 
 ## Response interception
 
@@ -95,6 +95,7 @@ Here is what the homepage will look like with our stubbed response:
 ![test site with stubbed response](/samples/images/response-interception.png)
 
 Run the above examples as follows:
+
 ```sh
 node request-interception.js
 ```

@@ -1,7 +1,7 @@
 ---
 title: UI/UX designer
 subtitle: Full time / Remote
-position_state: Closed
+positionState: Closed
 draft: true
 ---
 
@@ -12,16 +12,16 @@ draft: true
 ## About the role
 
 Checkly is looking for an experienced UI/UX designer. We want to take the next step in what customers are constantly
-complimenting us on: our great UI and UX. You will be working directly with the founders, frontend devs and backend devs in 
+complimenting us on: our great UI and UX. You will be working directly with the founders, frontend devs and backend devs in
 creating the best working and most lovable monitoring application for developers.
 
-This is a great opportunity to join an early stage company, influence the product road map and help us do what we love most: 
+This is a great opportunity to join an early stage company, influence the product road map and help us do what we love most:
 building the best active monitoring service for modern DevOps teams.
 
 ### Design our product experience
 
-Your design tasks will be very diverse: from landing pages, to interactive & data heavy dashboards to typography and visual 
-hierarchy.  
+Your design tasks will be very diverse: from landing pages, to interactive & data heavy dashboards to typography and visual
+hierarchy.
 
 You will be working on all projects we have at Checkly.
 
@@ -40,9 +40,9 @@ We are migrating from Sketch to Figma for our main design tooling.
 - You are quick to pick up on new stuff and enjoy the process of learning new things.
 - You love making software for other developers!
 
-*Bonus points*
+_Bonus points_
 
-- Hands-on experience with Vue.js, SCSS.  
+- Hands-on experience with Vue.js, SCSS.
 - Experience with building SaaS tools for developers.
 - Experience working remotely in a distributed team.
 
@@ -53,4 +53,3 @@ We are migrating from Sketch to Figma for our main design tooling.
 - Work with the latest technologies.
 - Contribute to open source.
 - Modern laptop and equipment provided.
-

@@ -10,10 +10,10 @@ tags:
 icon: session-management.svg
 menu:
   learn:
-    parent: "Session Management"
+    parent: 'Session Management'
 ---
 
-import { Tab, Tabs, ReadFile } from '~/components/shortcodes'
+import { Tab, Tabs, ReadFile } from '~/components/global'
 
 The [HyperText Transfer Protocol (HTTP)](https://developer.mozilla.org/en-US/docs/Web/HTTP#:~:text=Hypertext%20Transfer%20Protocol%%20%28HTTP%29%20is,be%20used%20for%20other%20purposes.) is stateless, but cookies allow it to keep context consistent over the course of a session. In other words, by having our browser automatically exchange small amounts of data, we get to have websites recognise us and remember our preferences, the contents of our shopping baskets or the fact that we had just logged in to our account.
 
@@ -89,13 +89,11 @@ We are now able to read the file later and load the cookies into our new browser
 </Tab>
 </Tabs>
 
-
 > Cookies come with an expiration date, so make sure the ones you are trying to reuse are still valid.
 
 While brand new browser sessions with both Puppeteer and Playwright will not contain any cookies by default, there might be points when it is necessary to clear them.
 
 In case you need to clear cookies, you can use [`page.deleteCookie(...cookies)`](https://pptr.dev/#?product=Puppeteer&version=v5.3.1&show=api-pagedeletecookiecookies) with Puppeteer and [`browserContext.clearCookies()`](https://playwright.dev/#version=v1.4.2&path=docs%2Fapi.md&q=browsercontextclearcookies) with Playwright.
-
 
 > Notice how Puppeteer handles cookies at page level while Playwright does so at context level.
 
@@ -145,7 +143,6 @@ We can use the content of this file to set localStorage in a separate session. T
 
 You can interact with sessionStorage very much like we did with localStorage.
 
-
 > Do not underestimate the usefulness of having shorter execution time on scripts, especially when frequently running large batches/suites.
 
 All the above examples can be run as follows:
@@ -178,4 +175,4 @@ node managing-cookies.js
 
 1. The official MDN docs for [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies).
 2. A practical guide to the [Web Storage APIs](https://javascript.info/localstorage), sessionStorage and localStorage.
-2. Official [Puppeteer](https://pptr.dev/#?product=Puppeteer&version=v5.3.1&show=api-pagecookiesurls) and [Playwright](https://playwright.dev/#version=v1.4.2&path=docs%2Fauth.md&q=cookies) docs around cookies.
+3. Official [Puppeteer](https://pptr.dev/#?product=Puppeteer&version=v5.3.1&show=api-pagecookiesurls) and [Playwright](https://playwright.dev/#version=v1.4.2&path=docs%2Fauth.md&q=cookies) docs around cookies.

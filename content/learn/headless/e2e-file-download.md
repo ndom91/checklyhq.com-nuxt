@@ -11,10 +11,10 @@ tags:
 icon: e2e.svg
 menu:
   learn:
-    parent: "E2E"
+    parent: 'E2E'
 ---
 
-import { Tab, Tabs, ReadFile } from '~/components/shortcodes'
+import { Tab, Tabs, ReadFile } from '~/components/global'
 
 Websites might expose files for users to download and then access from their local machine. Common cases are downloading tickets, receipts and itineraries.
 
@@ -45,7 +45,7 @@ We can approach this scenario in different ways. One possibility is to perform t
 </Tab>
 </Tabs>
 
-We could also click the link directly and wait for the download event, then proceed with the comparison. Waiting for the download event is currently supported by Playwright, but not  by Puppeteer.
+We could also click the link directly and wait for the download event, then proceed with the comparison. Waiting for the download event is currently supported by Playwright, but not by Puppeteer.
 
 Note that in this case, we need to enable downloads in the browser context before proceeding.
 

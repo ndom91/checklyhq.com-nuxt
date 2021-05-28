@@ -17,7 +17,7 @@
 
 <script>
 import { Footer, StartForFree } from '~/components/common'
-import { AlternativeHero } from '~/components/shortcodes'
+import { AlternativeHero } from '~/components/global'
 import { TestimonialQuote } from '~/components/landing'
 
 export default {

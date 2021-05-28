@@ -13,6 +13,7 @@
         <nuxt-img
           format="svg"
           src="/images/text_racoon_logo.svg"
+          width="120px"
           alt="Checkly Logo"
         />
       </NuxtLink>

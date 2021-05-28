@@ -4,7 +4,7 @@ alias:
   - transaction-monitoring
 ---
 
-import { Sm4ColItem, AlternativePicture, FeatureRow, CtaLink } from '~/components/shortcodes'
+import { Sm4ColItem, AlternativePicture, FeatureRow, CtaLink } from '~/components/global'
 
 <h1 class="text-center hero-text width-645">Synthetic monitoring for your vital click flows</h1>
 

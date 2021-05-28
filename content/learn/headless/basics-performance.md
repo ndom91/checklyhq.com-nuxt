@@ -13,10 +13,10 @@ weight: 8
 
 menu:
   learn:
-    parent: "Performance"
+    parent: 'Performance'
 ---
 
-import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/shortcodes'
+import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/global'
 
 The need for fast and responsive applications has never been greater because of the move from [desktop to mobile](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide/2019). Still, web applications have been increasing in [complexity and size](https://httparchive.org/reports/page-weight), with rising load times. It is therefore clear why the topic of webpage performance is more popular today than it likely ever was.
 
@@ -136,11 +136,13 @@ Lighthouse can easily be used programmatically with Playwright and Puppeteer to 
 </Tabs>
 
 All above examples can be run as follows:
+
 ```sh
 $ node measure-performance.js
 ```
 
 ## Further reading
+
 1. The comprehensive [MDN Web Performance documentation](https://developer.mozilla.org/en-US/docs/Web/Performance)
 2. [web.dev's performance section](https://web.dev/learn/#performance)
 3. [Web Performance Recipes With Puppeteer](https://addyosmani.com/blog/puppeteer-recipes/) by Addy Osmani

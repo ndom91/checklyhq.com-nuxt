@@ -17,10 +17,10 @@ weight: 6
 
 menu:
   learn:
-    parent: "Getting Started"
+    parent: 'Getting Started'
 ---
 
-import { Tab, Tabs } from '~/components/shortcodes'
+import { Tab, Tabs } from '~/components/global'
 
 Users normally access most website functionality through clicks, keystrokes etc. Puppeteer and Playwright allow us to replicate these events by referencing elements on the page using [CSS selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors).
 
@@ -33,37 +33,37 @@ Clicking is the default way of selecting and activating elements on web pages, a
 <Tabs>
 <Tab title="Puppeteer">
 
- ```js
-const puppeteer = require('puppeteer');
+```js
+const puppeteer = require('puppeteer')
 
-(async () => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-  await page.goto('https://danube-webshop.herokuapp.com/');
+;(async () => {
+  const browser = await puppeteer.launch()
+  const page = await browser.newPage()
+  await page.goto('https://danube-webshop.herokuapp.com/')
 
-  await page.waitForSelector('#login');
-  await page.click('#login');
+  await page.waitForSelector('#login')
+  await page.click('#login')
 
-  await browser.close();
+  await browser.close()
 })()
 ```
 
 </Tab>
 <Tab title="Playwright">
 
- ```js
-const { chromium } = require('playwright');
+```js
+const { chromium } = require('playwright')
 
-(async () => {
-  const browser = await chromium.launch();
-  const page = await browser.newPage();
-  await page.goto('https://danube-webshop.herokuapp.com/');
+;(async () => {
+  const browser = await chromium.launch()
+  const page = await browser.newPage()
+  await page.goto('https://danube-webshop.herokuapp.com/')
 
-  await page.click('#login');
+  await page.click('#login')
 
-  await browser.close();
+  await browser.close()
 })()
- ```
+```
 
 </Tab>
 </Tabs>
@@ -81,36 +81,37 @@ A popular pattern among web pages is exposing additional information or function
 <Tabs>
 <Tab title="Puppeteer">
 
- ```js
-const puppeteer = require('puppeteer');
+```js
+const puppeteer = require('puppeteer')
 
-(async () => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-  await page.goto('https://danube-webshop.herokuapp.com/');
+;(async () => {
+  const browser = await puppeteer.launch()
+  const page = await browser.newPage()
+  await page.goto('https://danube-webshop.herokuapp.com/')
 
-  await page.waitForSelector('a');
-  await page.hover('a');
+  await page.waitForSelector('a')
+  await page.hover('a')
 
-  await browser.close();
+  await browser.close()
 })()
- ```
+```
+
 </Tab>
 <Tab title="Playwright">
 
- ```js
-const { chromium } = require('playwright');
+```js
+const { chromium } = require('playwright')
 
-(async () => {
-  const browser = await chromium.launch();
-  const page = await browser.newPage();
-  await page.goto('https://danube-webshop.herokuapp.com/');
+;(async () => {
+  const browser = await chromium.launch()
+  const page = await browser.newPage()
+  await page.goto('https://danube-webshop.herokuapp.com/')
 
-  await page.hover('a');
+  await page.hover('a')
 
-  await browser.close();
+  await browser.close()
 })()
- ```
+```
 
 </Tab>
 </Tabs>
@@ -122,36 +123,38 @@ Focussing on specific UI elements allows the user to interact with them without 
 <Tabs>
 <Tab title="Puppeteer">
 
- ```js
-const puppeteer = require('puppeteer');
+```js
+const puppeteer = require('puppeteer')
 
-(async () => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-  await page.goto('https://danube-webshop.herokuapp.com/');
+;(async () => {
+  const browser = await puppeteer.launch()
+  const page = await browser.newPage()
+  await page.goto('https://danube-webshop.herokuapp.com/')
 
-  await page.waitForSelector('input');
-  await page.focus('input');
+  await page.waitForSelector('input')
+  await page.focus('input')
 
-  await browser.close();
+  await browser.close()
 })()
- ```
+```
+
 </Tab>
 <Tab title="Playwright">
 
- ```js
-const { chromium } = require('playwright');
+```js
+const { chromium } = require('playwright')
 
-(async () => {
-  const browser = await chromium.launch();
-  const page = await browser.newPage();
-  await page.goto('https://danube-webshop.herokuapp.com/');
+;(async () => {
+  const browser = await chromium.launch()
+  const page = await browser.newPage()
+  await page.goto('https://danube-webshop.herokuapp.com/')
 
-  await page.focus('input');
+  await page.focus('input')
 
-  await browser.close();
+  await browser.close()
 })()
- ```
+```
+
 </Tab>
 </Tabs>
 
@@ -162,40 +165,43 @@ We can simulate typing on a real keyboard using `page.type()`:
 <Tabs>
 <Tab title="Puppeteer">
 
- ```js
-const puppeteer = require('puppeteer');
+```js
+const puppeteer = require('puppeteer')
 
-(async () => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-  await page.goto('https://danube-webshop.herokuapp.com/');
+;(async () => {
+  const browser = await puppeteer.launch()
+  const page = await browser.newPage()
+  await page.goto('https://danube-webshop.herokuapp.com/')
 
   await page.waitForSelector('input')
-  await page.type('input', 'some search terms');
+  await page.type('input', 'some search terms')
 
-  await browser.close();
+  await browser.close()
 })()
- ```
+```
+
 </Tab>
 <Tab title="Playwright">
 
- ```js
-const { chromium } = require('playwright');
+```js
+const { chromium } = require('playwright')
 
-(async () => {
-  const browser = await chromium.launch();
-  const page = await browser.newPage();
-  await page.goto('https://danube-webshop.herokuapp.com/');
+;(async () => {
+  const browser = await chromium.launch()
+  const page = await browser.newPage()
+  await page.goto('https://danube-webshop.herokuapp.com/')
 
-  await page.fill('input', 'some search terms');
+  await page.fill('input', 'some search terms')
 
-  await browser.close();
+  await browser.close()
 })()
- ```
+```
+
 </Tab>
 </Tabs>
 
 Single key presses can also be executed. For example, to press the Enter key:
+
 - Puppeteer: `await page.keyboard.press('Enter');`
 - Playwright: `await page.press('Enter');`
 
@@ -206,16 +212,18 @@ Key presses can also be sent to a specific element:
 We can also hold down and release one or more keys, possibly combining them to use keyboard shortcuts:
 
 ```js
-await page.keyboard.down('Control');
-await page.keyboard.press('V');
-await page.keyboard.up('Control');
+await page.keyboard.down('Control')
+await page.keyboard.press('V')
+await page.keyboard.up('Control')
 ```
 
 You can run (from the terminal) the above examples as follows:
+
 ```sh
 $ node basic-click-type.js
 ```
 
 ## Further reading
+
 1. The related official documentation of [Puppeteer](https://pptr.dev/#?product=Puppeteer&version=v5.2.1&show=api-pageclickselector-options) and [Playwright](https://playwright.dev/#version=v1.2.1&path=docs%2Finput.md&q=)
 2. [Finding effective selectors](/learn/headless/basics-selectors/)

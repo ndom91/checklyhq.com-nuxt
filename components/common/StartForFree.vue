@@ -10,7 +10,8 @@
                   Try out Checkly for free
                 </div>
                 <p class="lead-text">
-                  Start monitoring your API endpoints and your vital site transactions.
+                  Start monitoring your API endpoints and your vital site
+                  transactions.
                 </p>
                 <a
                   class="signup-button btn btn-success btn-lg"
@@ -34,6 +35,6 @@
 
 <script>
 export default {
-  name: 'StartForFree'
+  name: 'StartForFree',
 }
 </script>

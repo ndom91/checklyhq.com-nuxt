@@ -11,10 +11,10 @@ icon: getting-started.svg
 
 menu:
   learn:
-    parent: "Getting Started"
+    parent: 'Getting Started'
 ---
 
-import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/shortcodes'
+import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/global'
 
 Let's start by creating a new directory and navigating to it. Assuming you already have [Node.js](https://nodejs.org/) available in your local environment, installing Puppeteer or Playwright is achieved with just one instruction:
 
@@ -53,10 +53,10 @@ Puppeteer and Playwright come bundled with their respective browsers, so we now 
 </Tabs>
 
 Run this example as follows:
+
 ```sh
 $ node hello-world.js
 ```
-
 
 Nothing much has happened, right? Remember: by default, Puppeteer and Playwright will run in headless mode! That means we won't see anything of what is happening in the browser when our script runs.
 
@@ -68,16 +68,18 @@ When you are first writing and debugging your scripts, it is a good idea to disa
 <Tab title="Puppeteer">
 
 ```js
-const browser = await puppeteer.launch({ headless: false });
+const browser = await puppeteer.launch({ headless: false })
 ```
+
 <RunInCheckly script="/samples/puppeteer/basic-navigation.js" framework="puppeteer" />
 
 </Tab>
 <Tab title="Playwright">
 
 ```js
-const browser = await chromium.launch({ headless: false });
+const browser = await chromium.launch({ headless: false })
 ```
+
 <RunInCheckly script="/samples/playwright/basic-navigation.js" framework="playwright" />
 
 </Tab>
@@ -86,4 +88,5 @@ const browser = await chromium.launch({ headless: false });
 After executing the updated file, you will see Chromium starting up, only to shut down after an instant. Everything is working as expected! Our script is just so short, it runs almost instantaneously.
 
 ## Further reading
+
 1. Getting started guides for [Puppeteer](https://pptr.dev) and [Playwright](https://playwright.dev/docs/intro#installation)

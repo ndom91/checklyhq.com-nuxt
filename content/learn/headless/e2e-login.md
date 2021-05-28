@@ -11,10 +11,10 @@ tags:
 icon: e2e.svg
 menu:
   learn:
-    parent: "E2E"
+    parent: 'E2E'
 ---
 
-import { Tab, Tabs, ReadFile } from '~/components/shortcodes'
+import { Tab, Tabs, ReadFile } from '~/components/global'
 
 When automating key site transactions, we inevitably stumble into login scenarios. In most cases, users need to be able to access accounts on a platform to get any value out of it. If they suddenly become unable to do so, we need to be informed as quickly as possible.
 
@@ -68,6 +68,6 @@ node login.js
 </Tabs>
 
 ## Takeaways
+
 1. Use environment variables to inject secrets.
 2. You might need to wait for the navigation as you are redirected to the login screen/modal.
-

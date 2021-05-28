@@ -9,13 +9,14 @@
       </div>
     </div>
     <div class="col-sm-12 col-md-7 text-right">
-      <nuxt-img
+      <nuxt-picture
         class="img-w720 big-drop-shadow rounded"
+        :format="format"
         :src="img"
         :alt="header"
-        :width="imgWidth"
-        :height="imgHeight"
-      />
+        sizes="sm:100% md:700px"
+        fit="inside"
+      ></nuxt-picture>
     </div>
   </div>
 </template>
@@ -34,15 +35,10 @@ export default {
       required: false,
       default: '',
     },
-    imgWidth: {
+    format: {
       type: String,
       required: false,
-      default: '0',
-    },
-    imgHeight: {
-      type: String,
-      required: false,
-      default: '0',
+      default: 'png',
     },
   },
 }

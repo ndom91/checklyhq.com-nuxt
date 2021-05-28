@@ -4,11 +4,12 @@
       <div class="opensource">
         <section class="opensource__hero">
           <div class="container">
-            <h1 class="display-3">
-              Open Source
-            </h1>
+            <h1 class="display-3">Open Source</h1>
             <p class="opensource__hero__lead">
-              Checkly's foundation is Open Source. We are not only using but building and supporting Open Source. To grow the OSS and headless automation community even further, give back and allow developers to keep doing incredible things.  🚀
+              Checkly's foundation is Open Source. We are not only using but
+              building and supporting Open Source. To grow the OSS and headless
+              automation community even further, give back and allow developers
+              to keep doing incredible things. 🚀
             </p>
             <div class="cta-wraps">
               <a
@@ -22,7 +23,7 @@
                   alt="arrow up right"
                   width="8"
                   height="8"
-                >
+                />
                 Get involved on GitHub
               </a>
             </div>
@@ -30,9 +31,7 @@
         </section>
         <section class="opensource__initiatives">
           <div class="container">
-            <h2 class="section-header">
-              Our Open Source initiatives
-            </h2>
+            <h2 class="section-header">Our Open Source initiatives</h2>
             <div class="d-flex">
               <div class="card">
                 <div class="card-image">
@@ -41,7 +40,7 @@
                     alt="headless recorder logo"
                     width="92"
                     height="92"
-                  >
+                  />
                 </div>
                 <h5>
                   Headless recorder
@@ -51,12 +50,15 @@
                       alt="github start"
                       width="16"
                       height="15"
-                    >
+                    />
                   </span>
-                  <span id="headless-recorder">{{ headlessRecorderStargazers }}</span>
+                  <span id="headless-recorder">{{
+                    headlessRecorderStargazers
+                  }}</span>
                 </h5>
                 <p>
-                  Headless recorder is a Chrome extension that records your browser interactions
+                  Headless recorder is a Chrome extension that records your
+                  browser interactions
                 </p>
                 <div class="cta-wraps">
                   <a
@@ -70,7 +72,7 @@
                       alt="arrow download"
                       width="10"
                       height="14"
-                    >
+                    />
                     Get Headless recorder
                   </a>
                   <a
@@ -90,7 +92,7 @@
                     alt="terraform logo"
                     width="101"
                     height="92"
-                  >
+                  />
                 </div>
                 <h5>
                   Terraform Provider
@@ -100,11 +102,16 @@
                       alt="github start"
                       width="16"
                       height="15"
-                    >
+                    />
                   </span>
-                  <span id="terraform-provider">{{ terraformProviderStargazers }}</span>
+                  <span id="terraform-provider">{{
+                    terraformProviderStargazers
+                  }}</span>
                 </h5>
-                <p>The Terraform provider enables users to manage their Checkly resources</p>
+                <p>
+                  The Terraform provider enables users to manage their Checkly
+                  resources
+                </p>
                 <div class="cta-wraps">
                   <a
                     class="cta-link"
@@ -117,7 +124,7 @@
                       alt="arrow visit"
                       width="13"
                       height="13"
-                    >
+                    />
                     Get Terraform provider
                   </a>
                   <a
@@ -135,11 +142,11 @@
         </section>
         <section class="opensource__mmr">
           <div class="container text-center">
-            <h2 class="section-header">
-              1% goes to Open Source
-            </h2>
+            <h2 class="section-header">1% goes to Open Source</h2>
             <p>
-              We love Open Source and aim to donate 1% of our revenue to non-corporate backed Open Source maintainers building incredible things.
+              We love Open Source and aim to donate 1% of our revenue to
+              non-corporate backed Open Source maintainers building incredible
+              things.
             </p>
             <a
               href="https://github.com/orgs/checkly/sponsoring"
@@ -154,16 +161,13 @@
           <div class="container">
             <h2 class="section-header">
               Recent posts from
-              <a
-                href="https://theheadless.dev"
-                target="_blank"
-                rel="noopener"
-              >
+              <a href="https://theheadless.dev" target="_blank" rel="noopener">
                 Headless Automation Guides
               </a>
             </h2>
             <p class="lead">
-              Puppeteer and Playwright tips, tricks and in-depth guides from the trenches
+              Puppeteer and Playwright tips, tricks and in-depth guides from the
+              trenches
             </p>
             <div class="d-flex">
               <div
@@ -190,7 +194,7 @@
                       alt="arrow up right"
                       width="8"
                       height="8"
-                    >
+                    />
                     Read article
                   </a>
                 </div>
@@ -211,54 +215,51 @@ import { Footer, StartForFree } from '@/components/common'
 export default {
   name: 'OpenSource',
   components: { Footer, StartForFree },
-  data () {
+  data() {
     return {
       posts: [],
       headlessRecorderStargazers: 0,
-      terraformProviderStargazers: 0
+      terraformProviderStargazers: 0,
     }
   },
-  async mounted () {
+  async mounted() {
     this.posts = await this.getLatestPosts()
-    this.headlessRecorderStargazers = await this.getStargazers('checkly/headless-recorder')
-    this.terraformProviderStargazers = await this.getStargazers('checkly/terraform-provider-checkly')
+    this.headlessRecorderStargazers = await this.getStargazers(
+      'checkly/headless-recorder'
+    )
+    this.terraformProviderStargazers = await this.getStargazers(
+      'checkly/terraform-provider-checkly'
+    )
   },
   methods: {
-    async getLatestPosts () {
-      return fetch('https://theheadless.dev/rss.xml')
-        .then(res => res.text())
-        .then(data => {
-          const parser = new DOMParser()
-          const xmlDoc = parser.parseFromString(data, 'text/xml')
-          const items = xmlDoc.getElementsByTagName('item')
-          const articles = Array.from(items).reduce((articles, item) => {
-            articles.push({
-              title: item.children[0].textContent,
-              link: item.children[1].textContent,
-              guid: item.children[2].textContent,
-              pubdate: item.children[3].textContent,
-              description: item.children[4].textContent
-            })
-            return articles
-          }, [])
-          return articles
+    async getLatestPosts() {
+      const res = await fetch('https://theheadless.dev/rss.xml')
+      const data = await res.text()
+      const parser = new DOMParser()
+      const xmlDoc = parser.parseFromString(data, 'text/xml')
+      const items = xmlDoc.getElementsByTagName('item')
+      return Array.from(items).reduce((articles, item) => {
+        articles.push({
+          title: item.children[0].textContent,
+          link: item.children[1].textContent,
+          guid: item.children[2].textContent,
+          pubdate: item.children[3].textContent,
+          description: item.children[4].textContent,
         })
-        .catch(err => console.error(err))
+        return articles
+      }, [])
     },
-    async getStargazers (repo) {
-      return fetch(`https://api.github.com/repos/${repo}`)
-        .then(res => res.json())
-        .then((res) => {
-          let stars = ''
-          if (res.stargazers_count > 1000) {
-            stars = (res.stargazers_count / 1000).toFixed(1) + 'k'
-          } else {
-            stars = res.stargazers_count
-          }
-          return stars
-        })
-        .catch(err => console.error(err))
-    }
-  }
+    async getStargazers(repo) {
+      const res = await fetch(`https://api.github.com/repos/${repo}`)
+      const data = await res.json()
+      let stars = ''
+      if (data.stargazers_count > 1000) {
+        stars = (data.stargazers_count / 1000).toFixed(1) + 'k'
+      } else {
+        stars = data.stargazers_count
+      }
+      return stars
+    },
+  },
 }
 </script>

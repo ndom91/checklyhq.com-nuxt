@@ -10,10 +10,10 @@ tags:
 icon: e2e.svg
 menu:
   learn:
-    parent: "E2E"
+    parent: 'E2E'
 ---
 
-import { Tab, Tabs, ReadFile } from '~/components/shortcodes'
+import { Tab, Tabs, ReadFile } from '~/components/global'
 
 Another key website flow that needs to be closely monitored is any sort of checkout. You want to be 100% sure your users are able to pay for goods or services you might be offering, at any given time.
 
@@ -22,6 +22,7 @@ Another key website flow that needs to be closely monitored is any sort of check
 ## Steps
 
 Checkout procedures can vary dramatically depending on what is being bought or sold. A few constants will be:
+
 1. a shopping basket page / section, in cases where multiple items can be bought - this is normally where the checkout procedure starts
 2. a page to enter or edit billing and, where applicable, shipping information
 3. a summary to review all the different parameters of the purchase
@@ -68,6 +69,7 @@ Note: In some cases, users will need to [log in](e2e-login/) before they can pro
 Checkout is a peculiar flow: unlike Login and others, it almost always involves an actual exchange of currency. This is usually not an issue in pre-production environments, as payment providers are not yet involved or are set up in sandbox/test mode. For Production, low-value transactions can be performed with low frequency and immediately voided after the test has been completed.
 
 ## Takeaways
+
 1. Checkout flows will vary depending on what is being purchased.
 2. Remember to check different flows (e.g. with and without login) if needed.
 3. Additional care is needed on production systems as real transactions will take place.

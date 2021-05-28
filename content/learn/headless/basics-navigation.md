@@ -12,12 +12,13 @@ weight: 4
 
 menu:
   learn:
-    parent: "Getting Started"
+    parent: 'Getting Started'
 ---
 
-import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/shortcodes'
+import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/global'
 
 Every useful script that we will write will almost certainly do three key things:
+
 1. Navigating to some web page
 2. Waiting for something
 3. Possibly getting a timeout 😐
@@ -33,7 +34,7 @@ Initial navigation to any page is pretty much the same for both frameworks and c
 
 - Whenever your code does a `page.goto()`, or a `page.click()` on a link, you explicitly trigger a navigation.
 - The webpage you are on can also trigger a navigation by executing `location.href= 'https://example.com'` or using the
-`history.pushState()` API.
+  `history.pushState()` API.
 
 In the example below we trigger two navigations:
 
@@ -58,10 +59,10 @@ In the example below we trigger two navigations:
 </Tabs>
 
 Run this example as follows:
+
 ```sh
 $ node basic-browser-navigation.js
 ```
-
 
 We also add `await browser.close()` to ensure that we are shutting down our browser before terminating the session.
 Without it, our execution would not return after the page has loaded, keeping our test hanging indefinitely.
@@ -101,7 +102,6 @@ Run this example as follows:
 $ node basic-browser-waiting.js
 ```
 
-
 This works exactly the same for the `page.waitForXpath()` function is you are using XPath selectors instead of CSS selectors.
 
 **page.waitForNavigation()**
@@ -113,15 +113,14 @@ case is by using the `Promise.all()` method to wait for the click to happen and 
 ```js
 const [response] = await Promise.all([
   page.waitForNavigation(),
-  page.click('a.some-link')
-]);
+  page.click('a.some-link'),
+])
 ```
 
 Interestingly, Playwright offers pretty much the same API for waiting on events and elements but again stresses its automatic handling
 of the wait states under the hood.
 
 > gree Playwright handles a lot of the common waiting scenario's using its built-in "auto waiting". Depending on your use case, it might serve all your needs
-
 
 ## Timeouts
 
@@ -165,10 +164,10 @@ Which of these options is useful to you depends on your situation:
 - Does your SPA need to be fully rendered and finish all XHR calls? Go with `load`
 - You server render and load in some non-crucial element in a lazy fashion? go for one of the `networkidle` variant.
 
-
 Now that we know how to start a browser and navigate to a URL, the clear next step is to learn how to [interact with a webpage](/learn/headless/basics-clicking-typing/).
 
 ## Further reading
+
 1. [Playwright general navigation docs](https://playwright.dev/#version=v1.3.0&path=docs%2Floading.md&q=)
 2. [Puppeteer page.goto() docs](https://pptr.dev/#?product=Puppeteer&version=v5.2.1&show=api-pagegotourl-options)
 3. [Playwright auto waiting](https://playwright.dev/#version=v1.3.0&path=docs%2Fcore-concepts.md&q=auto-waiting)

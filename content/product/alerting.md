@@ -2,7 +2,7 @@
 title: Alerting
 ---
 
-import { Sm4ColItem, AlternativePicture, FeatureRow, CtaLink } from '~/components/shortcodes'
+import { Sm4ColItem, AlternativePicture, FeatureRow, CtaLink } from '~/components/global'
 
 <h1 class="text-center hero-text width-645"> We hope you'll never see this message... </h1>
 
@@ -28,10 +28,11 @@ you want. Know when your service fails before your customers do.
 <h2 class="text-center section-header">How it works</h2>
 
 <feature-row
-  header="Set up your thresholds"
-  img="/product/alerting/error-howitworks-1@2x.png"
-  imgWidth="650"
-  imgHeight="288"
+header="Set up your thresholds"
+img="/product/alerting/error-howitworks-1@2x.png"
+imgWidth="650"
+imgHeight="288"
+
 >
 
 The internet can be flaky. Sometimes a failing service is just fine 2 seconds later. **Dodge false positives** by specifying exactly when you should be alerted and how often you want to be reminded.
@@ -41,13 +42,13 @@ The internet can be flaky. Sometimes a failing service is just fine 2 seconds la
 </div>
 </feature-row>
 
-<feature-row 
-  header="Pick your channels" 
-  img="/product/alerting/error-howitworks-2@2x.png" 
-  imgWidth="650" 
-  imgHeight="420"
->
-  Choose one or more of the available alerting channels. We have everything from **email, to Pagerduty, Opsgenie and SMS**. Need something custom? Use the webhooks or hook up <g-link to="/docs/integrations/prometheus/">our Prometheus integration</g-link> and roll your own alerting.
+<feature-row
+header="Pick your channels"
+img="/product/alerting/error-howitworks-2@2x.png"
+imgWidth="650"
+imgHeight="420"
+
+> Choose one or more of the available alerting channels. We have everything from **email, to Pagerduty, Opsgenie and SMS**. Need something custom? Use the webhooks or hook up <g-link to="/docs/integrations/prometheus/">our Prometheus integration</g-link> and roll your own alerting.
 
   <div class="cta">
     <cta-link text="Learn more" link="/docs/alerting/" />
@@ -56,7 +57,6 @@ The internet can be flaky. Sometimes a failing service is just fine 2 seconds la
 </div>
 </div>
 </div>
-
 
 <div class="row justify-content-center header-part mt-8 pb-9">
 	<div class="col-sm-12 col-md-8">

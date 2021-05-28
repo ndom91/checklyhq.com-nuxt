@@ -572,7 +572,7 @@
 <script>
 import { Footer, StartForFree } from '@/components/common'
 import { TestimonialQuote } from '@/components/landing'
-import { FaqToggle } from '@/components/shortcodes'
+import { FaqToggle } from '@/components/global'
 
 export default {
   name: 'Pricing',

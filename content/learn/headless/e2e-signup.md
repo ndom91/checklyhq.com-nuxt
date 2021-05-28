@@ -11,10 +11,10 @@ tags:
 icon: e2e.svg
 menu:
   learn:
-    parent: "E2E"
+    parent: 'E2E'
 ---
 
-import { Tab, Tabs, ReadFile } from '~/components/shortcodes'
+import { Tab, Tabs, ReadFile } from '~/components/global'
 
 Signups are key transactions in most web platforms, and therefore prime targets for automation.
 
@@ -69,8 +69,10 @@ node signup.js
 The normal signup flow might include asking the user to confirm their email address right away by navigating to a URL included in an automated email. Reliably replicating the steps needed to achieve that is not trivial. A possible solution to the issue is having the system under test distinguish between test sessions and normal user sessions, and skip the verification step for test sessions. A way to achieve this would be to check for a specific user agent ID which could be set as part of our test:
 
 ```js
-await page.setUserAgent('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 \
-(KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36 TEST_ID/<MY_SECRET>');
+await page.setUserAgent(
+  'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 \
+(KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36 TEST_ID/<MY_SECRET>'
+)
 ```
 
 ## Takeaways

@@ -12,10 +12,10 @@ weight: 7
 
 menu:
   learn:
-    parent: "Getting Started"
+    parent: 'Getting Started'
 ---
 
-import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/shortcodes'
+import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/global'
 
 Headless browsers are fully capable of taking screenshots, which is very useful in troubleshooting failures or faulty scripts. Using additional libraries and tools, it is also possible to automate visual comparisons.
 
@@ -68,6 +68,7 @@ Having our screenshot limited to a smaller portion of the viewport is also possi
 </Tabs>
 
 The above examples can be run as follows:
+
 ```sh
 $ node basic-screenshots.js
 ```
@@ -79,6 +80,7 @@ Screenshots can be fed to image comparison libraries, such as [Resemble.js](http
 Some libraries, like [Differencify](https://github.com/NimaSoroush/differencify) and [jest-puppeteer-docker](https://github.com/gidztech/jest-puppeteer-docker), already combine Puppeteer with visual comparison libraries while exposing higher-level config to the user.
 
 ## Further reading
+
 1. Official documentation for taking screenshots with [Puppeteer](https://pptr.dev/#?product=Puppeteer&version=v5.5.0&show=api-pagescreenshotoptions) and [Playwright](https://playwright.dev/docs/verification?_highlight=screenshot#screenshots)
 2. Blog post from baseweb.design on the whys and hows of [visual regression testing](https://baseweb.design/blog/visual-regression-testing/)
 3. Blog post from Gideon Pyzer looking at different visual [regression testing tools](https://gideonpyzer.dev/blog/2018/06/25/visual-regression-testing/)

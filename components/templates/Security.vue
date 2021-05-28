@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import { FaqToggle } from '@/components/shortcodes'
+import { FaqToggle } from '@/components/global'
 import { Footer } from '~/components/common'
 
 export default {

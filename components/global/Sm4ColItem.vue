@@ -14,13 +14,13 @@ export default {
     header: {
       type: String,
       required: false,
-      default: ''
+      default: '',
     },
     body: {
       type: String,
       required: false,
-      default: ''
-    }
-  }
+      default: '',
+    },
+  },
 }
 </script>

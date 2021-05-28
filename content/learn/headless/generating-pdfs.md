@@ -10,10 +10,10 @@ tags:
 icon: misc.svg
 menu:
   learn:
-    parent: "Miscellaneous"
+    parent: 'Miscellaneous'
 ---
 
-import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/shortcodes'
+import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/global'
 
 import PuppeteerMinimal from '../../samples/puppeteer/pdf-minimal.js'
 import PlaywrightMinimal from '../../samples/playwright/pdf-minimal.js'
@@ -27,7 +27,6 @@ This article introduces this functionality and shows how we can customise the PD
 ## Generating a PDF file
 
 After loading a page, we use the `page.pdf()` command to convert it to a PDF.
-
 
 <Tabs>
 <Tab title="Puppeteer">
@@ -57,7 +56,7 @@ After loading a page, we use the `page.pdf()` command to convert it to a PDF.
 
 Note that we need to pass the `path` option to have the PDF file actually saved to disk.
 
-> ⚠️  This feature is currently only supported in Chromium headless in both Puppeteer and Playwright.
+> ⚠️ This feature is currently only supported in Chromium headless in both Puppeteer and Playwright.
 
 ## Tweaking the result
 
@@ -159,6 +158,7 @@ We are including the following template files for our header and footer.
   </body>
 </html>
 ```
+
 </Tab>
 </Tabs>
 
@@ -169,6 +169,7 @@ The first page of the generated PDF looks as follows:
 > Chromium sets a default padding for header and footer. You will need to [override it](https://github.com/puppeteer/puppeteer/issues/4132#issuecomment-475110167) in your CSS.</style>
 
 Run the above examples as follows:
+
 ```sh
 node generate-pdf.js
 ```

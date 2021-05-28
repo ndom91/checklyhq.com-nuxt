@@ -11,10 +11,10 @@ tags:
 icon: e2e.svg
 menu:
   learn:
-    parent: "E2E"
+    parent: 'E2E'
 ---
 
-import { Tab, Tabs, ReadFile } from '~/components/shortcodes'
+import { Tab, Tabs, ReadFile } from '~/components/global'
 
 Puppeteer and Playwright also allow us to automate logging in to a Microsoft Live account.
 
@@ -62,7 +62,6 @@ node mslive-login.js
 </Tab>
 </Tabs>
 
-
 > This example does not work when you have 2-factor authentication enabled, and you might trigger a recaptcha check.
 
 ## Takeaways
@@ -70,8 +69,3 @@ node mslive-login.js
 1. Use environment variables to inject secrets.
 2. Wait for the navigation as your are redirected to Microsoft.
 3. Wait for the navigation as you are redirected back to the start site.
-
-
-
-
-

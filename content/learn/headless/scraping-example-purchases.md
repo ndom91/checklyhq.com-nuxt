@@ -10,10 +10,10 @@ tags:
 icon: scraping.svg
 menu:
   learn:
-    parent: "Scraping"
+    parent: 'Scraping'
 ---
 
-import { Tab, Tabs, ReadFile } from '~/components/shortcodes'
+import { Tab, Tabs, ReadFile } from '~/components/global'
 
 Puppeteer and Playwright can be particularly useful when scraping data accessible only behind a login wall. This article shows a practical example of such a case.
 
@@ -63,14 +63,15 @@ node scraping-example-purchases.js
 </Tab>
 </Tabs>
 
-
 > Under the hood, Amazon can change quite quickly. You might need to adjust the locators and/or flow slightly to have the script work for you.
 
 > ⚠️ Websites might [restrict headless browser traffic](/learn/headless/challenging-flows/) in order to protect their users from fraud. 2FA will also interfere with the script if enabled.
 
 ## Takeaways
+
 1. We can scrape information available behind a login wall with Puppeteer and Playwright.
 2. Some websites might not allow scraping. Always make sure you check their terms of service beforehand.
 
 ## Further reading
+
 1. [Basic scraping](/learn/headless/basics-scraping/) with Puppeteer and Playwright

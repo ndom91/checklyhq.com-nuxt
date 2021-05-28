@@ -1,10 +1,11 @@
 <template>
-  <nuxt-img
+  <nuxt-picture
     :class="className"
     :src="img"
     :alt="alt"
-    :width="width"
-    :height="height"
+    :format="format"
+    sizes="sm:700px"
+    fit="inside"
   />
 </template>
 
@@ -22,17 +23,12 @@ export default {
       required: false,
       default: '',
     },
+    format: {
+      type: String,
+      required: false,
+      default: 'png',
+    },
     className: {
-      type: String,
-      required: false,
-      default: '',
-    },
-    width: {
-      type: String,
-      required: false,
-      default: '',
-    },
-    height: {
       type: String,
       required: false,
       default: '',
