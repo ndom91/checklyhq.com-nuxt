@@ -8,15 +8,6 @@
   </div>
 </template>
 
-<page-query>
-query Page ($path: String!) {
-  page: pages (path: $path) {
-    title
-    content
-  }
-}
-</page-query>
-
 <script>
 import { Footer } from '~/components/common'
 export default {

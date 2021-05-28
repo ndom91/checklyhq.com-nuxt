@@ -1,21 +1,15 @@
 <template>
   <div>
     <aside class="learn-menu">
-      <nav
-        id="sideMenu"
-        class="left-transform right-transform"
-      >
+      <nav id="sideMenu" class="left-transform right-transform">
         <ul class="learn-menu-content">
           <li
             v-for="(cat, index) of categories"
             :key="cat.id"
             class="learn-menu-item"
           >
-            <LearnMenuToggle
-              :category="cat"
-              :index="index"
-            />
-          <!-- <div
+            <LearnMenuToggle :category="cat" :index="index" />
+            <!-- <div
             :id="index"
             class="learn-menu-title{{ if $currentPage.HasMenuCurrent &quot;learn&quot; . }} active{{ end }}"
           >
@@ -47,27 +41,6 @@
   </div>
 </template>
 
-<static-query>
-query {
-  allLearn {
-    edges {
-      node {
-        id
-        path
-        title
-        weight
-        icon
-        menu {
-          learn {
-            parent
-          }
-        }
-      }
-    }
-  }
-}
-</static-query>
-
 <script>
 import LearnMenuToggle from './LearnMenuToggle'
 
@@ -75,9 +48,9 @@ export default {
   name: 'LearnMenu',
   components: { LearnMenuToggle },
   computed: {
-    categories () {
+    categories() {
       const subMenuItems = this.$static.allLearn.edges
-        .filter(node => node.weight !== null)
+        .filter((node) => node.weight !== null)
         .reduce((topLevelItems, learn) => {
           const parent = learn.node.menu?.learn?.parent
           if (parent) {
@@ -89,7 +62,7 @@ export default {
         }, {})
 
       return subMenuItems
-    }
-  }
+    },
+  },
 }
 </script>

@@ -19,20 +19,6 @@
   </div>
 </template>
 
-<page-query>
-query ($id: ID!) {
-  guides (id: $id) {
-    title
-    path
-    headings {
-      depth
-      value
-      anchor
-    }
-  }
-}
-</page-query>
-
 <script>
 import { Footer, StartForFree } from '@/components/common'
 export default {

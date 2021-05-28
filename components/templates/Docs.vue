@@ -80,20 +80,6 @@
   </div>
 </template>
 
-<page-query>
-query Documentation ($id: ID!) {
-  docs(id: $id) {
-    title
-    path
-    headings {
-      depth
-      value
-      anchor
-    }
-  }
-}
-</page-query>
-
 <script>
 import mediumZoom from 'medium-zoom'
 import { DocsMenu } from '~/components/docs'

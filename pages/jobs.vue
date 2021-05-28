@@ -65,22 +65,6 @@
   </div>
 </template>
 
-<static-query>
-query {
-  allJob {
-    edges {
-      node {
-        title
-        subtitle
-        position_state
-        draft
-        path
-      }
-    }
-  }
-}
-</static-query>
-
 <script>
 import { Footer } from '@/components/common'
 

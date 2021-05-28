@@ -11,15 +11,6 @@
   </div>
 </template>
 
-<page-query>
-query ($id: ID!) {
-  terms (id: $id) {
-    title
-    content
-  }
-}
-</page-query>
-
 <script>
 import { Footer } from '~/components/common'
 export default {

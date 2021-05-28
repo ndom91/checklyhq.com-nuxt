@@ -7,20 +7,6 @@
   </pre>
 </template>
 
-<static-query>
-query {
-  allSamples{
-    edges {
-      node {
-        id
-        name
-        content
-      }
-    }
-  }
-}
-</static-query>
-
 <script>
 import Prism from 'prismjs'
 
@@ -29,22 +15,24 @@ export default {
   props: {
     filename: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
   computed: {
-    codeContent () {
-      return this.$static.allSamples.edges.find(edge => edge.node.name.includes(this.filename)).node.content.trim()
-    }
+    codeContent() {
+      return this.$static.allSamples.edges
+        .find((edge) => edge.node.name.includes(this.filename))
+        .node.content.trim()
+    },
   },
-  mounted () {
+  mounted() {
     Prism.highlightAll()
-  }
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 pre {
-  color: white
+  color: white;
 }
 </style>

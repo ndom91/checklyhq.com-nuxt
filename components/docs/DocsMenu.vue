@@ -46,28 +46,6 @@
   </div>
 </template>
 
-<static-query>
-query {
-  allDocs {
-    edges {
-      node {
-        id
-        path
-        title
-        weight
-        icon
-        menu {
-          docs {
-            parent
-            identifier
-          }
-        }
-      }
-    }
-  }
-}
-</static-query>
-
 <script>
 import DocsMenuToggle from './DocsMenuToggle'
 

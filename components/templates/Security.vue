@@ -27,24 +27,6 @@
   </div>
 </template>
 
-<page-query>
-query ($id: ID!) {
-  security (id: $id) {
-    title
-    content
-  }
-  allSecurityFaq (order: ASC) {
-    edges {
-      node {
-        id
-        q
-        a
-      }
-    }
-  }
-}
-</page-query>
-
 <script>
 import { FaqToggle } from '@/components/shortcodes'
 import { Footer } from '~/components/common'

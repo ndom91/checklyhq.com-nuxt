@@ -67,20 +67,6 @@
   </div>
 </template>
 
-<page-query>
-query Learn ($id: ID!) {
-  learn(id: $id) {
-    title
-    path
-    headings {
-      depth
-      value
-      anchor
-    }
-  }
-}
-</page-query>
-
 <script>
 import { LearnMenu } from '@/components/learn'
 import mediumZoom from 'medium-zoom'
