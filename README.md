@@ -1,20 +1,23 @@
-# checklyhq.com-nuxt
+<img width="96px" height="96px" align="right" src="static/logo.svg" alt="Checkly Logo" />
 
-## Build Setup
+# Checkly Homepage
 
-```bash
-# install dependencies
-$ npm install
+This is a repo containing the [Nuxt.js](https://nuxtjs.org/) rewrite of the [checklyhq.com](https://checklyhq.com) Marketing Site.
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+## 🏗️ Getting Started
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+1. `git clone https://github.com/ndom91/checklyhq.com-nuxt`
+2. `cd checklyhq-nuxt && npm install`
+3. `npm run dev`
 
-# generate static project
-$ npm run generate
-```
+Then you'll have access to two separate instances:
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+1. Development server available at [`localhost:8080`](http://localhost:8080)
+
+## 🚀 Deploying
+
+The marketing site gets built into a statically generated webpage and hydrated with Vue by Vercel. Preview deploys available at https://checklyhq-com-nuxt.vercel.app.
+
+## 📋 License
+
+MIT
