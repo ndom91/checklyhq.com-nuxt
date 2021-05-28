@@ -1,0 +1,68 @@
+<template>
+  <div
+    class="run-in-checkly"
+    @click="launchCheckly"
+  >
+    <img
+      src="/learn/icons/zap.svg"
+      class="mr-1"
+    >
+    Run in Checkly
+  </div>
+</template>
+
+<static-query>
+query {
+  allSamples{
+    edges {
+      node {
+        id
+        name
+        content
+        framework
+      }
+    }
+  }
+}
+</static-query>
+
+<script>
+export default {
+  name: 'RunInCheckly',
+  props: {
+    script: {
+      type: String,
+      required: true
+    },
+    framework: {
+      type: String,
+      required: true
+    }
+  },
+  methods: {
+    launchCheckly () {
+      if (typeof window === 'undefined') return
+      const isDev = window.location.host.includes('localhost')
+      const body = this.$static.allSamples.edges.find(edge => edge.node.name.includes(this.script))
+      const script = encodeURIComponent(btoa(body.node.content))
+      window.location.href = `${isDev ? 'http://localhost:8081' : 'https://app.checklyhq.com'}/checks/new/browser?framework=${this.framework}&script=${script}`
+    }
+  }
+}
+</script>
+
+<style lang="scss">
+.run-in-checkly {
+  position: absolute;
+  bottom: 33px;
+  background-color: #45C8F1;
+  z-index: 100000000;
+  right: 25px;
+  color: #FFF;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+</style>
