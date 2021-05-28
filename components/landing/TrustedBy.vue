@@ -7,11 +7,12 @@
             Trusted by engineering teams at
           </h5>
         </div>
-      </div><div class="row">
+      </div>
+      <div class="row">
         <div class="col-sm-12">
-          <g-image
+          <nuxt-img
             class="trusted-by-image"
-            src="~/assets/images/landing/testimonial-logos@2x.webp"
+            src="~/static/images/landing/testimonial-logos@2x.webp"
             alt="trusted by companies for api and synthetic monitoring"
             width="1100"
             height="53.5"
@@ -24,7 +25,7 @@
 
 <script>
 export default {
-  name: 'TrustedBy'
+  name: 'TrustedBy',
 }
 </script>
 

@@ -4,35 +4,40 @@
       <div class="row justify-content-center">
         <div class="col-sm-12 col-md-10 col-lg-5">
           <div class="text-side text-left">
-            <h2 class="section-super-header">
-              synthetic monitoring
-            </h2>
-            <h3 class="section-header">
-              Monitor crucial flows fast
-            </h3>
+            <h2 class="section-super-header">synthetic monitoring</h2>
+            <h3 class="section-header">Monitor crucial flows fast</h3>
             <p class="lead-text">
-              Monitor and validate your crucial site transactions. Take screenshots and get instant insights into what's working and what's not.
-              <br><br>
-              Coding browser click-flows used to be hard. Not anymore. Use modern open source frameworks like Playwright and Puppeteer to automate your flows. Run your checks in 20 locations worldwide.
-            </p><a
-              class="cta-link"
-              href="/product/synthetic-monitoring/"
-            >Learn more</a>
+              Monitor and validate your crucial site transactions. Take
+              screenshots and get instant insights into what's working and
+              what's not.
+              <br /><br />
+              Coding browser click-flows used to be hard. Not anymore. Use
+              modern open source frameworks like Playwright and Puppeteer to
+              automate your flows. Run your checks in 20 locations worldwide.
+            </p>
+            <a class="cta-link" href="/product/synthetic-monitoring/"
+              >Learn more</a
+            >
           </div>
         </div>
         <div class="col-sm-12 col-lg-7">
           <div class="image-side right">
-            <g-image
-              class="big-landing-image big-drop-shadow code fade-in lazy"
-              src="~/assets/images/landing/browser-check-1-section-screenshot@2x.webp"
+            <nuxt-img
+              class="big-landinnuxt-img big-drop-shadow code fade-in lazy"
+              src="~/static/images/landing/browser-check-1-section-screenshot@2x.webp"
               alt="checkly browser check"
               fit="inside"
               width="600"
               height="509"
             />
-            <g-image
-              class="big-landing-image big-drop-shadow screenshots fade-in lazy"
-              src="~/assets/images/landing/browser-check-2-section-screenshot@2x.webp"
+            <nuxt-img
+              class="
+                big-landinnuxt-img big-drop-shadow
+                screenshots
+                fade-in
+                lazy
+              "
+              src="~/static/images/landing/browser-check-2-section-screenshot@2x.webp"
               alt="checkly browser screenshots"
               fit="inside"
               width="600"
@@ -47,7 +52,7 @@
 
 <script>
 export default {
-  name: 'SiteMonitoring'
+  name: 'SiteMonitoring',
 }
 </script>
 

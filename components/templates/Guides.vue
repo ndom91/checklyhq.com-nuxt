@@ -2,9 +2,7 @@
   <div class="main container guides">
     <div class="row">
       <div class="col-sm-12 col-lg-10 offset-lg-1">
-        <div class="guides__label">
-          Checkly Guides
-        </div>
+        <div class="guides__label">Checkly Guides</div>
         <h1 class="guides__title">
           {{ $page.guides.title }}
         </h1>
@@ -39,6 +37,6 @@ query ($id: ID!) {
 import { Footer, StartForFree } from '@/components/common'
 export default {
   name: 'Guides',
-  components: { Footer, StartForFree }
+  components: { Footer, StartForFree },
 }
 </script>

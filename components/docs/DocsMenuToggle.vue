@@ -1,30 +1,23 @@
 <template>
   <div>
-    <a
-      class="docs-menu-title"
-      :class="open && 'active'"
-      @click="toggle"
-    >
+    <a class="docs-menu-title" :class="open && 'active'" @click="toggle">
       <img
-        :src="'/docs/images/icons/'+category[0].icon+'@2x.png'"
+        :src="'/docs/images/icons/' + category[0].icon + '@2x.png'"
         width="26"
         height="26"
         :alt="index"
-      >
+      />
       {{ index }}
     </a>
-    <ul
-      class="docs-menu-sub collapse"
-      :class="open && 'active'"
-    >
+    <ul class="docs-menu-sub collapse" :class="open && 'active'">
       <li
-        v-for="subcat of category.sort((a, b) => ( a.weight - b.weight))"
+        v-for="subcat of categorySorted.sort((a, b) => a.weight - b.weight)"
         :key="subcat.path"
-        class="docs-menu-sub-item "
+        class="docs-menu-sub-item"
       >
-        <g-link :to="subcat.path">
+        <NuxtLink to="subcat.path">
           {{ subcat.title }}
-        </g-link>
+        </NuxtLink>
       </li>
     </ul>
   </div>
@@ -36,23 +29,24 @@ export default {
   props: {
     category: {
       type: Array,
-      default: [],
-      required: false
+      default: () => [],
+      required: false,
     },
     index: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
-  data () {
+  data() {
     return {
-      open: false
+      open: false,
+      categorySorted: this.category,
     }
   },
   methods: {
-    toggle () {
+    toggle() {
       this.open = !this.open
-    }
-  }
+    },
+  },
 }
 </script>

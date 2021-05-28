@@ -1,15 +1,8 @@
 <template>
   <div>
     <aside class="docs-menu">
-      <nav
-        id="sideMenu"
-        class="left-transform right-transform"
-      >
-        <a
-          class="api-reference-link"
-          href="/docs/api"
-          target="_blank"
-        >
+      <nav id="sideMenu" class="left-transform right-transform">
+        <a class="api-reference-link" href="/docs/api" target="_blank">
           API reference
         </a>
         <ul class="docs-menu-content">
@@ -18,10 +11,7 @@
             :key="cat.id"
             class="docs-menu-item"
           >
-            <DocsMenuToggle
-              :category="cat"
-              :index="index"
-            />
+            <DocsMenuToggle :category="cat" :index="index" />
             <!-- <btn
               :id="index.toLowerCase()"
               class="docs-menu-title"
@@ -43,9 +33,9 @@
                 :key="subcat.path"
                 class="docs-menu-sub-item "
               >
-                <g-link :to="subcat.path">
+                <NuxtLink to="subcat.path">
                   {{ subcat.title }}
-                </g-link>
+                </NuxtLink>
               </li>
             </ul> -->
           </li>
@@ -84,15 +74,15 @@ import DocsMenuToggle from './DocsMenuToggle'
 export default {
   name: 'DocsMenu',
   components: { DocsMenuToggle },
-  data () {
+  data() {
     return {
-      currentPage: ''
+      currentPage: '',
     }
   },
   computed: {
-    categories () {
+    categories() {
       const subMenuItems = this.$static.allDocs.edges
-        .filter(node => node.weight !== null)
+        .filter((node) => node.weight !== null)
         .reduce((topLevelItems, doc) => {
           const parent = doc.node.menu?.docs?.parent
           if (parent) {
@@ -104,7 +94,7 @@ export default {
         }, {})
 
       return subMenuItems
-    }
-  }
+    },
+  },
 }
 </script>

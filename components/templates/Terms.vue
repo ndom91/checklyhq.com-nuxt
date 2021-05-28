@@ -25,11 +25,8 @@ import { Footer } from '~/components/common'
 export default {
   name: 'Terms',
   components: { Footer },
-  mount () {
+  mount() {
     console.log(this.$page.pages)
-  }
+  },
 }
 </script>
-
-<style>
-</style>

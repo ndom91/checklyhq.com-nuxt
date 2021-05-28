@@ -11,11 +11,12 @@
               class="signup-button btn btn-success btn-lg"
               data-signup="data-signup"
               href="https://app.checklyhq.com/signup"
-            >Start your free trial</a>
+              >Start your free trial</a
+            >
           </div>
         </div>
         <div class="col-sm-6 text-center">
-          <g-image
+          <nuxt-img
             class="alternativeto-hero-image img-fluid"
             src="/alternative/home-dashboard@2x.webp"
             alt="checkly pingdom monitoring dashboard alternative"
@@ -29,6 +30,6 @@
 
 <script>
 export default {
-  name: 'AlternativeHero'
+  name: 'AlternativeHero',
 }
 </script>

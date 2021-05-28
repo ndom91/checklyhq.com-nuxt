@@ -54,52 +54,52 @@ monitoring solution to check your mobile, webapp or IoT API for performance, upt
 
 <h2 class="text-center section-header mt-8">How it works</h2>
 
-<feature-row 
-  header="Create an HTTP request" 
-  img="/product/api-monitoring/api-howitworks-1@2x.png" 
-  imgWidth="610" 
-  imgHeight="308"
->
-  Import your HTTP requests or assemble one by hand. Checkly gives you full control over all HTTP request options: <b>HTTP method, URL, query parameters, headers, and body</b>. Add credentials or a Bearer token for authentication.
+<feature-row
+header="Create an HTTP request"
+img="/product/api-monitoring/api-howitworks-1@2x.png"
+imgWidth="610"
+imgHeight="308"
+
+> Import your HTTP requests or assemble one by hand. Checkly gives you full control over all HTTP request options: <b>HTTP method, URL, query parameters, headers, and body</b>. Add credentials or a Bearer token for authentication.
 
   <div class="cta">
     <cta-link text="Learn more" link="/docs/api-checks/request-settings/" />
   </div>
 </feature-row>
 
-<feature-row 
-  header="Add API check assertions" 
-  img="/product/api-monitoring/api-howitworks-2@2x.png" 
-  imgWidth="610" 
-  imgHeight="308"
->
-  Checkly's assertion matrix helps you create as many assertions per check as you want. Monitor your API for correct response times, HTTP status code, plain text or JSON bodies and headers. <b>Drill into JSON payloads with JSON path</b> or user regular expression.
+<feature-row
+header="Add API check assertions"
+img="/product/api-monitoring/api-howitworks-2@2x.png"
+imgWidth="610"
+imgHeight="308"
+
+> Checkly's assertion matrix helps you create as many assertions per check as you want. Monitor your API for correct response times, HTTP status code, plain text or JSON bodies and headers. <b>Drill into JSON payloads with JSON path</b> or user regular expression.
 
   <div class="cta">
     <cta-link text="Learn more" link="/docs/api-checks/assertions/" />
   </div>
 </feature-row>
 
-<feature-row 
-  header="Customize setup & teardown" 
-  img="/product/api-monitoring/api-howitworks-3@2x.png" 
-  imgWidth="610" 
-  imgHeight="308"
->
-  If needed, you can take full control of how your request executes. Use setup scripts to <b>cryptographically sign requests</b>, fetch OAuth tokens and update request attributes before any request is done. Use teardown scripts to clean up test data or <b>scrub sensitive data</b> from the response.
+<feature-row
+header="Customize setup & teardown"
+img="/product/api-monitoring/api-howitworks-3@2x.png"
+imgWidth="610"
+imgHeight="308"
+
+> If needed, you can take full control of how your request executes. Use setup scripts to <b>cryptographically sign requests</b>, fetch OAuth tokens and update request attributes before any request is done. Use teardown scripts to clean up test data or <b>scrub sensitive data</b> from the response.
 
   <div class="cta">
     <cta-link text="Learn more" link="/docs/api-checks/setup-teardown-scripts/" />
   </div>
 </feature-row>
 
-<feature-row 
-header="Monitor your API every minute" 
-img="/product/api-monitoring/api-howitworks-4@2x.png" 
-imgWidth="610" 
+<feature-row
+header="Monitor your API every minute"
+img="/product/api-monitoring/api-howitworks-4@2x.png"
+imgWidth="610"
 imgHeight="308"
->
-  We monitor your API as often as once per minute. This gives you a consistent and accurate view of your API performance. Next to aggregating metrics, we give you **access to each result** from each of the configured data centers.
+
+> We monitor your API as often as once per minute. This gives you a consistent and accurate view of your API performance. Next to aggregating metrics, we give you **access to each result** from each of the configured data centers.
 
   <div class="cta">
     <cta-link text="Learn more" link="/docs/api-checks/assertions/" />
@@ -111,7 +111,7 @@ imgHeight="308"
 	<div class="col-sm-12 col-md-8">
 		<h2 class="section-super-header">alerting</h2>
 		<div class="lead-text">
-      <g-image class="alerting-top-image" src="/product/api-monitoring/alerting-options@2x.webp" alt="checkly alerting options" width="750" height="45" />
+      <nuxt-img class="alerting-top-image" src="/product/api-monitoring/alerting-options@2x.webp" alt="checkly alerting options" width="750" height="45" />
 		</div>
 	  <h2 class="section-header mt-1">Alerting for any situation</h2>
 	  <p class="lead-text mb-2">
@@ -144,4 +144,3 @@ imgHeight="308"
 	</div>
 </div>
 </div>
-

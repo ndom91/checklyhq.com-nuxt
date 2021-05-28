@@ -5,28 +5,39 @@
         <div class="col-sm-12 col-lg-8 offset-lg-2 text-center">
           <h1>Join us!</h1>
           <span class="markdown">
-            Checkly is growing! Join us and help us empower development teams to build, deploy and run better software. You will be working on our SaaS app and our open source projects <a
+            Checkly is growing! Join us and help us empower development teams to
+            build, deploy and run better software. You will be working on our
+            SaaS app and our open source projects
+            <a
               href="https://github.com/checkly/headless-recorder"
               target="_blank"
-            >headless recorder</a> and <a
+              >headless recorder</a
+            >
+            and
+            <a
               href="https://registry.terraform.io/providers/checkly/checkly/latest/docs"
               target="_blank"
-            >Terraform Provider</a>.
+              >Terraform Provider</a
+            >.
           </span>
         </div>
       </div>
       <div class="row mb-4">
         <div
-          v-if="$static.allJob.edges.filter(job => job.node.position_state === 'Open').length > 0"
+          v-if="
+            $static.allJob.edges.filter(
+              (job) => job.node.position_state === 'Open'
+            ).length > 0
+          "
           class="col-sm-12 col-lg-8 offset-lg-2 text-left"
         >
           <div
-            v-for="job in $static.allJob.edges.filter(job => job.node.position_state === 'Open')"
+            v-for="job in $static.allJob.edges.filter(
+              (job) => job.node.position_state === 'Open'
+            )"
             :key="job.node.title"
           >
-            <g-link
-              :to="job.node.path"
-            >
+            <NuxtLink :to="job.node.path">
               <div class="d-flex flex-row justify-content-start mb-2">
                 <div class="d-flex flex-column">
                   <h2 class="mb-2 text-primary">
@@ -42,21 +53,15 @@
                   </div>
                 </div>
               </div>
-            </g-link>
+            </NuxtLink>
           </div>
         </div>
-        <div
-          v-else
-          class="col-sm-12 col-lg-8 offset-lg-2 text-center"
-        >
-          <h5 class="mb-2">
-            😮 No open positions just now...
-          </h5>
+        <div v-else class="col-sm-12 col-lg-8 offset-lg-2 text-center">
+          <h5 class="mb-2">😮 No open positions just now...</h5>
         </div>
       </div>
     </div>
     <Footer />
-  </div>
   </div>
 </template>
 
@@ -81,6 +86,6 @@ import { Footer } from '@/components/common'
 
 export default {
   name: 'Jobs',
-  components: { Footer }
+  components: { Footer },
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <g-image
+  <nuxt-img
     :class="className"
     :src="img"
     :alt="alt"
@@ -15,28 +15,28 @@ export default {
     alt: {
       type: String,
       required: false,
-      default: ''
+      default: '',
     },
     img: {
       type: String,
       required: false,
-      default: ''
+      default: '',
     },
     className: {
       type: String,
       required: false,
-      default: ''
+      default: '',
     },
     width: {
       type: String,
       required: false,
-      default: ''
+      default: '',
     },
     height: {
       type: String,
       required: false,
-      default: ''
-    }
-  }
+      default: '',
+    },
+  },
 }
 </script>

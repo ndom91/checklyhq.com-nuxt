@@ -19,15 +19,15 @@
         >
           <b-tab
             v-for="(highlight, index) in $page.integrations.highlights"
-            :id="`integration-tab-${ index }-content`"
+            :id="`integration-tab-${index}-content`"
             :key="highlight.label"
             class="integration-tab-content"
             local-active="active"
-            :title="'<img width=68 src='+highlight.tabIcon+'>'"
+            :title="'<img width=68 src=' + highlight.tabIcon + '>'"
           >
             <div class="integrations__highlights__contents">
               <div class="image-wrap">
-                <g-image
+                <nuxt-img
                   :src="highlight.image"
                   :alt="highlight.title"
                   width="424"
@@ -42,20 +42,15 @@
                   {{ highlight.title }}
                 </h3>
                 <p>{{ highlight.description }}</p>
-                <g-link
-                  class="cta-link"
-                  :to="highlight.ctaLink"
-                >
+                <NuxtLink class="cta-link" :to="highlight.ctaLink">
                   Learn more
-                </g-link>
+                </NuxtLink>
               </div>
             </div>
           </b-tab>
         </b-tabs>
         <div class="integrations__subnav">
-          <h2 class="display-4 text-center">
-            All Integrations
-          </h2>
+          <h2 class="display-4 text-center">All Integrations</h2>
           <div class="d-flex">
             <a href="#alert">Alerting</a>
             <a href="#triggers">Triggers</a>
@@ -63,13 +58,8 @@
             <a href="#infrastructure">Infrastructure</a>
           </div>
         </div>
-        <div
-          id="alert"
-          class="integrations__cardlist"
-        >
-          <h3 class="list-title">
-            Alerting
-          </h3>
+        <div id="alert" class="integrations__cardlist">
+          <h3 class="list-title">Alerting</h3>
           <div class="d-flex">
             <div
               v-for="alert in $page.integrations.alerting"
@@ -77,7 +67,7 @@
               class="card"
             >
               <div class="card__img">
-                <g-image
+                <nuxt-img
                   :src="alert.icon"
                   :alt="alert.service"
                   width="alert.iconWidth"
@@ -90,31 +80,22 @@
               <p class="card__description">
                 {{ alert.description }}
               </p>
-              <div
-                class="card__cta"
-              >
-                <g-link
+              <div class="card__cta">
+                <NuxtLink
                   v-if="alert.ctaLink"
                   class="cta-link"
                   :to="alert.ctaLink"
                 >
                   {{ alert.service }} integration
-                </g-link>
-                <span v-else>
-                  Coming soon!
-                </span>
+                </NuxtLink>
+                <span v-else> Coming soon! </span>
               </div>
             </div>
             <div class="card hidden" />
           </div>
         </div>
-        <div
-          id="triggers"
-          class="integrations__cardlist"
-        >
-          <h3 class="list-title">
-            Triggers
-          </h3>
+        <div id="triggers" class="integrations__cardlist">
+          <h3 class="list-title">Triggers</h3>
           <div class="d-flex">
             <div
               v-for="trigger in $page.integrations.triggers"
@@ -122,7 +103,7 @@
               class="card"
             >
               <div class="card__img">
-                <g-image
+                <nuxt-img
                   :src="trigger.icon"
                   :alt="trigger.service"
                   width="trigger.iconWidth"
@@ -136,28 +117,21 @@
                 {{ trigger.description }}
               </p>
               <div class="card__cta">
-                <g-link
+                <NuxtLink
                   v-if="trigger.ctaLink"
                   class="cta-link"
                   :to="trigger.ctaLink"
                 >
                   {{ trigger.service }} integration
-                </g-link>
-                <span v-else>
-                  Coming soon!
-                </span>
+                </NuxtLink>
+                <span v-else> Coming soon! </span>
               </div>
             </div>
             <div class="card hidden" />
           </div>
         </div>
-        <div
-          id="frameworks"
-          class="integrations__cardlist"
-        >
-          <h3 class="list-title">
-            Frameworks
-          </h3>
+        <div id="frameworks" class="integrations__cardlist">
+          <h3 class="list-title">Frameworks</h3>
           <div class="d-flex">
             <div
               v-for="framework in $page.integrations.frameworks"
@@ -165,7 +139,7 @@
               class="card"
             >
               <div class="card__img">
-                <g-image
+                <nuxt-img
                   :src="framework.icon"
                   :alt="framework.service"
                   width="framework.iconWidth"
@@ -180,28 +154,21 @@
                 {{ framework.description }}
               </p>
               <div class="card__cta">
-                <g-link
+                <NuxtLink
                   v-if="framework.ctaLink"
                   class="cta-link"
                   :to="framework.ctaLink"
                 >
                   {{ framework.service }} integration
-                </g-link>
-                <span v-else>
-                  Coming soon!
-                </span>
+                </NuxtLink>
+                <span v-else> Coming soon! </span>
               </div>
             </div>
             <div class="card hidden" />
           </div>
         </div>
-        <div
-          id="infrastructure"
-          class="integrations__cardlist"
-        >
-          <h3 class="list-title">
-            Infrastructure
-          </h3>
+        <div id="infrastructure" class="integrations__cardlist">
+          <h3 class="list-title">Infrastructure</h3>
           <div class="d-flex">
             <div
               v-for="infra in $page.integrations.infrastructure"
@@ -209,7 +176,7 @@
               class="card"
             >
               <div class="card__img">
-                <g-image
+                <nuxt-img
                   :src="infra.icon"
                   :alt="infra.service"
                   width="infra.iconWidth"
@@ -223,16 +190,14 @@
                 {{ infra.description }}
               </p>
               <div class="card__cta">
-                <g-link
+                <NuxtLink
                   v-if="infra.ctaLink"
                   class="cta-link"
                   :to="infra.ctaLink"
                 >
                   {{ infra.service }} integration
-                </g-link>
-                <span v-else>
-                  Coming soon!
-                </span>
+                </NuxtLink>
+                <span v-else> Coming soon! </span>
               </div>
             </div>
             <div class="card hidden" />
@@ -295,12 +260,11 @@ query ($path: String!) {
 </page-query>
 
 <script>
-import BTabs from 'bootstrap-vue/lib/components/tabs.vue'
-import BTab from 'bootstrap-vue/lib/components/tab.vue'
+import { BTab, BTabs } from 'bootstrap-vue'
 import { StartForFree, Footer } from '@/components/common'
 
 export default {
   name: 'Integration',
-  components: { BTabs, BTab, StartForFree, Footer }
+  components: { BTabs, BTab, StartForFree, Footer },
 }
 </script>

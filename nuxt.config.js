@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'checklyhq.com-nuxt',
+    title: 'ChecklyNuxt',
     htmlAttrs: {
       lang: 'en',
     },
@@ -12,8 +12,20 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
+      {
+        title: 'Delightful Active Monitoring for Developers',
+        meta: [
+          // Override Example
+          { key: 'og:type', property: 'og:type', content: 'article' },
+          {
+            key: 'og:url',
+            property: 'og:url',
+            content: 'https://checklyhq.com',
+          },
+        ],
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -31,6 +43,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    '@nuxt/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

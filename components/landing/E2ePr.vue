@@ -3,22 +3,17 @@
     <div class="container">
       <div class="row justify-content-center header-part">
         <div class="col-sm-12 col-md-8">
-          <h2 class="section-super-header">
-            e2e testing
-          </h2>
-          <h3 class="section-header">
-            Monitoring 💘 E2E testing
-          </h3>
+          <h2 class="section-super-header">e2e testing</h2>
+          <h3 class="section-header">Monitoring 💘 E2E testing</h3>
         </div>
         <div class="col-sm-12 col-md-8">
           <p class="lead">
-            Monitoring production is great. But catching bugs before they hit production is better.
-            Run your API monitors and synthetic monitoring scripts against your staging environment on each <code>git push</code>.
+            Monitoring production is great. But catching bugs before they hit
+            production is better. Run your API monitors and synthetic monitoring
+            scripts against your staging environment on each
+            <code>git push</code>.
           </p>
-          <a
-            class="cta-link"
-            href="/docs/cicd/"
-          >Learn more</a>
+          <a class="cta-link" href="/docs/cicd/">Learn more</a>
         </div>
       </div>
       <div class="row justify-content-center">
@@ -26,31 +21,40 @@
           <ul class="list-group">
             <li class="list-group-item">
               <h5>
-                <span class="ion-settings  mr-2" />
+                <span class="ion-settings mr-2" />
                 Setup
               </h5>
-              <p>Create your API checks and script your browser click flows using the UI or API.</p>
+              <p>
+                Create your API checks and script your browser click flows using
+                the UI or API.
+              </p>
             </li>
             <li class="list-group-item">
               <h5>
                 <span class="ion-pull-request mr-2" />
                 Integrate
               </h5>
-              <p>Install our GitHub App in your repo. We'll start listening to each deploy event.</p>
+              <p>
+                Install our GitHub App in your repo. We'll start listening to
+                each deploy event.
+              </p>
             </li>
             <li class="list-group-item">
               <h5>
                 <span class="ion-checkmark-round mr-2" />
                 E2E test on each push
               </h5>
-              <p>On each push, get detailed E2E test results, logs and screenshots right in your PR.</p>
+              <p>
+                On each push, get detailed E2E test results, logs and
+                screenshots right in your PR.
+              </p>
             </li>
           </ul>
         </div>
         <div class="col-sm-12 col-lg-8">
-          <g-image
+          <nuxt-img
             class="pr-image"
-            src="~/assets/images/landing/e2e-screenshot@2x.webp"
+            src="~/static/images/landing/e2e-screenshot@2x.webp"
             alt="checkly e2e screenshot"
             width="687"
             height="324"
@@ -59,16 +63,26 @@
       </div>
       <div class="row justify-content-center text-center">
         <div class="col-sm-12">
-          <div class="d-flex flex-row align-items-center justify-content-center pt-4">
-            Works out-of-the-box with <g-image
+          <div
+            class="
+              d-flex
+              flex-row
+              align-items-center
+              justify-content-center
+              pt-4
+            "
+          >
+            Works out-of-the-box with
+            <nuxt-img
               class="mx-1"
-              src="~/assets/images/landing/vercel-logo.png"
+              src="~/static/images/landing/vercel-logo.png"
               alt="Vercel logo"
               width="20"
               height="20"
-            />Vercel and <g-image
+            />Vercel and
+            <nuxt-img
               class="mx-1"
-              src="~/assets/images/landing/heroku-logo.png"
+              src="~/static/images/landing/heroku-logo.png"
               alt="Heroku logo"
               width="20"
               height="20"
@@ -82,7 +96,7 @@
 
 <script>
 export default {
-  name: 'E2ePr'
+  name: 'E2ePr',
 }
 </script>
 

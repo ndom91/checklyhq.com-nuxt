@@ -1,10 +1,7 @@
 <template>
-  <g-link
-    class="cta-link"
-    :to="link"
-  >
+  <NuxtLink class="cta-link" :to="link">
     {{ text }}
-  </g-link>
+  </NuxtLink>
 </template>
 
 <script>
@@ -14,13 +11,13 @@ export default {
     text: {
       type: String,
       required: false,
-      default: ''
+      default: '',
     },
     link: {
       type: String,
       required: false,
-      default: ''
-    }
-  }
+      default: '',
+    },
+  },
 }
 </script>

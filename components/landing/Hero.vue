@@ -4,11 +4,11 @@
       <div class="row justify-content-center">
         <div class="col-sm-12 col-md-10 col-lg-8">
           <h1 class="display-3">
-            Delightful Active Monitoring<br>for Developers
+            Delightful Active Monitoring<br />for Developers
           </h1>
           <p class="lead">
-            Checkly is the API & E2E monitoring platform for the modern stack: programmable, flexible
-            and loving JavaScript.
+            Checkly is the API & E2E monitoring platform for the modern stack:
+            programmable, flexible and loving JavaScript.
           </p>
           <div>
             <a
@@ -24,9 +24,9 @@
       </div>
       <div class="row">
         <div class="col-sm-12 text-center">
-          <g-image
+          <nuxt-img
             class="hero-image big-drop-shadow img-fluid"
-            src="~/assets/images/landing/home-hero-screenshot@2x.webp"
+            src="~/static/images/landing/home-hero-screenshot@2x.webp"
             alt="checkly monitoring dashboard"
             immediate
             position="top"
@@ -41,7 +41,7 @@
 
 <script>
 export default {
-  name: 'Hero'
+  name: 'Hero',
 }
 </script>
 

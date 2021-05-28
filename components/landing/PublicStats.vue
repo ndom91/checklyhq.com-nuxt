@@ -5,17 +5,11 @@
         <div class="col-sm-12">
           <div class="counter-text">
             We already ran
-            <span
-              id="api-check-results"
-              class="counter"
-            >
+            <span id="api-check-results" class="counter">
               {{ apiCount }}
             </span>
             API checks and
-            <span
-              id="browser-check-results"
-              class="counter"
-            >
+            <span id="browser-check-results" class="counter">
               {{ browserCount }}
             </span>
             browser checks!
@@ -29,32 +23,32 @@
 <script>
 export default {
   name: 'PublicStats',
-  data () {
+  data() {
     return {
       apiCount: 0,
-      browserCount: 0
+      browserCount: 0,
     }
   },
-  mounted () {
+  mounted() {
     this.loadCheckCount()
 
     this.checkCountInterval = window.setInterval(() => {
       this.loadCheckCount()
     }, 30000)
   },
-  beforeDestroy () {
+  beforeDestroy() {
     clearInterval(this.checkCountInterval)
   },
   methods: {
-    loadCheckCount () {
+    loadCheckCount() {
       fetch('https://api.checklyhq.com/public-stats')
-        .then(res => res.json())
-        .then(res => {
+        .then((res) => res.json())
+        .then((res) => {
           this.apiCount = res.apiCheckResults.toLocaleString()
           this.browserCount = res.browserCheckResults.toLocaleString()
         })
-    }
-  }
+    },
+  },
 }
 </script>
 

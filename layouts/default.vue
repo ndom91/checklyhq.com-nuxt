@@ -1,11 +1,8 @@
 <template>
   <div class="layout">
     <Navbar />
-    <main
-      id="landing"
-      class="main landing"
-    >
-      <slot />
+    <main id="landing" class="main landing">
+      <Nuxt />
     </main>
   </div>
 </template>
@@ -14,7 +11,6 @@
 import { Navbar } from '@/components/common'
 
 export default {
-  name: 'Layout',
-  components: { Navbar }
+  components: { Navbar },
 }
 </script>

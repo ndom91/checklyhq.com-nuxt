@@ -24,9 +24,6 @@ query ($id: ID!) {
 import { Footer } from '~/components/common'
 export default {
   name: 'Privacy',
-  components: { Footer }
+  components: { Footer },
 }
 </script>
-
-<style>
-</style>

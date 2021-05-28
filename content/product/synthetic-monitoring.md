@@ -1,7 +1,7 @@
 ---
 title: Synthetic Monitoring
 alias:
-    - transaction-monitoring
+  - transaction-monitoring
 ---
 
 import { Sm4ColItem, AlternativePicture, FeatureRow, CtaLink } from '~/components/shortcodes'
@@ -59,44 +59,44 @@ correctness and performance of all your crucial click paths.
 Checkly uses the Puppeteer & Playwright frameworks to accurately simulate interactions with a Chrome browser. Getting a monitoring script going is a lot easier than you might think. Just follow the steps below and you'll be up in no time.
 </p>
 
+<feature-row
+header="Create a script"
+img="/product/transaction-monitoring/synthetic-howitworks-1@2x.png"
+imgWidth="610"
+imgHeight="261"
 
-<feature-row 
-  header="Create a script" 
-  img="/product/transaction-monitoring/synthetic-howitworks-1@2x.png" 
-  imgWidth="610" 
-  imgHeight="261"
->
-  Pick one of the examples from our built-in library as your starting point. Alternatively, you can install and fire up the <g-link to="/docs/headless-recorder/">Headless Recorder</g-link> browser extension and record a script in real-time as you click through your site.
+> Pick one of the examples from our built-in library as your starting point. Alternatively, you can install and fire up the <g-link to="/docs/headless-recorder/">Headless Recorder</g-link> browser extension and record a script in real-time as you click through your site.
 
   <div class="cta">
     <cta-link text="Learn more" link="/docs/browser-checks/" />
   </div>
 </feature-row>
 
-<feature-row 
-  header="Tweak it" 
-  img="/product/transaction-monitoring/synthetic-howitworks-2@2x.png" 
-  imgWidth="610" 
-  imgHeight="291"
->
-  Use our in app debugger to iterate on your script and directly see the results. Add extra assertions, screenshots and navigation actions. Add the industry standard <b>Mocha and Chai libraries</b> for a familiar workflow.
+<feature-row
+header="Tweak it"
+img="/product/transaction-monitoring/synthetic-howitworks-2@2x.png"
+imgWidth="610"
+imgHeight="291"
+
+> Use our in app debugger to iterate on your script and directly see the results. Add extra assertions, screenshots and navigation actions. Add the industry standard <b>Mocha and Chai libraries</b> for a familiar workflow.
+
   <div class="cta">
     <cta-link text="Learn more" link="/docs/browser-checks/using-mocha/"/>
   </div>
 </feature-row>
 
-<feature-row 
-  header="Run it every ten minutes" 
-  img="/product/transaction-monitoring/synthetic-howitworks-3@2x.png" 
-  imgWidth="610" 
-  imgHeight="254"
->
-  Schedule your script to run as often as every ten minutes. A regular interval gives you an accurate insight into how your vital transactions are performing over time. We also give you <b>full access to the log files</b> for each run in case an alert is triggered.
+<feature-row
+header="Run it every ten minutes"
+img="/product/transaction-monitoring/synthetic-howitworks-3@2x.png"
+imgWidth="610"
+imgHeight="254"
+
+> Schedule your script to run as often as every ten minutes. A regular interval gives you an accurate insight into how your vital transactions are performing over time. We also give you <b>full access to the log files</b> for each run in case an alert is triggered.
+
   <div class="cta">
     <cta-link text="Learn more" link="/docs/browser-checks/quickstart/" />
   </div>
 </feature-row>
-
 
 <div class="gray-section two-grid">
   <div class="row justify-content-center header-part">
@@ -151,7 +151,7 @@ Checkly uses the Puppeteer & Playwright frameworks to accurately simulate intera
     <div class="col-sm-12 col-md-8">
       <h2 class="section-super-header">alerting</h2>
       <div class="lead-text">
-        <g-image class="alerting-top-image" src="/product/synthetic-monitoring/alerting-options@2x.webp" alt="checkly alerting options" width="750" height="45" />
+        <nuxt-img class="alerting-top-image" src="/product/synthetic-monitoring/alerting-options@2x.webp" alt="checkly alerting options" width="750" height="45" />
       </div>
       <h2 class="section-header mt-1">Alerting for any situation</h2>
       <p class="lead-text mb-lg-2">
@@ -188,6 +188,3 @@ Checkly uses the Puppeteer & Playwright frameworks to accurately simulate intera
     </div>
   </div>
 </div>
-
-
-

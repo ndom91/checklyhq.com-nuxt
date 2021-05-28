@@ -4,36 +4,38 @@
       <div class="row justify-content-center">
         <div class="col-sm-12 col-md-10 col-lg-5">
           <div class="text-side text-left">
-            <h2 class="section-super-header">
-              api monitoring
-            </h2>
-            <h3 class="section-header">
-              Monitor all your APIs easily
-            </h3>
+            <h2 class="section-super-header">api monitoring</h2>
+            <h3 class="section-header">Monitor all your APIs easily</h3>
             <p class="lead-text">
-              Make sure your APIs always responds quickly and with the correct payload. Our intuitive editor lets you configure powerful HTTP requests.
-              <br><br>
-              Kickstart your checks with our Swagger and cURL importer. Add Node.js-based setup/teardown scripts and fine-grained assertions for in-depth API monitoring.
-            </p><a
-              class="cta-link"
-              href="/product/api-monitoring/"
-            >Learn
-              more</a>
+              Make sure your APIs always responds quickly and with the correct
+              payload. Our intuitive editor lets you configure powerful HTTP
+              requests.
+              <br /><br />
+              Kickstart your checks with our Swagger and cURL importer. Add
+              Node.js-based setup/teardown scripts and fine-grained assertions
+              for in-depth API monitoring.
+            </p>
+            <a class="cta-link" href="/product/api-monitoring/">Learn more</a>
           </div>
         </div>
         <div class="col-sm-12 col-lg-7">
           <div class="image-side right">
-            <g-image
-              class="big-landing-image big-drop-shadow code fade-in lazy"
-              src="~/assets/images/landing/api-check-1-section-screenshot@2x.webp"
+            <nuxt-img
+              class="big-landinnuxt-img big-drop-shadow code fade-in lazy"
+              src="~/static/images/landing/api-check-1-section-screenshot@2x.webp"
               alt="checkly assertions edit"
               fit="inside"
               width="810"
               height="560"
             />
-            <g-image
-              class="big-landing-image big-drop-shadow screenshots fade-in lazy"
-              src="~/assets/images/landing/api-check-2-section-screenshot@2x.webp"
+            <nuxt-img
+              class="
+                big-landinnuxt-img big-drop-shadow
+                screenshots
+                fade-in
+                lazy
+              "
+              src="~/static/images/landing/api-check-2-section-screenshot@2x.webp"
               alt="checkly assertions"
               fit="inside"
               width="810"
@@ -48,7 +50,7 @@
 
 <script>
 export default {
-  name: 'ApiMonitoring'
+  name: 'ApiMonitoring',
 }
 </script>
 

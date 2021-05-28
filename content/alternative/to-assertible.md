@@ -1,7 +1,7 @@
 ---
 title: Alternative to Assertible
-description: "Checkly is the perfect Assertible alternative for modern developers to check their APIs and site transaction flows."
-hero: "The modern alternative to Assertible for developers"
+description: 'Checkly is the perfect Assertible alternative for modern developers to check their APIs and site transaction flows.'
+hero: 'The modern alternative to Assertible for developers'
 ---
 
 import { Sm4ColItem, AlternativePicture, AlternativeFeature, CtaLink } from '~/components/shortcodes'
@@ -32,6 +32,7 @@ Checkly is built for developers and engineering teams eager to monitor their clo
 <alternative-feature header="API monitoring for developers" img="/alternative/setup-teardown.png">
 
 Checkly enables you to create flexible HTTP Checks tailored to your needs.
+
 - Monitor your API for performance & correctness
 - Run custom JavaScript before and after your check with setup & teardown scripts
 - Easily create your checks with our API, our Terraform provider and our Swagger importer
@@ -40,10 +41,10 @@ Checkly enables you to create flexible HTTP Checks tailored to your needs.
 
 </alternative-feature>
 
-
 <alternative-feature header="E2E checks with real browsers" img="/alternative/script.png">
 
 Code your checks and control exactly how they interact with a real browser.
+
 - Use real and worldwide distributed browsers to validate what you need using Puppeteer or Playwright
 - We support you with examples and our Headless Recorder — coding is optional
 - Run your tests constantly or via our CI/CD integrations
@@ -61,12 +62,11 @@ Code your checks and control exactly how they interact with a real browser.
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <g-image  class="trusted-by-image" src="/alternative/testimonial-logos@2x.png" alt="trusted by companies for api and browser transaction monitoring"  />
+        <nuxt-img  class="trusted-by-image" src="/alternative/testimonial-logos@2x.png" alt="trusted by companies for api and browser transaction monitoring"  />
       </div>
     </div>
   </div>
 </section>
-
 
 <h2 class="text-center section-header pt-5">Global coverage</h2>
 <p class="text-center lead-text mb-lg-5">

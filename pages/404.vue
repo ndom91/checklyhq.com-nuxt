@@ -3,11 +3,9 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 text-center">
-          <h1 class="pt-3">
-            404
-          </h1>
+          <h1 class="pt-3">404</h1>
           <div class="pt-4">
-            <g-image
+            <nuxt-img
               class="mb-2"
               src="/images/404_ghibli.gif"
               alt="cute studio Ghibli animated GIF"
@@ -31,6 +29,6 @@ import { Footer } from '~/components/common'
 
 export default {
   name: 'FourOhFour',
-  components: { Footer }
+  components: { Footer },
 }
 </script>

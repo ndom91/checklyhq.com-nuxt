@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="col-sm-8 text-right">
-      <g-image
+      <nuxt-img
         class="img-w720 big-drop-shadow rounded"
         :src="img"
         :alt="header"
@@ -25,13 +25,13 @@ export default {
     header: {
       type: String,
       required: false,
-      default: ''
+      default: '',
     },
     img: {
       type: String,
       required: false,
-      default: ''
-    }
-  }
+      default: '',
+    },
+  },
 }
 </script>

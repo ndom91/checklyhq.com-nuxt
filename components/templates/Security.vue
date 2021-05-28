@@ -6,22 +6,20 @@
           <div v-html="$page.security.content" />
         </div>
       </div>
-      <div class="pricing__faq d-flex flex-column justify-content-center text-center mx-auto">
-        <h2
-          id="faq"
-          class="mb-5"
-        >
-          FAQ
-        </h2>
+      <div
+        class="
+          pricing__faq
+          d-flex
+          flex-column
+          justify-content-center
+          text-center
+          mx-auto
+        "
+      >
+        <h2 id="faq" class="mb-5">FAQ</h2>
 
-        <div
-          v-for="edge of $page.allSecurityFaq.edges"
-          :key="edge.node.id"
-        >
-          <FaqToggle
-            :question="edge.node.q"
-            :answer="edge.node.a"
-          />
+        <div v-for="edge of $page.allSecurityFaq.edges" :key="edge.node.id">
+          <FaqToggle :question="edge.node.q" :answer="edge.node.a" />
         </div>
       </div>
       <Footer />
@@ -48,17 +46,14 @@ query ($id: ID!) {
 </page-query>
 
 <script>
-import { Footer } from '~/components/common'
 import { FaqToggle } from '@/components/shortcodes'
+import { Footer } from '~/components/common'
 
 export default {
   name: 'Security',
   components: { Footer, FaqToggle },
-  mount () {
+  mount() {
     console.log(this.$page.pages)
-  }
+  },
 }
 </script>
-
-<style>
-</style>

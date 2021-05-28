@@ -5,43 +5,39 @@
       <article class="markdown">
         <div class="welcome">
           <h5>Welcome to the Headless Automation Guide!</h5>
-          <p>We gave theheadless.dev a new home and will publish fresh content around Puppeteer & Playwright in this guide.</p>
+          <p>
+            We gave theheadless.dev a new home and will publish fresh content
+            around Puppeteer & Playwright in this guide.
+          </p>
         </div>
         <div class="d-flex search">
-          <div
-            id="mobile-toc-button"
-            class="mobile-toc-button"
-          >
+          <div id="mobile-toc-button" class="mobile-toc-button">
             <img
               src="/images/icons/toc-icon.svg"
               alt="table of contents"
               width="14"
               height="12"
-            > Table of contents
+            />
+            Table of contents
           </div>
-          <form
-            id="search-form"
-            class="form-inline"
-          >
+          <form id="search-form" class="form-inline">
             <img
               src="/docs/images/icons/search@2x.png"
               alt="search"
               with="16"
               height="16"
-            >
+            />
             <input
               id="search"
               class="form-control py-2"
               type="search"
               placeholder="Press / to search"
-            >
+            />
           </form>
         </div>
         <h1>{{ $page.learn.title }}</h1>
         <div class="learn-toc-mobile mb-5 pt-3">
-          <div class="learn-toc-header mb-3 pt-3">
-            On this page
-          </div>
+          <div class="learn-toc-header mb-3 pt-3">On this page</div>
         </div>
         <VueRemarkContent />
 
@@ -55,19 +51,14 @@
     </div>
     <aside class="learn-toc mb-3">
       <div id="tocMenu">
-        <div class="learn-toc-header">
-          On this page
-        </div>
+        <div class="learn-toc-header">On this page</div>
         <!-- TOC from remark-toc -->
         <nav id="TableOfContents">
           <ul>
-            <li
-              v-for="heading of $page.learn.headings"
-              :key="heading.anchor"
-            >
-              <g-link :to="$page.learn.path + heading.anchor">
+            <li v-for="heading of $page.learn.headings" :key="heading.anchor">
+              <NuxtLink :to="$page.learn.path + heading.anchor">
                 {{ heading.value }}
-              </g-link>
+              </NuxtLink>
             </li>
           </ul>
         </nav>
@@ -97,17 +88,17 @@ import mediumZoom from 'medium-zoom'
 export default {
   name: 'Learn',
   components: { LearnMenu },
-  mounted () {
+  mounted() {
     mediumZoom('.markdown img', {
       margin: 48,
-      background: 'rgba(0,0,0,0.6)'
+      background: 'rgba(0,0,0,0.6)',
     })
   },
-  updated () {
+  updated() {
     mediumZoom('.markdown img', {
       margin: 48,
-      background: 'rgba(0,0,0,0.6)'
+      background: 'rgba(0,0,0,0.6)',
     })
-  }
+  },
 }
 </script>

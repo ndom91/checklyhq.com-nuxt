@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+  <head {{ HEAD_ATTRS }}>
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://ajax.googleapis.com/" crossorigin />
+    <link rel="dns-prefetch" href="https://ajax.googleapis.com/" />
+    <link rel="preconnect" href="https://plausible.io/" crossorigin />
+    <link rel="dns-prefetch" href="https://plausible.io/" />
+    <!-- PLAUSIBLE -->
+    <script
+      async
+      defer
+      data-domain="checklyhq.com"
+      src="https://plausible.io/js/plausible.js"
+    ></script>
+    <!-- COOKIE LAW -->
+    <script
+      async
+      src="https://cdn.cookielaw.org/consent/e4c8a868-c0ad-4c0c-b61e-f6eb6cad2810.js"
+      type="text/javascript"
+      charset="UTF-8"
+    ></script>
+    <script type="text/javascript">
+      function OptanonWrapper() {}
+    </script>
+    <style>
+      .qc-cmp-ui {
+        background-color: #45c8f1 !important;
+      }
+
+      .qc-cmp-publisher-purposes-table .qc-cmp-table-header {
+        background-color: #fafafa !important;
+      }
+
+      .qc-cmp-publisher-purposes-table .qc-cmp-table-row {
+        background-color: #ffffff !important;
+      }
+    </style>
+    <!-- INTERCOM -->
+    <script>
+      var intercomLoader = function () {
+        ;(function () {
+          var w = window
+          var ic = w.Intercom
+          if (typeof ic === 'function') {
+            ic('reattach_activator')
+            ic('update', w.intercomSettings)
+          } else {
+            var d = document
+            var i = function () {
+              i.c(arguments)
+            }
+            i.q = []
+            i.c = function (args) {
+              i.q.push(args)
+            }
+            w.Intercom = i
+            var l = function () {
+              var s = d.createElement('script')
+              s.type = 'text/javascript'
+              s.async = true
+              s.src = 'https://widget.intercom.io/widget/ep3ft8gg'
+              var x = d.getElementsByTagName('script')[0]
+              x.parentNode.insertBefore(s, x)
+            }
+            if (document.readyState === 'complete') {
+              l()
+            } else if (w.attachEvent) {
+              w.attachEvent('onload', l)
+            } else {
+              w.addEventListener('load', l, false)
+            }
+          }
+        })()
+        window.Intercom('boot', {
+          app_id: 'ep3ft8gg',
+          custom_launcher_selector: '.open-intercom-link',
+        })
+
+        window.removeEventListener('scroll', intercomLoader)
+      }
+      window.addEventListener('scroll', intercomLoader)
+    </script>
+    {{ HEAD }}
+  </head>
+  <body {{ BODY_ATTRS }}>
+    {{ APP }}
+  </body>
+</html>

@@ -3,29 +3,22 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-sm-12 col-md-8">
-          <h2 class="section-super-header">
-            Stats & metrics
-          </h2>
-          <h3 class="display-4">
-            Insights without limits
-          </h3>
+          <h2 class="section-super-header">Stats & metrics</h2>
+          <h3 class="display-4">Insights without limits</h3>
           <p class="lead">
-            Doing a root cause without complete
-            and accurate data is insane. But too much detail can also be distracting.
-            That's why next to calculating aggregates to keep an overview, Checkly stores each and every
-            raw result for you and your team to dive into.
+            Doing a root cause without complete and accurate data is insane. But
+            too much detail can also be distracting. That's why next to
+            calculating aggregates to keep an overview, Checkly stores each and
+            every raw result for you and your team to dive into.
           </p>
-          <a
-            class="cta-link"
-            href="/docs/"
-          >Learn more</a>
+          <a class="cta-link" href="/docs/">Learn more</a>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-12 text-center">
-          <g-image
+          <nuxt-img
             class="results-image img-fluid"
-            src="~/assets/images/landing/check-results@2x.webp"
+            src="~/static/images/landing/check-results@2x.webp"
             alt="checkly check results"
             width="900"
             height="700"
@@ -38,7 +31,7 @@
 
 <script>
 export default {
-  name: 'Results'
+  name: 'Results',
 }
 </script>
 
