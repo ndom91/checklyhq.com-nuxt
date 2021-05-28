@@ -4,10 +4,10 @@
       <div class="container">
         <div class="integrations__hero align-items-center text-center">
           <h1 class="display-3">
-            {{ $page.integrations.heroTitle }}
+            {{ integrations.heroTitle }}
           </h1>
           <p class="integrations__hero__lead">
-            {{ $page.integrations.heroDescription }}
+            {{ integrations.heroDescription }}
           </p>
         </div>
         <b-tabs
@@ -18,7 +18,7 @@
           justified
         >
           <b-tab
-            v-for="(highlight, index) in $page.integrations.highlights"
+            v-for="(highlight, index) in integrations.highlights"
             :id="`integration-tab-${index}-content`"
             :key="highlight.label"
             class="integration-tab-content"
@@ -62,7 +62,7 @@
           <h3 class="list-title">Alerting</h3>
           <div class="d-flex">
             <div
-              v-for="alert in $page.integrations.alerting"
+              v-for="alert in integrations.alerting"
               :key="alert.service"
               class="card"
             >
@@ -98,7 +98,7 @@
           <h3 class="list-title">Triggers</h3>
           <div class="d-flex">
             <div
-              v-for="trigger in $page.integrations.triggers"
+              v-for="trigger in integrations.triggers"
               :key="trigger.service"
               class="card"
             >
@@ -134,7 +134,7 @@
           <h3 class="list-title">Frameworks</h3>
           <div class="d-flex">
             <div
-              v-for="framework in $page.integrations.frameworks"
+              v-for="framework in integrations.frameworks"
               :key="framework.service"
               class="card"
             >
@@ -171,7 +171,7 @@
           <h3 class="list-title">Infrastructure</h3>
           <div class="d-flex">
             <div
-              v-for="infra in $page.integrations.infrastructure"
+              v-for="infra in integrations.infrastructure"
               :key="infra.service"
               class="card"
             >
@@ -219,11 +219,8 @@ export default {
   name: 'Integration',
   components: { BTabs, BTab, StartForFree, Footer },
   async asyncData({ $content, params }) {
-    // fetch our jobs here
     const integrations = await $content('integrations', params.slug).fetch()
-    console.log(integrations)
-
-    return { integrations }
+    return { integrations: integrations[0] }
   },
 }
 </script>
