@@ -210,61 +210,20 @@
   </div>
 </template>
 
-<page-query>
-query ($path: String!) {
-  integrations (path: $path) {
-    heroTitle
-    heroDescription
-    highlights {
-      label
-      title
-      description
-      image
-      tabIcon
-      ctaLink
-    }
-    alerting{
-      service
-      icon
-      iconWidth
-      iconHeight
-      ctaLink
-      description
-    }
-    triggers{
-      service
-      icon
-      iconWidth
-      iconHeight
-      ctaLink
-      description
-    }
-    frameworks{
-      service
-      icon
-      iconWidth
-      iconHeight
-      ctaLink
-      description
-    }
-    infrastructure{
-      service
-      icon
-      iconWidth
-      iconHeight
-      ctaLink
-      description
-    }
-  }
-}
-</page-query>
-
 <script>
-import { BTab, BTabs } from 'bootstrap-vue'
+import BTabs from 'bootstrap-vue/lib/components/tabs.vue'
+import BTab from 'bootstrap-vue/lib/components/tab.vue'
 import { StartForFree, Footer } from '@/components/common'
 
 export default {
   name: 'Integration',
   components: { BTabs, BTab, StartForFree, Footer },
+  async asyncData({ $content, params }) {
+    // fetch our jobs here
+    const integrations = await $content('integrations', params.slug).fetch()
+    console.log(integrations)
+
+    return { integrations }
+  },
 }
 </script>

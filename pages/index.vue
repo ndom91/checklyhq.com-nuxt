@@ -50,12 +50,5 @@ export default {
     PublicStats,
     Footer,
   },
-  async asyncData({ $content, params }) {
-    // fetch our jobs here
-    const jobs = await $content('jobs', params.slug).fetch()
-    // console.log(jobs)
-
-    return { jobs }
-  },
 }
 </script>

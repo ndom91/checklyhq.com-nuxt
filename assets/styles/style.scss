@@ -1,5 +1,5 @@
-@import 'node_modules/bootstrap/scss/bootstrap';
-@import 'node_modules/bootstrap-vue/dist/bootstrap-vue';
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue/dist/bootstrap-vue.css';
 
 @import 'variables';
 
@@ -46,7 +46,6 @@
 @import 'sections/alternativeto-hero';
 @import 'sections/learn-headless';
 
-
 body {
   &.fixed-top-padding {
     padding-top: 90px; // navbar height
@@ -59,25 +58,39 @@ body {
 
 @import './vendor/css/ionicons.min.css';
 
-
 .container {
-	padding-right: 24px;
-	padding-left: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
 .gray-section {
-	background: $ash;
+  background: $ash;
+}
+.fade-enter-active {
+  transition: opacity 500ms;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/Inter/Inter.var.woff2') format('woff2');
 }
 
 @include media-breakpoint-down(md) {
-	.container {
-		width: 100%;
-	}
+  .container {
+    width: 100%;
+  }
 }
 @include media-breakpoint-down(sm) {
-	.container {
-		width: 100%;
-		padding-right: 18px;
-		padding-left: 18px;	
-	}
+  .container {
+    width: 100%;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
 }
