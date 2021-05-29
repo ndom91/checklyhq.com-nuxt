@@ -4,15 +4,21 @@
       <div class="row footer-top">
         <div class="col-lg-3">
           <div class="mb-3 mb-md-0">
-            <h6 id="menu_1_header">Product</h6>
+            <div id="menu_1_header" class="h6">Product</div>
             <ul id="menu_1" class="desktop-show">
               <li>
-                <NuxtLink to="/product/api-monitoring/">
+                <NuxtLink
+                  to="/product/api-monitoring/"
+                  aria-label="API Monitoring"
+                >
                   API monitoring
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/product/synthetic-monitoring/">
+                <NuxtLink
+                  to="/product/synthetic-monitoring/"
+                  aria-label="Synthetic Monitoring"
+                >
                   Synthetic monitoring
                 </NuxtLink>
               </li>
@@ -57,7 +63,7 @@
         </div>
         <div class="col-lg-3">
           <div class="mb-3 mb-md-0">
-            <h6 id="menu_2_header">Company</h6>
+            <div id="menu_2_header" class="h6">Company</div>
             <ul id="menu_2" class="desktop-show">
               <li>
                 <NuxtLink to="/about"> About </NuxtLink>
@@ -82,7 +88,7 @@
         </div>
         <div class="col-lg-3">
           <div class="mb-3 mb-md-0">
-            <h6 id="menu_3_header">Open Source</h6>
+            <div id="menu_3_header" class="h6">Open Source</div>
             <ul id="menu_3" class="desktop-show">
               <li>
                 <a
@@ -111,7 +117,7 @@
             </ul>
           </div>
           <div class="mb-3 mb-md-0">
-            <h6 id="menu_4_header">Learn</h6>
+            <div id="menu_4_header" class="h6">Learn</div>
             <ul id="menu_4" class="desktop-show">
               <li>
                 <NuxtLink to="/learn/headless">Puppeteer & Playwright</NuxtLink>
@@ -122,7 +128,7 @@
         </div>
         <div class="col-lg-3">
           <div class="mb-3 mb-md-0">
-            <h6 id="menu_5_header">Connect</h6>
+            <div id="menu_5_header" class="h6">Connect</div>
             <ul id="menu_5" class="desktop-show">
               <li>
                 <a
@@ -150,7 +156,7 @@
             </ul>
           </div>
           <div class="mb-3 mb-md-0">
-            <h6 id="menu_6_header">How we compare</h6>
+            <div id="menu_6_header" class="h6">How we compare</div>
             <ul id="menu_6" class="desktop-show">
               <li>
                 <a href="/alternative/to-pingdom/">Alternative to Pingdom</a>

@@ -5,7 +5,7 @@
   .footer-top {
     padding: 3.75 * $spacer 0 0;
 
-    h6 {
+    .h6 {
       color: $black;
       margin-bottom: 1.25 * $spacer;
 
@@ -62,7 +62,6 @@
     margin-top: 30px;
   }
 
-
   .desktop-show {
     display: block;
   }
@@ -71,7 +70,7 @@
 @include media-breakpoint-down(md) {
   .footer {
     .footer-top {
-      h6 {
+      .h6 {
         margin-bottom: $spacer;
         &:before {
           border: none;
