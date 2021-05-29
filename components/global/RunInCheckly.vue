@@ -1,13 +1,16 @@
 <template>
   <div class="run-in-checkly" @click="launchCheckly">
-    <img src="/learn/icons/zap.svg" class="mr-1" />
+    <ZapLogo class="mr-1" />
     Run in Checkly
   </div>
 </template>
 
 <script>
+import ZapLogo from '@@/static/learn/icons/zap.svg?inline'
+
 export default {
   name: 'RunInCheckly',
+  components: { ZapLogo },
   props: {
     script: {
       type: String,

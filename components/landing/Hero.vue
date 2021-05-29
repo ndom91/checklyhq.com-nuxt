@@ -28,7 +28,6 @@
             class="hero-image big-drop-shadow img-fluid"
             src="/images/landing/home-hero-screenshot@2x.webp"
             alt="checkly monitoring dashboard"
-            immediate
             position="top"
             width="1100"
             height="580"

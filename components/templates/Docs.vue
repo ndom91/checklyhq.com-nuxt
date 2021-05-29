@@ -6,12 +6,7 @@
         <article class="markdown">
           <div class="d-flex search">
             <div id="mobile-toc-button" class="mobile-toc-button">
-              <img
-                src="/images/icons/toc-icon.svg"
-                alt="table of contents"
-                width="14"
-                height="12"
-              />
+              <TocLogo alt="table of contents" width="14" height="12" />
               Table of contents
             </div>
             <form id="search-form" class="form-inline">
@@ -82,11 +77,12 @@
 
 <script>
 import mediumZoom from 'medium-zoom'
+import TocLogo from '@@/static/images/icons/toc-icon.svg?inline'
 import { DocsMenu } from '~/components/docs'
 
 export default {
   name: 'Docs',
-  components: { DocsMenu },
+  components: { DocsMenu, TocLogo },
   mounted() {
     mediumZoom('.markdown img', {
       margin: 48,

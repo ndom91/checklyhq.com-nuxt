@@ -12,12 +12,7 @@
         </div>
         <div class="d-flex search">
           <div id="mobile-toc-button" class="mobile-toc-button">
-            <img
-              src="/images/icons/toc-icon.svg"
-              alt="table of contents"
-              width="14"
-              height="12"
-            />
+            <TocLogo alt="table of contents" width="14" height="12" />
             Table of contents
           </div>
           <form id="search-form" class="form-inline">
@@ -69,11 +64,12 @@
 
 <script>
 import { LearnMenu } from '@/components/learn'
+import TocLogo from '@@/static/images/icons/toc-icon.svg?inline'
 import mediumZoom from 'medium-zoom'
 
 export default {
   name: 'Learn',
-  components: { LearnMenu },
+  components: { LearnMenu, TocLogo },
   mounted() {
     mediumZoom('.markdown img', {
       margin: 48,

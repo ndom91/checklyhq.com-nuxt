@@ -27,11 +27,7 @@
           <!-- FREE CARD -->
           <div class="pricing__card pricing__card--gray mr-4">
             <div class="pricing__love-devs">
-              <nuxt-img
-                src="/images/love-devs.svg"
-                format="svg"
-                alt="Checkly"
-              />
+              <LoveDevs alt="Checkly" />
             </div>
             <h4 class="mb-5">Free</h4>
             <div class="pricing__fancy-price mb-5 justify-content-center">
@@ -110,23 +106,15 @@
           </div>
           <div class="pricing__plans--toggle" @click="toggleDiscount">
             <span>
-              <nuxt-img
+              <PinkDrop
                 class="pricing__plans--toggle-arrow"
-                src="/images/icons/svg/pink-drop.svg"
-                format="svg"
-                width="14"
-                height="7.75"
                 :style="discountOpen && 'transform: rotate(180deg)'"
               />
             </span>
             <span class="ml-1 mr-1">Get a discount for your commitment.</span>
             <span>
-              <nuxt-img
+              <PinkDrop
                 class="pricing__plans--toggle-arrow"
-                src="/images/icons/svg/pink-drop.svg"
-                format="svg"
-                width="14"
-                height="7.75"
                 :style="discountOpen && 'transform: rotate(180deg)'"
               />
             </span>
@@ -573,10 +561,19 @@
 import { Footer, StartForFree } from '@/components/common'
 import { TestimonialQuote } from '@/components/landing'
 import { FaqToggle } from '@/components/global'
+import LoveDevs from '@@/static/images/love-devs.svg?inline'
+import PinkDrop from '@@/static/images/icons/svg/pink-drop.svg?inline'
 
 export default {
   name: 'Pricing',
-  components: { Footer, StartForFree, TestimonialQuote, FaqToggle },
+  components: {
+    Footer,
+    StartForFree,
+    TestimonialQuote,
+    FaqToggle,
+    LoveDevs,
+    PinkDrop,
+  },
   async asyncData({ $content, params }) {
     const pricing = await $content('data/pricing', params.slug).fetch()
     return { pricingQuestions: pricing[0].questions }

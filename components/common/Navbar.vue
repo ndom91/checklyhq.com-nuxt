@@ -10,12 +10,7 @@
         <span /><span /><span />
       </button>
       <NuxtLink class="navbar-brand mr-2" to="/">
-        <nuxt-img
-          format="svg"
-          src="/images/text_racoon_logo.svg"
-          width="120px"
-          alt="Checkly Logo"
-        />
+        <TextRaccoonLogo width="120px" alt="Checkly Logo" />
       </NuxtLink>
       <div id="navbarSupportedContent" class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
@@ -36,13 +31,7 @@
               <NuxtLink class="dropdown-item" to="/product/api-monitoring/">
                 <div class="d-flex">
                   <div class="menu-icon">
-                    <nuxt-img
-                      src="/images/icons/api.svg"
-                      format="svg"
-                      alt="Api monitoring"
-                      width="32"
-                      height="32"
-                    />
+                    <ApiLogo alt="Api monitoring" width="32" height="32" />
                   </div>
                   <div>
                     <div class="menu-title">API Monitoring</div>
@@ -59,9 +48,7 @@
               >
                 <div class="d-flex">
                   <div class="menu-icon">
-                    <nuxt-img
-                      src="/images/icons/chrome.svg"
-                      format="svg"
+                    <ChromeLogo
                       alt="Synthetic Monitoring"
                       width="32"
                       height="32"
@@ -79,13 +66,7 @@
               <NuxtLink class="dropdown-item" to="/product/alerting/">
                 <div class="d-flex">
                   <div class="menu-icon">
-                    <nuxt-img
-                      format="svg"
-                      src="/images/icons/alert.svg"
-                      alt="Alerting"
-                      width="32"
-                      height="32"
-                    />
+                    <AlertLogo alt="Alerting" width="32" height="32" />
                   </div>
                   <div>
                     <div class="menu-title">Alerting</div>
@@ -125,9 +106,7 @@
               <NuxtLink class="dropdown-item" to="/learn/headless/">
                 <div class="d-flex">
                   <div class="menu-icon">
-                    <nuxt-img
-                      format="svg"
-                      src="/images/icons/learn-puppeteer-playwright.svg"
+                    <LearnAutomationLogo
                       alt="Api monitoring"
                       width="32"
                       height="32"
@@ -149,13 +128,7 @@
               >
                 <div class="d-flex">
                   <div class="menu-icon">
-                    <nuxt-img
-                      format="svg"
-                      src="/images/icons/blog-icon.svg"
-                      alt="Alerting"
-                      width="32"
-                      height="32"
-                    />
+                    <BlogLogo alt="Blog" width="32" height="32" />
                   </div>
                   <div>
                     <div class="menu-title">Blog</div>
@@ -206,8 +179,23 @@
 </template>
 
 <script>
+import TextRaccoonLogo from '@@/static/images/text_racoon_logo.svg?inline'
+import ApiLogo from '@@/static/images/icons/api.svg?inline'
+import ChromeLogo from '@@/static/images/icons/chrome.svg?inline'
+import AlertLogo from '@@/static/images/icons/alert.svg?inline'
+import LearnAutomationLogo from '@@/static/images/icons/learn-puppeteer-playwright.svg?inline'
+import BlogLogo from '@@/static/images/icons/blog-icon.svg?inline'
+
 export default {
   name: 'Navbar',
+  components: {
+    TextRaccoonLogo,
+    ApiLogo,
+    ChromeLogo,
+    AlertLogo,
+    LearnAutomationLogo,
+    BlogLogo,
+  },
   computed: {
     hasAccount() {
       if (typeof document === 'undefined') return false
