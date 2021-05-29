@@ -1,9 +1,12 @@
-
 .navbar {
   min-height: 4rem;
-  transition: all .5s;
+  transition: all 0.5s;
   z-index: 9999;
   background: $white;
+
+  & .show {
+    display: block !important;
+  }
 
   &.navbar-home {
     background-color: $ash;

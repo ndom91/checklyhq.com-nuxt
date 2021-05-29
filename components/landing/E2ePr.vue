@@ -13,7 +13,7 @@
             scripts against your staging environment on each
             <code>git push</code>.
           </p>
-          <a class="cta-link" href="/docs/cicd/">Learn more</a>
+          <NuxtLink class="cta-link" to="/docs/cicd/">Learn more</NuxtLink>
         </div>
       </div>
       <div class="row justify-content-center">

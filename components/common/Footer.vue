@@ -20,6 +20,14 @@
                 <NuxtLink to="/integrations"> Integrations </NuxtLink>
               </li>
               <li>
+                <a href="https://status.checklyhq.com"
+                  >Live Checkly Dashboard
+                </a>
+              </li>
+              <li>
+                <NuxtLink to="/why-checkly"> Why Checkly </NuxtLink>
+              </li>
+              <li>
                 <NuxtLink to="/docs"> Docs </NuxtLink>
               </li>
               <li>
@@ -38,10 +46,10 @@
               </li>
               <li>
                 <a
-                  href="https://status.checklyhq.com/"
+                  href="https://is.checkly.online/"
                   target="_blank"
                   rel="noopener"
-                  >Live dashboard</a
+                  >Status</a
                 ><span class="green-dot" />
               </li>
             </ul>
@@ -92,20 +100,23 @@
                   >Terraform Provider</a
                 >
               </li>
+              <li>
+                <a
+                  href="https://jamstackdeploy.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >Jamstack Deploy</a
+                >
+              </li>
             </ul>
           </div>
           <div class="mb-3 mb-md-0">
             <h6 id="menu_4_header">Learn</h6>
             <ul id="menu_4" class="desktop-show">
-              <li><a href="/learn/headless">Puppeteer & Playwright</a></li>
               <li>
-                <a href="/guides/end-to-end-monitoring"
-                  >End-to-End Monitoring</a
-                >
+                <NuxtLink to="/learn/headless">Puppeteer & Playwright</NuxtLink>
               </li>
-              <li>
-                <a href="/guides/monitoring-as-code">Monitoring-as-Code</a>
-              </li>
+              <li><NuxtLink to="/guides">Checkly Guides</NuxtLink></li>
             </ul>
           </div>
         </div>

@@ -23,9 +23,9 @@
             Configure and scale your monitoring with Terraform's powerful CLI
             workflow.
           </p>
-          <a class="cta-link" href="/docs/integrations/terraform/"
-            >Learn more</a
-          >
+          <NuxtLink class="cta-link" to="/docs/integrations/terraform/">
+            Learn more
+          </NuxtLink>
         </div>
         <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 workflow-item">
           <div class="d-flex align-items-center" style="height: 80px">
@@ -36,9 +36,12 @@
             Extend your monitoring with Javascript for custom authentication and
             test logic.
           </p>
-          <a class="cta-link" href="/docs/api-checks/setup-teardown-scripts/"
-            >Learn more</a
+          <NuxtLink
+            class="cta-link"
+            to="/docs/api-checks/setup-teardown-scripts/"
           >
+            Learn more
+          </NuxtLink>
         </div>
         <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 workflow-item">
           <div class="d-flex align-items-center" style="height: 80px">
@@ -49,7 +52,9 @@
             Run your checks as tests on each <code>git push</code> and get
             results in your PR comments.
           </p>
-          <a class="cta-link" href="/docs/cicd/github/">Learn more</a>
+          <NuxtLink class="cta-link" to="/docs/cicd/github/"
+            >Learn more</NuxtLink
+          >
         </div>
         <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 workflow-item">
           <div class="d-flex align-items-center" style="height: 80px">
@@ -60,9 +65,9 @@
             Export uptime, status and response time data to your Prometheus
             cluster.
           </p>
-          <a class="cta-link" href="/docs/integrations/prometheus/"
-            >Learn more</a
-          >
+          <NuxtLink class="cta-link" to="/docs/integrations/prometheus/">
+            Learn more
+          </NuxtLink>
         </div>
       </div>
     </div>

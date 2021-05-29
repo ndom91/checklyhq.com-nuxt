@@ -12,8 +12,8 @@
             <h5>API monitoring</h5>
             <p>
               Flexible
-              <a class="info-link" href="/product/api-monitoring/"
-                >API monitoring</a
+              <NuxtLink class="info-link" to="/product/api-monitoring/"
+                >API monitoring</NuxtLink
               >
               with custom body, headers, query parameters and unlimited
               assertions.
@@ -26,8 +26,8 @@
             <p>
               Scripted browser clicks flow with Chrome using Puppeteer or
               Playwright Node.js frameworks.
-              <a class="info-link" href="/docs/browser-checks/screenshots/"
-                >Take up to ten screenshots</a
+              <NuxtLink class="info-link" to="/docs/browser-checks/screenshots/"
+                >Take up to ten screenshots</NuxtLink
               >
               per check.
             </p>
@@ -37,8 +37,8 @@
           <div class="block third">
             <h5>CI/CD integration</h5>
             <p>
-              <a class="info-link" href="/docs/cicd/triggers/"
-                >Trigger your checks</a
+              <NuxtLink class="info-link" to="/docs/cicd/triggers/"
+                >Trigger your checks</NuxtLink
               >
               on GitHub push & PR's or using a simple cURL command from your
               CI/CD pipeline.
@@ -50,7 +50,9 @@
             <h5>Public dashboards</h5>
             <p>
               Display a
-              <a class="info-link" href="/docs/dashboards/">public dashboard</a>
+              <NuxtLink class="info-link" to="/docs/dashboards/"
+                >public dashboard</NuxtLink
+              >
               on your site or in-office mounted TV, hosted on your company
               domain.
             </p>
@@ -80,7 +82,9 @@
             <h5>Threshold alerting</h5>
             <p>
               Control what
-              <a class="info-link" href="/docs/alerting/">triggers alerts</a>
+              <NuxtLink class="info-link" to="/docs/alerting/"
+                >triggers alerts</NuxtLink
+              >
               and set reminders. We always run double checks to combat false
               positives.
             </p>
@@ -90,8 +94,8 @@
           <div class="block second">
             <h5>Teams & users</h5>
             <p>
-              <a class="info-link" href="/docs/teams/"
-                >Add team members to your account to collaborate</a
+              <NuxtLink class="info-link" to="/docs/teams/">
+                Add team members to your account to collaborate </NuxtLink
               >. Comes with full role based access control.
             </p>
           </div>

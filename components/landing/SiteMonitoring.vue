@@ -15,9 +15,9 @@
               modern open source frameworks like Playwright and Puppeteer to
               automate your flows. Run your checks in 20 locations worldwide.
             </p>
-            <a class="cta-link" href="/product/synthetic-monitoring/"
-              >Learn more</a
-            >
+            <NuxtLink class="cta-link" to="/product/synthetic-monitoring/">
+              Learn more
+            </NuxtLink>
           </div>
         </div>
         <div class="col-sm-12 col-lg-7">

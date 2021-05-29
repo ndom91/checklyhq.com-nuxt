@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main id="landing" class="main landing">
     <Hero />
     <TrustedBy />
     <SiteMonitoring />
@@ -13,7 +13,7 @@
     <AllFeatures />
     <PublicStats />
     <Footer />
-  </div>
+  </main>
 </template>
 
 <script>

@@ -19,7 +19,7 @@
             alerted. "Double checking" is enabled by default to never get false
             positives.
           </p>
-          <a class="cta-link" href="/docs/alerting">Learn more</a>
+          <NuxtLink class="cta-link" to="/docs/alerting">Learn more</NuxtLink>
         </div>
       </div>
       <div class="row">

@@ -15,7 +15,9 @@
               Node.js-based setup/teardown scripts and fine-grained assertions
               for in-depth API monitoring.
             </p>
-            <a class="cta-link" href="/product/api-monitoring/">Learn more</a>
+            <NuxtLink class="cta-link" to="/product/api-monitoring/">
+              Learn more
+            </NuxtLink>
           </div>
         </div>
         <div class="col-sm-12 col-lg-7">

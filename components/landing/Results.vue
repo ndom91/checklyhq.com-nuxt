@@ -11,7 +11,7 @@
             calculating aggregates to keep an overview, Checkly stores each and
             every raw result for you and your team to dive into.
           </p>
-          <a class="cta-link" href="/docs/">Learn more</a>
+          <NuxtLink class="cta-link" to="/docs/">Learn more</NuxtLink>
         </div>
       </div>
       <div class="row">

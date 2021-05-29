@@ -1,9 +1,7 @@
 <template>
   <div class="layout">
     <Navbar />
-    <main id="landing" class="main landing">
-      <Nuxt />
-    </main>
+    <Nuxt />
   </div>
 </template>
 
