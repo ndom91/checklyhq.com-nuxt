@@ -31,7 +31,6 @@
             position="top"
             fit="outside"
             width="1100"
-            height="780"
           />
         </div>
       </div>

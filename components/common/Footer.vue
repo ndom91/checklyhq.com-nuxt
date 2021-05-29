@@ -176,6 +176,7 @@
           <div class="float-right">
             <a
               class="github"
+              aria-label="Github Link"
               href="https://github.com/checkly"
               target="_blank"
               rel="noopener"
@@ -183,6 +184,7 @@
               <GithubLogo alt="github logo" />
             </a>
             <a
+              aria-label="Twitter Link"
               href="https://twitter.com/checklyhq"
               target="_blank"
               rel="noopener"

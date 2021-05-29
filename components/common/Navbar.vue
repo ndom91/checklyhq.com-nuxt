@@ -9,7 +9,7 @@
       >
         <span /><span /><span />
       </button>
-      <NuxtLink class="navbar-brand mr-2" to="/">
+      <NuxtLink class="navbar-brand mr-2" to="/" aria-label="Home">
         <TextRaccoonLogo width="120px" height="42px" alt="Checkly Logo" />
       </NuxtLink>
       <div id="navbarSupportedContent" class="collapse navbar-collapse">
@@ -50,6 +50,7 @@
                 </NuxtLink>
                 <NuxtLink
                   class="dropdown-item"
+                  aria-label="Synthetic Monitoring Page"
                   to="/product/synthetic-monitoring/"
                 >
                   <div class="d-flex">
@@ -127,7 +128,7 @@
             @mouseout="isHoveringLearn = false"
           >
             <a
-              id="navbarDropdownMenuLink"
+              id="navbarDropdownMenuLinkLearn"
               class="nav-link dropdown-toggle"
               data-toggle="dropdown"
               href="#"

@@ -9,7 +9,7 @@
       <div class="row">
         <div class="col-sm-6 col-md-6 col-lg-4">
           <div class="block">
-            <h5>API monitoring</h5>
+            <div class="h5">API monitoring</div>
             <p>
               Flexible
               <NuxtLink class="info-link" to="/product/api-monitoring/"
@@ -22,7 +22,7 @@
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4">
           <div class="block second">
-            <h5>synthetic monitoring</h5>
+            <div class="h5">synthetic monitoring</div>
             <p>
               Scripted browser clicks flow with Chrome using Puppeteer or
               Playwright Node.js frameworks.
@@ -35,7 +35,7 @@
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4">
           <div class="block third">
-            <h5>CI/CD integration</h5>
+            <div class="h5">CI/CD integration</div>
             <p>
               <NuxtLink class="info-link" to="/docs/cicd/triggers/"
                 >Trigger your checks</NuxtLink
@@ -47,7 +47,7 @@
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4">
           <div class="block">
-            <h5>Public dashboards</h5>
+            <div class="h5">Public dashboards</div>
             <p>
               Display a
               <NuxtLink class="info-link" to="/docs/dashboards/"
@@ -60,7 +60,7 @@
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4">
           <div class="block second">
-            <h5>Global coverage</h5>
+            <div class="h5">Global coverage</div>
             <p>
               Get global latency metrics by running your checks from up to
               twenty data center locations around the world.
@@ -69,7 +69,7 @@
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4">
           <div class="block third">
-            <h5>Alerting channels</h5>
+            <div class="h5">Alerting channels</div>
             <p>
               Generous SMS bundles & unlimited recipients / endpoints for
               Pagerduty, Opsgenie, email, webhooks and Slack alerting
@@ -79,7 +79,7 @@
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4">
           <div class="block">
-            <h5>Threshold alerting</h5>
+            <div class="h5">Threshold alerting</div>
             <p>
               Control what
               <NuxtLink class="info-link" to="/docs/alerting/"
@@ -92,7 +92,7 @@
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4">
           <div class="block second">
-            <h5>Teams & users</h5>
+            <div class="h5">Teams & users</div>
             <p>
               <NuxtLink class="info-link" to="/docs/teams/">
                 Add team members to your account to collaborate </NuxtLink
@@ -102,7 +102,7 @@
         </div>
         <div class="col-sm-6 col-md-6 col-lg-4">
           <div class="block third">
-            <h5>SSL expiry alerting</h5>
+            <div class="h5">SSL expiry alerting</div>
             <p>
               We'll alert you when your SSL certificate is about to expire up to
               30 days in advance till D-day.

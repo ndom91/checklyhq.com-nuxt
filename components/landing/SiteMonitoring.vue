@@ -15,7 +15,11 @@
               modern open source frameworks like Playwright and Puppeteer to
               automate your flows. Run your checks in 20 locations worldwide.
             </p>
-            <NuxtLink class="cta-link" to="/product/synthetic-monitoring/">
+            <NuxtLink
+              class="cta-link"
+              to="/product/synthetic-monitoring/"
+              aria-label="Synthetic Monitoring Link"
+            >
               Learn more
             </NuxtLink>
           </div>
@@ -28,7 +32,6 @@
               alt="checkly browser check"
               fit="inside"
               width="600"
-              height="509"
             />
             <nuxt-picture
               class="big-landing-image big-drop-shadow screenshots fade-in lazy"
@@ -36,7 +39,6 @@
               alt="checkly browser screenshots"
               fit="inside"
               width="600"
-              height="402"
             />
           </div>
         </div>

@@ -2,20 +2,20 @@
 
 .all-features-section {
   padding-top: 1.2 * $section-top-padding;
-  padding-bottom: 2.4 *$section-bottom-padding;
+  padding-bottom: 2.4 * $section-bottom-padding;
 
   .section-header {
     margin-bottom: 50px;
   }
 
-  h5 {
-    font-size: .875rem;
+  .h5 {
+    font-size: 0.875rem;
     text-transform: uppercase;
     margin-bottom: 12px;
     color: $gray-dark;
     display: inline-block;
     font-weight: 600;
-    letter-spacing: .5px
+    letter-spacing: 0.5px;
   }
   p {
     margin-bottom: 37px;

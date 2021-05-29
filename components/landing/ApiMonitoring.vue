@@ -15,7 +15,11 @@
               Node.js-based setup/teardown scripts and fine-grained assertions
               for in-depth API monitoring.
             </p>
-            <NuxtLink class="cta-link" to="/product/api-monitoring/">
+            <NuxtLink
+              class="cta-link"
+              to="/product/api-monitoring/"
+              aria-label="API Monitoring Link"
+            >
               Learn more
             </NuxtLink>
           </div>
@@ -28,7 +32,6 @@
               alt="checkly assertions edit"
               fit="inside"
               width="600"
-              height="520"
             />
             <nuxt-picture
               class="big-landing-image big-drop-shadow screenshots fade-in lazy"
@@ -36,7 +39,6 @@
               alt="checkly assertions"
               fit="outside"
               width="600"
-              height="420"
             />
           </div>
         </div>

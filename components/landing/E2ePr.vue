@@ -13,37 +13,39 @@
             scripts against your staging environment on each
             <code>git push</code>.
           </p>
-          <NuxtLink class="cta-link" to="/docs/cicd/">Learn more</NuxtLink>
+          <NuxtLink class="cta-link" to="/docs/cicd/" aria-label="CICD Docs"
+            >Learn more</NuxtLink
+          >
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-sm-12 col-md-8 col-lg-4 hidden-md-down">
           <ul class="list-group">
             <li class="list-group-item">
-              <h5>
+              <span class="h5">
                 <span class="ion-settings mr-2" />
                 Setup
-              </h5>
+              </span>
               <p>
                 Create your API checks and script your browser click flows using
                 the UI or API.
               </p>
             </li>
             <li class="list-group-item">
-              <h5>
+              <span class="h5">
                 <span class="ion-pull-request mr-2" />
                 Integrate
-              </h5>
+              </span>
               <p>
                 Install our GitHub App in your repo. We'll start listening to
                 each deploy event.
               </p>
             </li>
             <li class="list-group-item">
-              <h5>
+              <span class="h5">
                 <span class="ion-checkmark-round mr-2" />
                 E2E test on each push
-              </h5>
+              </span>
               <p>
                 On each push, get detailed E2E test results, logs and
                 screenshots right in your PR.

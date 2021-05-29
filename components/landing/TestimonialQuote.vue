@@ -14,6 +14,7 @@
                 Leo Lamprecht | SVP Product<a
                   class="testimonial-logo"
                   href="https://vercel.com/"
+                  aria-label="Vercel Logo"
                   target="_blank"
                   rel="noopener"
                 >

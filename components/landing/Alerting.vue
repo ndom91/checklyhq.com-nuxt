@@ -30,7 +30,6 @@
             alt="checkly alerting settings"
             fit="inside"
             width="900"
-            height="568"
           />
         </div>
       </div>

@@ -53,7 +53,12 @@
         <div class="col-sm-12 col-md-6 col-lg-4">
           <div class="card testimonial-card mb-5 mb-md-0">
             <div class="card-block second">
-              <a href="http://www.dfuse.io/" target="_blank" rel="noopener">
+              <a
+                href="http://1password.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="1Password Link"
+              >
                 <OnePasswordLogo
                   class="testimonial-logo"
                   alt="dfuse logo"
@@ -79,6 +84,7 @@
                 <div class="text-muted">Lead Developer</div>
                 <a
                   class="text-muted"
+                  aria-label="1Password Link"
                   href="https://1password.com/"
                   target="_blank"
                   rel="noopener"
@@ -91,7 +97,12 @@
         <div class="col-sm-12 col-md-6 col-lg-4">
           <div class="card testimonial-card mb-5 mb-md-0">
             <div class="card-block first">
-              <a href="https://supplypike.com" target="_blank" rel="noopener">
+              <a
+                href="https://supplypike.com"
+                target="_blank"
+                rel="noopener"
+                aria-label="Supplypike Link"
+              >
                 <SupplyPikeLogo
                   class="testimonial-logo"
                   alt="supplypike logo"

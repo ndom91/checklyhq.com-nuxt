@@ -3,9 +3,9 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-lg-10 offset-lg-1">
-          <h5 class="section-super-header mb-3">
+          <p class="section-super-header mb-3">
             Trusted by engineering teams at
-          </h5>
+          </p>
         </div>
       </div>
       <div class="row">
