@@ -29,8 +29,9 @@
             src="/images/landing/home-hero-screenshot@2x.webp"
             alt="checkly monitoring dashboard"
             position="top"
+            fit="outside"
             width="1100"
-            height="580"
+            height="780"
           />
         </div>
       </div>
