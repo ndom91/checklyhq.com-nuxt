@@ -1,4 +1,5 @@
 @import 'variables.scss';
+
 .opensource {
   &__hero {
     margin-bottom: 58px;
@@ -35,6 +36,8 @@
 
         span {
           font-size: 14px;
+          display: grid;
+          place-items: center;
         }
 
         img {
@@ -43,6 +46,7 @@
       }
     }
   }
+
   &__mmr {
     padding: 40px 0 58px;
     background: $ash;
@@ -55,6 +59,7 @@
       color: $black;
     }
   }
+
   &__posts {
     padding: 100px 0 0;
 
@@ -72,10 +77,11 @@
       margin-top: 43px;
     }
   }
+
   .card {
     padding: 20px;
     margin-bottom: 30px;
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 80px) / 3);
     border-radius: 5px;
 
     .card-image {
@@ -86,7 +92,7 @@
       background-image: url('/opensource/image-background-pattern.png');
       background-size: 80px;
 
-      img {
+      svg {
         position: absolute;
         top: 50%;
         left: 50%;

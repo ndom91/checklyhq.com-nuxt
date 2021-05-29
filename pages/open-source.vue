@@ -18,12 +18,7 @@
                 target="_blank"
                 rel="noopener"
               >
-                <img
-                  src="/images/arrow-up-right.svg"
-                  alt="arrow up right"
-                  width="8"
-                  height="8"
-                />
+                <ArrowUpRight alt="arrow up right" width="8" height="8" />
                 Get involved on GitHub
               </a>
             </div>
@@ -35,8 +30,7 @@
             <div class="d-flex">
               <div class="card">
                 <div class="card-image">
-                  <img
-                    src="/opensource/headless_recorder_logo.svg"
+                  <HeadlessRecorderLogo
                     alt="headless recorder logo"
                     width="92"
                     height="92"
@@ -45,12 +39,7 @@
                 <h5>
                   Headless recorder
                   <span>
-                    <img
-                      src="/images/github-star.svg"
-                      alt="github start"
-                      width="16"
-                      height="15"
-                    />
+                    <GithubStar alt="github start" width="31" height="15" />
                   </span>
                   <span id="headless-recorder">{{
                     headlessRecorderStargazers
@@ -67,8 +56,7 @@
                     target="_blank"
                     rel="noopener"
                   >
-                    <img
-                      src="/images/arrow-download.svg"
+                    <ArrowDownload
                       alt="arrow download"
                       width="10"
                       height="14"
@@ -87,22 +75,12 @@
               </div>
               <div class="card">
                 <div class="card-image">
-                  <img
-                    src="/opensource/terraform_logo.svg"
-                    alt="terraform logo"
-                    width="101"
-                    height="92"
-                  />
+                  <TerraformLogo alt="terraform logo" width="101" height="92" />
                 </div>
                 <h5>
                   Terraform Provider
                   <span>
-                    <img
-                      src="/images/github-star.svg"
-                      alt="github start"
-                      width="16"
-                      height="15"
-                    />
+                    <GithubStar alt="github start" width="31" height="15" />
                   </span>
                   <span id="terraform-provider">{{
                     terraformProviderStargazers
@@ -119,17 +97,47 @@
                     target="_blank"
                     rel="noopener"
                   >
-                    <img
-                      src="/images/arrow-visit.svg"
-                      alt="arrow visit"
-                      width="13"
-                      height="13"
-                    />
+                    <ArrowVisit alt="arrow visit" width="13" height="13" />
                     Get Terraform provider
                   </a>
                   <a
                     class="cta-link"
                     href="https://github.com/checkly/terraform-provider-checkly"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    See the code
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <JamLogo alt="jamstack deploy" width="101" height="92" />
+                </div>
+                <h5>
+                  Jamstack Deploy
+                  <span>
+                    <GithubStar alt="github start" width="31" height="15" />
+                  </span>
+                  <span id="jamstack-deploy">{{ jamstackStargazers }}</span>
+                </h5>
+                <p>
+                  Measure cloud providers and check which fits better for your
+                  Jamstack App
+                </p>
+                <div class="cta-wraps">
+                  <a
+                    class="cta-link"
+                    href="https://jamstackdeploy.com"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <ArrowVisit alt="arrow visit" width="13" height="13" />
+                    Visit Jamstack Deploy
+                  </a>
+                  <a
+                    class="cta-link"
+                    href="https://github.com/checkly/jamstack-deploy"
                     target="_blank"
                     rel="noopener"
                   >
@@ -189,12 +197,7 @@
                     target="_blank"
                     rel="noopener"
                   >
-                    <img
-                      src="/images/arrow-up-right.svg"
-                      alt="arrow up right"
-                      width="8"
-                      height="8"
-                    />
+                    <ArrowUpRight alt="arrow up right" width="8" height="8" />
                     Read article
                   </a>
                 </div>
@@ -211,15 +214,33 @@
 
 <script>
 import { Footer, StartForFree } from '@/components/common'
+import ArrowUpRight from '@@/static/images/arrow-up-right.svg?inline'
+import ArrowVisit from '@@/static/images/arrow-visit.svg?inline'
+import HeadlessRecorderLogo from '@@/static/opensource/headless_recorder_logo.svg?inline'
+import TerraformLogo from '@@/static/opensource/terraform_logo.svg?inline'
+import GithubStar from '@@/static/images/github-star.svg?inline'
+import ArrowDownload from '@@/static/images/arrow-download.svg?inline'
+import JamLogo from '@@/static/images/jam.svg?inline'
 
 export default {
   name: 'OpenSource',
-  components: { Footer, StartForFree },
+  components: {
+    Footer,
+    StartForFree,
+    ArrowUpRight,
+    ArrowVisit,
+    HeadlessRecorderLogo,
+    GithubStar,
+    ArrowDownload,
+    TerraformLogo,
+    JamLogo,
+  },
   data() {
     return {
       posts: [],
       headlessRecorderStargazers: 0,
       terraformProviderStargazers: 0,
+      jamstackStargazers: 0,
     }
   },
   async mounted() {
@@ -229,6 +250,9 @@ export default {
     )
     this.terraformProviderStargazers = await this.getStargazers(
       'checkly/terraform-provider-checkly'
+    )
+    this.jamstackStargazers = await this.getStargazers(
+      'checkly/jamstack-deploy'
     )
   },
   methods: {
