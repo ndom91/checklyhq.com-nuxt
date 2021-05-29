@@ -91,24 +91,24 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
     script: [
-      {
-        src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js',
-        integrity:
-          'sha512-tqkUb/44CjLInUi6+QDdXjRrDWA7ivz60HCXDla9x0ToqLBTwu+KMQf0o8K90R7kcOBVV/VC/+3l/1RGjuGGxA==',
-        crossorigin: 'anonymous',
-      },
-      {
-        src: 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js',
-        integrity:
-          'sha512-HsZ1i9vlo01lbae+KIl//6KPxkOO6xSPI2PefsZiC8LmSW9KDWMYK9jhNqE9XsbjGyrnQAZ6sSHvtnR12sJPjA==',
-        crossorigin: 'anonymous',
-      },
-      {
-        src: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js',
-        integrity:
-          'sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn',
-        crossorigin: 'anonymous',
-      },
+      // {
+      //   src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js',
+      //   integrity:
+      //     'sha512-tqkUb/44CjLInUi6+QDdXjRrDWA7ivz60HCXDla9x0ToqLBTwu+KMQf0o8K90R7kcOBVV/VC/+3l/1RGjuGGxA==',
+      //   crossorigin: 'anonymous',
+      // },
+      // {
+      //   src: 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js',
+      //   integrity:
+      //     'sha512-HsZ1i9vlo01lbae+KIl//6KPxkOO6xSPI2PefsZiC8LmSW9KDWMYK9jhNqE9XsbjGyrnQAZ6sSHvtnR12sJPjA==',
+      //   crossorigin: 'anonymous',
+      // },
+      // {
+      //   src: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js',
+      //   integrity:
+      //     'sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn',
+      //   crossorigin: 'anonymous',
+      // },
     ],
   },
   ssr: false,
