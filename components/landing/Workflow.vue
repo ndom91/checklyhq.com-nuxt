@@ -16,12 +16,7 @@
       <div class="row text-left">
         <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 workflow-item">
           <div class="d-flex align-items-center" style="height: 80px">
-            <nuxt-picture
-              src="/images/landing/terra-logo@2x.webp"
-              alt="terraform logo"
-              width="70"
-              height="70"
-            />
+            <TerraformLogo alt="terraform logo" width="70" height="70" />
           </div>
           <h5>Terraform</h5>
           <p>
@@ -34,12 +29,7 @@
         </div>
         <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 workflow-item">
           <div class="d-flex align-items-center" style="height: 80px">
-            <nuxt-picture
-              src="/images/landing/javascript-logo@2x.webp"
-              alt="javascript logo"
-              width="70"
-              height="70"
-            />
+            <JavascriptLogo alt="javascript logo" width="70" height="70" />
           </div>
           <h5>Javascript</h5>
           <p>
@@ -52,12 +42,7 @@
         </div>
         <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 workflow-item">
           <div class="d-flex align-items-center" style="height: 80px">
-            <nuxt-picture
-              src="/images/landing/github-logo@2x.webp"
-              alt="github logo"
-              width="70"
-              height="70"
-            />
+            <GithubLogo alt="github logo" width="70" height="70" />
           </div>
           <h5>GitHub</h5>
           <p>
@@ -68,12 +53,7 @@
         </div>
         <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 workflow-item">
           <div class="d-flex align-items-center" style="height: 80px">
-            <nuxt-picture
-              src="/images/landing/prometheus-logo@2x.webp"
-              alt="prometheus logo"
-              width="70"
-              height="70"
-            />
+            <PrometheusLogo alt="prometheus logo" width="70" height="70" />
           </div>
           <h5>Prometheus</h5>
           <p>
@@ -90,8 +70,14 @@
 </template>
 
 <script>
+import TerraformLogo from '@@/static/images/landing/terraform.svg?inline'
+import JavascriptLogo from '@@/static/images/landing/javascript-logo.svg?inline'
+import GithubLogo from '@@/static/images/landing/github.svg?inline'
+import PrometheusLogo from '@@/static/images/landing/prometheus.svg?inline'
+
 export default {
   name: 'Workflow',
+  components: { TerraformLogo, JavascriptLogo, GithubLogo, PrometheusLogo },
 }
 </script>
 

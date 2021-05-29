@@ -32,6 +32,7 @@
   }
 
   .alerting-image {
+    display: inline-block;
     margin-top: 80px;
     border-radius: 5px;
     border: 1px solid $gray-light;
@@ -59,4 +60,3 @@
     }
   }
 }
-

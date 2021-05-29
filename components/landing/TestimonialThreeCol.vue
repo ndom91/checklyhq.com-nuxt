@@ -6,13 +6,22 @@
           <div class="card testimonial-card mb-5 mb-md-0">
             <div class="card-block first">
               <a href="https://railway.app" target="_blank" rel="noopener">
-                <nuxt-picture
-                  class="testimonial-logo"
-                  src="/images/landing/railway_logo@2x.webp"
-                  alt="railway.app logo"
-                  width="170"
-                  height="25"
-                />
+                <div
+                  class="
+                    d-flex
+                    align-items-center
+                    justify-content-start
+                    text-dark
+                  "
+                >
+                  <RailwayLogo
+                    class="testimonial-logo m-0"
+                    alt="railway.app logo"
+                    width="40"
+                    height="40"
+                  />
+                  <span>Railway</span>
+                </div>
               </a>
               <p class="testimonial-text">
                 "We've been using Checkly for the past months. It's been
@@ -45,9 +54,8 @@
           <div class="card testimonial-card mb-5 mb-md-0">
             <div class="card-block second">
               <a href="http://www.dfuse.io/" target="_blank" rel="noopener">
-                <nuxt-picture
+                <OnePasswordLogo
                   class="testimonial-logo"
-                  src="/images/landing/1p-wordmark@2x.webp"
                   alt="dfuse logo"
                   width="140"
                   height="26"
@@ -84,9 +92,8 @@
           <div class="card testimonial-card mb-5 mb-md-0">
             <div class="card-block first">
               <a href="https://supplypike.com" target="_blank" rel="noopener">
-                <nuxt-picture
+                <SupplyPikeLogo
                   class="testimonial-logo"
-                  src="/images/landing/supplypike_logo@2x.webp"
                   alt="supplypike logo"
                   width="150"
                   height="25"
@@ -125,8 +132,13 @@
 </template>
 
 <script>
+import RailwayLogo from '@@/static/images/landing/railway.svg?inline'
+import OnePasswordLogo from '@@/static/images/landing/1p-wordmark.svg?inline'
+import SupplyPikeLogo from '@@/static/images/landing/supplypike-logo.svg?inline'
+
 export default {
   name: 'TestimonialThreeCol',
+  components: { RailwayLogo, OnePasswordLogo, SupplyPikeLogo },
 }
 </script>
 

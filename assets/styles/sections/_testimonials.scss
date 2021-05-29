@@ -1,5 +1,4 @@
 .testimonial-section {
-
   .testimonial-card {
     border: none;
     max-height: 415px;
@@ -10,7 +9,12 @@
   }
   .testimonial-logo {
     height: auto;
-    margin-bottom: 1rem;
+    & + span {
+      color: #000;
+      font-size: 1.2em;
+      margin-left: 1rem;
+      font-weight: 700;
+    }
   }
   .testimonial-text {
     font-size: $font-size-base;
@@ -27,7 +31,6 @@
       margin-right: 1rem;
     }
   }
-
 
   .testimonial-name-badge {
     display: flex;
@@ -77,7 +80,7 @@
       .card-block {
         padding: 2 * $spacer 3 * $spacer;
         &:before {
-          content: "“";
+          content: '“';
           font-family: serif;
           position: absolute;
           width: 10px;
@@ -90,7 +93,6 @@
           }
         }
       }
-
     }
     .testimonial-text {
       min-height: 100px;
@@ -113,7 +115,7 @@
       margin-bottom: 0;
       font-size: $font-size-h4;
       &:before {
-        content: "“";
+        content: '“';
         font-family: serif;
         position: absolute;
         width: 10px;
@@ -130,7 +132,7 @@
       height: 25px;
 
       margin-bottom: 1px;
-      margin-left: .5rem;
+      margin-left: 0.5rem;
     }
   }
 }
@@ -148,7 +150,7 @@
       .testimonial-card {
         height: auto;
       }
-      
+
       .first {
         margin-left: 0;
         margin-right: 0;
