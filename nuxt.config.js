@@ -121,6 +121,10 @@ export default {
     // '@nuxtjs/stylelint-module',
     '@nuxt/image',
     '@nuxtjs/svg',
+    [
+      'nuxt-purgecss',
+      { enabled: true, mode: 'postcss', styleExtensions: ['.css', '.scss'] },
+    ],
   ],
   modules: ['@nuxtjs/axios', '@nuxt/content'],
   axios: {},

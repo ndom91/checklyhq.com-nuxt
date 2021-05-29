@@ -30,8 +30,6 @@ p {
   }
 }
 
-
-
 .cta-link {
   color: $brand-primary;
   font-size: 1rem;
@@ -41,15 +39,15 @@ p {
     text-decoration: none;
   }
   &::after {
-    transform: rotate(45deg) translate3d(0,0,0);
-    transition: transform .2s ease-in-out;
+    transform: rotate(45deg) translate3d(0, 0, 0);
+    transition: transform 0.2s ease-in-out;
     border-top-width: 2px;
     border-top-style: solid;
     border-right-width: 2px;
     border-right-style: solid;
-    content: "";
+    content: '';
     display: inline-block;
-    margin-left: .3em;
+    margin-left: 0.3em;
     position: relative;
     pointer-events: none;
     width: 6px;
@@ -64,10 +62,10 @@ p {
   background-color: $green;
   border-radius: 50%;
   display: inline-block;
-  margin-left: .4rem;
+  margin-left: 0.4rem;
   vertical-align: middle;
   position: relative;
-  margin-top: -2px
+  margin-top: -2px;
 }
 
 // Forms
@@ -78,7 +76,6 @@ p {
   margin-bottom: 1rem;
 }
 
-
 .custom-select {
   height: auto !important;
   padding: 0.75rem 1.75rem 0.75rem 1.5rem;
@@ -86,9 +83,8 @@ p {
 }
 
 .form-control {
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
 }
-
 
 // Image & Video
 
@@ -134,8 +130,10 @@ img.avatar {
 
 .big-drop-shadow {
   @include screen-shadow();
+  & img {
+    @include screen-shadow();
+  }
 }
-
 
 // alignment
 

@@ -16,7 +16,7 @@
       <div class="row text-left">
         <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 workflow-item">
           <div class="d-flex align-items-center" style="height: 80px">
-            <nuxt-img
+            <nuxt-picture
               src="/images/landing/terra-logo@2x.webp"
               alt="terraform logo"
               width="70"
@@ -34,7 +34,7 @@
         </div>
         <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 workflow-item">
           <div class="d-flex align-items-center" style="height: 80px">
-            <nuxt-img
+            <nuxt-picture
               src="/images/landing/javascript-logo@2x.webp"
               alt="javascript logo"
               width="70"
@@ -52,7 +52,7 @@
         </div>
         <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 workflow-item">
           <div class="d-flex align-items-center" style="height: 80px">
-            <nuxt-img
+            <nuxt-picture
               src="/images/landing/github-logo@2x.webp"
               alt="github logo"
               width="70"
@@ -68,7 +68,7 @@
         </div>
         <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 workflow-item">
           <div class="d-flex align-items-center" style="height: 80px">
-            <nuxt-img
+            <nuxt-picture
               src="/images/landing/prometheus-logo@2x.webp"
               alt="prometheus logo"
               width="70"

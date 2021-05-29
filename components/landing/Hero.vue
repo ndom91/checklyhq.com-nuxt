@@ -24,7 +24,7 @@
       </div>
       <div class="row">
         <div class="col-sm-12 text-center">
-          <nuxt-img
+          <nuxt-picture
             class="hero-image big-drop-shadow img-fluid"
             src="/images/landing/home-hero-screenshot@2x.webp"
             alt="checkly monitoring dashboard"

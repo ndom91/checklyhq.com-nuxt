@@ -9,16 +9,16 @@
     background-size: 400px;
   }
 
-  img.big-landing-image {
+  .big-landing-image {
     width: 800px;
     position: absolute;
   }
 
   .flex-row {
-  	display: flex;
+    display: flex;
   }
 
-  img.landing-image {
+  .landing-image {
     width: 100%;
     position: absolute;
     border: 1px solid $gray-light;
@@ -26,14 +26,14 @@
   }
 
   @include media-breakpoint-down(sm) {
-    img.big-landing-image {
+    .big-landing-image {
       width: 640px;
       position: inherit;
     }
   }
 
   @include media-breakpoint-down(xs) {
-    img.big-landing-image {
+    .big-landing-image {
       width: 100%;
       position: inherit;
     }

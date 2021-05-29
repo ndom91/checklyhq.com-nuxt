@@ -22,21 +22,16 @@
         </div>
         <div class="col-sm-12 col-lg-7">
           <div class="image-side right">
-            <nuxt-img
-              class="big-landinnuxt-img big-drop-shadow code fade-in lazy"
+            <nuxt-picture
+              class="big-landing-image big-drop-shadow code fade-in lazy"
               src="/images/landing/browser-check-1-section-screenshot@2x.webp"
               alt="checkly browser check"
               fit="inside"
               width="600"
               height="509"
             />
-            <nuxt-img
-              class="
-                big-landinnuxt-img big-drop-shadow
-                screenshots
-                fade-in
-                lazy
-              "
+            <nuxt-picture
+              class="big-landing-image big-drop-shadow screenshots fade-in lazy"
               src="/images/landing/browser-check-2-section-screenshot@2x.webp"
               alt="checkly browser screenshots"
               fit="inside"

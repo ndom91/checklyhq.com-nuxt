@@ -4,7 +4,7 @@
       <div class="row justify-content-center">
         <div class="col-sm-12 col-md-8">
           <h2 class="section-super-header">Alerting</h2>
-          <nuxt-img
+          <nuxt-picture
             class="alerting-top-image"
             src="/images/landing/alerting-options@2x.webp"
             alt="checkly alerting options"
@@ -24,8 +24,8 @@
       </div>
       <div class="row">
         <div class="col-sm-12 text-center">
-          <nuxt-img
-            class="alertinnuxt-img big-drop-shadow img-fluid"
+          <nuxt-picture
+            class="alerting-image big-drop-shadow img-fluid"
             src="/images/landing/alert-settings@2x.webp"
             alt="checkly alerting settings"
             fit="inside"

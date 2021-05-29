@@ -10,7 +10,7 @@
       </div>
       <div class="row">
         <div class="col-sm-12">
-          <nuxt-img
+          <nuxt-picture
             class="trusted-by-image"
             src="/images/landing/testimonial-logos@2x.webp"
             alt="trusted by companies for api and synthetic monitoring"

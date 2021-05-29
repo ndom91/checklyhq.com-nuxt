@@ -1,5 +1,5 @@
 <template>
-  <section class="api-monitoring-section gray-section">
+  <section class="site-monitoring-section gray-section">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-sm-12 col-md-10 col-lg-5">
@@ -20,26 +20,21 @@
         </div>
         <div class="col-sm-12 col-lg-7">
           <div class="image-side right">
-            <nuxt-img
-              class="big-landinnuxt-img big-drop-shadow code fade-in lazy"
+            <nuxt-picture
+              class="big-landing-image big-drop-shadow code fade-in lazy"
               src="/images/landing/api-check-1-section-screenshot@2x.webp"
               alt="checkly assertions edit"
               fit="inside"
-              width="810"
-              height="560"
+              width="600"
+              height="520"
             />
-            <nuxt-img
-              class="
-                big-landinnuxt-img big-drop-shadow
-                screenshots
-                fade-in
-                lazy
-              "
+            <nuxt-picture
+              class="big-landing-image big-drop-shadow screenshots fade-in lazy"
               src="/images/landing/api-check-2-section-screenshot@2x.webp"
               alt="checkly assertions"
-              fit="inside"
-              width="810"
-              height="595"
+              fit="outside"
+              width="600"
+              height="420"
             />
           </div>
         </div>

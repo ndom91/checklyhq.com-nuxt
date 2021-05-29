@@ -52,7 +52,7 @@
           </ul>
         </div>
         <div class="col-sm-12 col-lg-8">
-          <nuxt-img
+          <nuxt-picture
             class="pr-image"
             src="/images/landing/e2e-screenshot@2x.webp"
             alt="checkly e2e screenshot"
@@ -73,20 +73,10 @@
             "
           >
             Works out-of-the-box with
-            <nuxt-img
-              class="mx-1"
-              src="/images/landing/vercel-logo.png"
-              alt="Vercel logo"
-              width="20"
-              height="20"
-            />Vercel and
-            <nuxt-img
-              class="mx-1"
-              src="/images/landing/heroku-logo.png"
-              alt="Heroku logo"
-              width="20"
-              height="20"
-            />Heroku
+            <VercelLogo class="mx-1" alt="Vercel logo" width="20" height="20" />
+            Vercel and
+            <HerokuLogo class="mx-1" alt="Heroku logo" width="20" height="20" />
+            Heroku
           </div>
         </div>
       </div>
@@ -95,8 +85,12 @@
 </template>
 
 <script>
+import HerokuLogo from '@@/static/images/landing/heroku-stroke.svg?inline'
+import VercelLogo from '@@/static/images/landing/vercel-dark.svg?inline'
+
 export default {
   name: 'E2ePr',
+  components: { HerokuLogo, VercelLogo },
 }
 </script>
 

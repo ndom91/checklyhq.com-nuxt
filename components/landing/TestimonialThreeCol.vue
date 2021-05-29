@@ -6,7 +6,7 @@
           <div class="card testimonial-card mb-5 mb-md-0">
             <div class="card-block first">
               <a href="https://railway.app" target="_blank" rel="noopener">
-                <nuxt-img
+                <nuxt-picture
                   class="testimonial-logo"
                   src="/images/landing/railway_logo@2x.webp"
                   alt="railway.app logo"
@@ -20,7 +20,7 @@
                 intuitively. The team are super receptive & quick to help"
               </p>
               <div class="testimonial-portrait">
-                <nuxt-img
+                <nuxt-picture
                   src="/images/testimonials/railway_portrait.webp"
                   alt="Jake Cooper"
                   width="55"
@@ -45,7 +45,7 @@
           <div class="card testimonial-card mb-5 mb-md-0">
             <div class="card-block second">
               <a href="http://www.dfuse.io/" target="_blank" rel="noopener">
-                <nuxt-img
+                <nuxt-picture
                   class="testimonial-logo"
                   src="/images/landing/1p-wordmark@2x.webp"
                   alt="dfuse logo"
@@ -59,7 +59,7 @@
                 their support is super friendly and knowledgeable!"
               </p>
               <div class="testimonial-portrait">
-                <nuxt-img
+                <nuxt-picture
                   alt="customer portrait"
                   src="/images/testimonials/conner_hicks.png"
                   width="55"
@@ -84,7 +84,7 @@
           <div class="card testimonial-card mb-5 mb-md-0">
             <div class="card-block first">
               <a href="https://supplypike.com" target="_blank" rel="noopener">
-                <nuxt-img
+                <nuxt-picture
                   class="testimonial-logo"
                   src="/images/landing/supplypike_logo@2x.webp"
                   alt="supplypike logo"
@@ -98,7 +98,7 @@
                 Prometheus and PagerDuty make the adoption seamless."
               </p>
               <div class="testimonial-portrait">
-                <nuxt-img
+                <nuxt-picture
                   src="/images/testimonials/supplypike_portrait.webp"
                   alt="Kanat Bekterimov"
                   width="55"
