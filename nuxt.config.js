@@ -1,7 +1,7 @@
 export default {
   target: 'static',
   head: {
-    title: 'ChecklyNuxt',
+    title: 'Delightful Active Monitoring for Developers',
     htmlAttrs: {
       lang: 'en',
     },
@@ -130,8 +130,15 @@ export default {
       'nuxt-purgecss',
       { enabled: true, mode: 'postcss', styleExtensions: ['.css', '.scss'] },
     ],
+    '@hexdigital/nuxt-intercom',
   ],
-  modules: ['@nuxtjs/axios', '@nuxt/content'],
+  modules: ['@nuxtjs/axios', '@nuxt/content', 'vue-plausible'],
+  plausible: {
+    domain: 'checklyhq.com',
+  },
+  intercom: {
+    app_id: 'ep3ft8gg',
+  },
   axios: {},
   build: {},
   content: {

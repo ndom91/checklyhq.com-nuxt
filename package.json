@@ -21,12 +21,14 @@
     }
   },
   "dependencies": {
+    "@hexdigital/nuxt-intercom": "^0.0.9",
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/axios": "^5.13.1",
     "bootstrap": "^4.0.0-alpha.6",
     "core-js": "^3.9.1",
     "medium-zoom": "^1.0.6",
-    "nuxt": "^2.15.3"
+    "nuxt": "^2.15.3",
+    "vue-plausible": "^1.1.4"
   },
   "devDependencies": {
     "@nuxt/image": "^0.4.12",
