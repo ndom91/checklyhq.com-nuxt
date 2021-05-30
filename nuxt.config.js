@@ -94,7 +94,18 @@ export default {
         content: '@checklyHQ',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    link: [
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+      {
+        rel: 'preconnect',
+        href: 'https://ajax.googleapis.com',
+        crossorigin: true,
+      },
+      {
+        rel: 'dns-prefetch',
+        href: 'https://ajax.googleapis.com',
+      },
+    ],
     script: [
       // {
       //   src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js',
@@ -137,7 +148,10 @@ export default {
     domain: 'checklyhq.com',
   },
   intercom: {
-    app_id: 'ep3ft8gg',
+    appId: 'ep3ft8gg',
+  },
+  purgeCSS: {
+    whitelist: ['.Cookie', 'Cookie__button'],
   },
   axios: {},
   build: {},
