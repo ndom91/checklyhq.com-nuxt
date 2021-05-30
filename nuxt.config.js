@@ -17,7 +17,6 @@ export default {
       {
         title: 'Delightful Active Monitoring for Developers',
         meta: [
-          // Override Example
           { key: 'og:type', property: 'og:type', content: 'article' },
           {
             key: 'og:url',
@@ -154,13 +153,11 @@ export default {
   },
   intercom: {
     appId: 'ep3ft8gg',
+    scriptDefer: true,
   },
-  // purgeCSS: {
-  //   whitelist: ['Cookie', 'Cookie__button'],
-  // },
-  axios: {},
-  build: {},
   content: {
     liveEdit: false,
   },
+  axios: {},
+  build: {},
 }
