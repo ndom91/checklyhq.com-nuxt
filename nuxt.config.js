@@ -139,7 +139,12 @@ export default {
     '@nuxtjs/svg',
     [
       'nuxt-purgecss',
-      { enabled: true, mode: 'postcss', styleExtensions: ['.css', '.scss'] },
+      {
+        enabled: true,
+        mode: 'postcss',
+        styleExtensions: ['.css', '.scss'],
+        whitelist: ['Cookie', 'Cookie__button'],
+      },
     ],
     '@hexdigital/nuxt-intercom',
   ],
@@ -150,9 +155,9 @@ export default {
   intercom: {
     appId: 'ep3ft8gg',
   },
-  purgeCSS: {
-    whitelist: ['.Cookie', 'Cookie__button'],
-  },
+  // purgeCSS: {
+  //   whitelist: ['Cookie', 'Cookie__button'],
+  // },
   axios: {},
   build: {},
   content: {
