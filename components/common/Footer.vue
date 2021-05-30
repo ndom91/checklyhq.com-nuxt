@@ -221,27 +221,26 @@ export default {
       statusClass: 'dot--green',
     }
   },
-  mounted() {},
+  mounted() {
+    this.getChecklyStatus()
+  },
   methods: {
-    getChecklyStatus() {
-      fetch('https://nq8lf8mrmvw6.statuspage.io/api/v2/status.json')
-        .then(function (response) {
-          return response.json()
-        })
-        .then(function (res) {
-          if (res.status.indicator === 'none') {
-            this.statusClass = 'dot--green'
-          }
-          if (res.status.indicator === 'minor') {
-            this.statusClass = 'dot--yellow'
-          }
-          if (
-            res.status.indicator === 'major' ||
-            res.status.indicator === 'critical'
-          ) {
-            this.statusClass = 'dot--red'
-          }
-        })
+    async getChecklyStatus() {
+      const statusUrl = 'https://nq8lf8mrmvw6.statuspage.io/api/v2/status.json'
+      const response = await fetch(statusUrl)
+      const res = await response.json()
+      if (res.status.indicator === 'none') {
+        this.statusClass = 'dot--green'
+      }
+      if (res.status.indicator === 'minor') {
+        this.statusClass = 'dot--yellow'
+      }
+      if (
+        res.status.indicator === 'major' ||
+        res.status.indicator === 'critical'
+      ) {
+        this.statusClass = 'dot--red'
+      }
     },
   },
 }
