@@ -56,7 +56,11 @@
                   target="_blank"
                   rel="noopener"
                   >Status</a
-                ><span class="green-dot" />
+                ><span
+                  id="footer-status-indicator"
+                  class="dot"
+                  :class="statusClass"
+                />
               </li>
             </ul>
           </div>
@@ -212,6 +216,34 @@ import TwitterLogo from '@@/static/images/twitter.svg?inline'
 export default {
   name: 'Footer',
   components: { FooterLogo, GithubLogo, TwitterLogo },
+  data() {
+    return {
+      statusClass: 'dot--green',
+    }
+  },
+  mounted() {},
+  methods: {
+    getChecklyStatus() {
+      fetch('https://nq8lf8mrmvw6.statuspage.io/api/v2/status.json')
+        .then(function (response) {
+          return response.json()
+        })
+        .then(function (res) {
+          if (res.status.indicator === 'none') {
+            this.statusClass = 'dot--green'
+          }
+          if (res.status.indicator === 'minor') {
+            this.statusClass = 'dot--yellow'
+          }
+          if (
+            res.status.indicator === 'major' ||
+            res.status.indicator === 'critical'
+          ) {
+            this.statusClass = 'dot--red'
+          }
+        })
+    },
+  },
 }
 </script>
 

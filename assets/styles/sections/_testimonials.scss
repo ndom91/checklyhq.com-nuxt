@@ -6,6 +6,9 @@
     .card-block {
       padding: 2 * $spacer;
     }
+    a:hover {
+      text-decoration: none;
+    }
   }
   .testimonial-logo {
     height: auto;
@@ -59,7 +62,7 @@
     }
 
     .testimonial-text {
-      margin: 14px 0 40px;
+      margin: 20px 0 40px;
       padding-top: 0;
     }
     .testimonial-portrait {
