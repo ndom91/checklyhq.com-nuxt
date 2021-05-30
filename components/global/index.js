@@ -21,5 +21,5 @@ export {
   ReadFile,
   CtaLink,
   Tabs,
-  Tab
+  Tab,
 }

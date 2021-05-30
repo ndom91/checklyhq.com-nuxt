@@ -8,17 +8,32 @@
               Create the best active monitoring platform.
             </h1>
             <p class="integrations__hero__lead">
-              Open Source powered automation - made fast, reliable and easy-to-use.
+              Open Source powered automation - made fast, reliable and
+              easy-to-use.
             </p>
           </div>
           <div class="row text-left justify-content-center pt-5">
             <div class="col-sm-12 col-lg-8">
               <h2>About Checkly</h2>
               <p class="mb-4">
-                Checkly was founded in Berlin to enable developers to monitor their critical APIs and UIs easily.
+                Checkly was founded in Berlin to enable developers to monitor
+                their critical APIs and UIs easily.
               </p>
-              <p>Synthetic monitoring and end-to-end testing technologies have been sleepy during the last decade; in contrast, the DevOps-space, CI/CD-workflows, and Developer-tools evolved. Modern automation needs to become faster, easy to implement, open, integrated, and reliable. That's what we are working on every day.</p>
-              <p>We believe in a bright future where apps are built and shipped more reliably from dev to production and further. Our vision is to create the best active monitoring platform for developers using modern stacks. A platform with a world-class developer experience!</p>
+              <p>
+                Synthetic monitoring and end-to-end testing technologies have
+                been sleepy during the last decade; in contrast, the
+                DevOps-space, CI/CD-workflows, and Developer-tools evolved.
+                Modern automation needs to become faster, easy to implement,
+                open, integrated, and reliable. That's what we are working on
+                every day.
+              </p>
+              <p>
+                We believe in a bright future where apps are built and shipped
+                more reliably from dev to production and further. Our vision is
+                to create the best active monitoring platform for developers
+                using modern stacks. A platform with a world-class developer
+                experience!
+              </p>
             </div>
           </div>
         </div>
@@ -30,10 +45,13 @@
             <div class="col-sm-12 col-lg-8">
               <h2>Open Source</h2>
               <p>
-                Checkly's foundation is Open Source. We are not only using but building and supporting Open Source.
+                Checkly's foundation is Open Source. We are not only using but
+                building and supporting Open Source.
               </p>
               <p>
-                <a href="/open-source">Learn about our Open Source intiatives</a>
+                <a href="/open-source"
+                  >Learn about our Open Source intiatives</a
+                >
               </p>
             </div>
           </div>
@@ -43,9 +61,7 @@
         <div class="container">
           <div class="row text-left justify-content-center pt-5">
             <div class="col-sm-12 col-lg-8">
-              <h2 class="mb-5">
-                Leadership team
-              </h2>
+              <h2 class="mb-5">Leadership team</h2>
               <div class="row">
                 <div class="col-md-6 col-lg-4 align-items-center text-center">
                   <img
@@ -54,10 +70,8 @@
                     class="avatar mb-3"
                     width="128"
                     height="128"
-                  >
-                  <h6 class="font-weight-bold mb-1">
-                    Tim Nolet
-                  </h6>
+                  />
+                  <h6 class="font-weight-bold mb-1">Tim Nolet</h6>
                   <p>CTO</p>
                 </div>
                 <div class="col-md-6 col-lg-4 align-items-center text-center">
@@ -67,10 +81,8 @@
                     class="avatar mb-3"
                     width="128"
                     height="128"
-                  >
-                  <h6 class="font-weight-bold mb-1">
-                    Hannes Lenke
-                  </h6>
+                  />
+                  <h6 class="font-weight-bold mb-1">Hannes Lenke</h6>
                   <p>CEO</p>
                 </div>
                 <div class="col-md-6 col-lg-4 align-items-center text-center">
@@ -80,10 +92,8 @@
                     class="avatar mb-3"
                     width="128"
                     height="128"
-                  >
-                  <h6 class="font-weight-bold mb-1">
-                    Timo Euteneuer
-                  </h6>
+                  />
+                  <h6 class="font-weight-bold mb-1">Timo Euteneuer</h6>
                   <p>CCO</p>
                 </div>
               </div>
@@ -104,9 +114,12 @@
                   class="avatar mb-3"
                   width="96"
                   height="96"
-                >
+                />
               </div>
-              <p>We are excited to work with some of the best investors in the world. You might know some of their companies.</p>
+              <p>
+                We are excited to work with some of the best investors in the
+                world. You might know some of their companies.
+              </p>
               <div class="row text-left justify-content-center">
                 <div class="col-md-4">
                   <dl>
@@ -149,35 +162,29 @@
             <div class="col-sm-12 col-lg-8">
               <h2>Contact</h2>
               <p>
-                <a href="mailto:info@checklyhq.com">info@checklyhq.com</a><br>
+                <a href="mailto:info@checklyhq.com">info@checklyhq.com</a><br />
                 Checkly Inc. has registered offices at:
               </p>
               <div class="row pt-4">
                 <div class="col-sm-4 mb-lg-3">
-                  <h5 class="add-star-before">
-                    🇺🇸 United States
-                  </h5>
+                  <h5 class="add-star-before">🇺🇸 United States</h5>
                   <address>
-                    One Boston Place, Suite 2600<br>
-                    Boston, MA 02108<br>
+                    One Boston Place, Suite 2600<br />
+                    Boston, MA 02108<br />
                   </address>
                 </div>
                 <div class="col-sm-4 mb-lg-3">
-                  <h5 class="add-star-before">
-                    🇩🇪 Germany
-                  </h5>
+                  <h5 class="add-star-before">🇩🇪 Germany</h5>
                   <address>
-                    Kopernikusstraße 35<br>
+                    Kopernikusstraße 35<br />
                     10243 Berlin
                   </address>
                 </div>
                 <div class="col-sm-4 mb-lg-3">
-                  <h5 class="add-star-before">
-                    🇳🇱 Netherlands
-                  </h5>
+                  <h5 class="add-star-before">🇳🇱 Netherlands</h5>
                   <address>
-                    The J.P. Coenstraat 24 BIS<br>
-                    3531 ET Utrecht <br>
+                    The J.P. Coenstraat 24 BIS<br />
+                    3531 ET Utrecht <br />
                   </address>
                 </div>
               </div>
@@ -185,7 +192,7 @@
           </div>
         </div>
       </section>
-      <br><br><br>
+      <br /><br /><br />
     </div>
     <Footer />
   </div>
@@ -196,6 +203,6 @@ import { Footer } from '@/components/common'
 
 export default {
   name: 'About',
-  components: { Footer }
+  components: { Footer },
 }
 </script>

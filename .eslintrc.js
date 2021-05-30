@@ -12,6 +12,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:nuxt/recommended',
   ],
+  ignorePatterns: ['content/samples/**/*.js'],
   plugins: [],
   // add your custom rules here
   rules: {},

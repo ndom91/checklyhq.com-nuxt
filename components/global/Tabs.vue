@@ -4,7 +4,7 @@
       <li
         v-for="(tab, index) in tabs"
         :key="tab.title"
-        :class="{'tabs__selected': (index == selectedIndex)}"
+        :class="{ tabs__selected: index == selectedIndex }"
         @click="selectTab(index)"
       >
         {{ tab.title }}
@@ -17,26 +17,26 @@
 <script>
 export default {
   name: 'Tabs',
-  data () {
+  data() {
     return {
       selectedIndex: 0,
-      tabs: []
+      tabs: [],
     }
   },
-  created () {
+  created() {
     this.tabs = this.$children
   },
-  mounted () {
+  mounted() {
     this.selectTab(0)
   },
   methods: {
-    selectTab (i) {
+    selectTab(i) {
       this.selectedIndex = i
       this.tabs.forEach((tab, index) => {
-        tab.isActive = (index === i)
+        tab.isActive = index === i
       })
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -48,12 +48,12 @@ ul.tabs__header {
   margin: 0;
   border-bottom: 1px solid #e0e6ed;
   text-transform: uppercase;
-  font-size: .8rem;
+  font-size: 0.8rem;
 
   & > li {
     margin: 0;
     display: inline-block;
-    padding: .75em 1.5em;
+    padding: 0.75em 1.5em;
     cursor: pointer;
   }
 
@@ -62,5 +62,4 @@ ul.tabs__header {
     border-bottom: 3px solid #ff4949;
   }
 }
-
 </style>

@@ -8,7 +8,7 @@
       {{ question }}
     </button>
     <div
-      class="pricing__accordion--panel "
+      class="pricing__accordion--panel"
       :class="open && 'active'"
       v-html="answer"
     />
@@ -21,22 +21,22 @@ export default {
   props: {
     question: {
       type: String,
-      default: ''
+      default: '',
     },
     answer: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
-  data () {
+  data() {
     return {
-      open: false
+      open: false,
     }
   },
   methods: {
-    toggle () {
+    toggle() {
       this.open = !this.open
-    }
-  }
+    },
+  },
 }
 </script>

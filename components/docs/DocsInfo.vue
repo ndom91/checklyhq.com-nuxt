@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="alert alert-info"
-    v-html="content"
-  />
+  <div class="alert alert-info" v-html="content" />
 </template>
 
 <script>
@@ -11,8 +8,8 @@ export default {
   props: {
     content: {
       type: String,
-      default: ''
-    }
-  }
+      default: '',
+    },
+  },
 }
 </script>

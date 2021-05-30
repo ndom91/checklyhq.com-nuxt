@@ -1,23 +1,14 @@
 <template>
   <div :class="className">
-    <div
-      v-if="img"
-      class="image-wrap"
-    >
+    <div v-if="img" class="image-wrap">
       <img
         v-if="headerTag === 'h2'"
         :src="img"
         :alt="title"
         width="42"
         height="42"
-      >
-      <img
-        v-else
-        :src="img"
-        :alt="title"
-        width="32"
-        height="32"
-      >
+      />
+      <img v-else :src="img" :alt="title" width="32" height="32" />
     </div>
     <div class="text-wrap">
       <h2 v-if="headerTag === 'h2'">
@@ -27,12 +18,7 @@
         {{ title }}
       </h3>
       <p>{{ description }}</p>
-      <a
-        class="cta-link"
-        :href="link"
-      >
-        Read more
-      </a>
+      <a class="cta-link" :href="link"> Read more </a>
     </div>
   </div>
 </template>
@@ -43,28 +29,28 @@ export default {
   props: {
     className: {
       type: String,
-      default: ''
+      default: '',
     },
     headerTag: {
       type: String,
-      default: 'h3'
+      default: 'h3',
     },
     title: {
       type: String,
-      default: ''
+      default: '',
     },
     img: {
       type: String,
-      default: ''
+      default: '',
     },
     description: {
       type: String,
-      default: ''
+      default: '',
     },
     link: {
       type: String,
-      default: ''
-    }
-  }
+      default: '',
+    },
+  },
 }
 </script>

@@ -23,5 +23,5 @@ export {
   TestimonialQuote,
   TestimonialThreeCol,
   AllFeatures,
-  PublicStats
+  PublicStats,
 }

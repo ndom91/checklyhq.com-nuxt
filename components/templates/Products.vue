@@ -19,6 +19,6 @@ import { Footer, StartForFree } from '@/components/common'
 
 export default {
   name: 'Products',
-  components: { Footer, StartForFree }
+  components: { Footer, StartForFree },
 }
 </script>
