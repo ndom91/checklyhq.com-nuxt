@@ -1,3 +1,5 @@
+const copyRightNotice = `\u00A9 ChecklyHQ ${new Date().getFullYear()}. All rights reserved`
+
 export default {
   target: 'static',
   head: {
@@ -34,7 +36,7 @@ export default {
       },
       {
         name: 'copyright',
-        // content: copyRightNotice,
+        content: copyRightNotice,
       },
       {
         name: 'viewport',
@@ -50,7 +52,8 @@ export default {
       {
         key: 'og:description',
         property: 'og:description',
-        // content: config.siteDescription,
+        content:
+          'Checkly is the API & E2E monitoring platform for the modern stack: programmable, flexible and loving JavaScript.',
       },
       {
         key: 'og:image',
@@ -65,12 +68,13 @@ export default {
       {
         key: 'twitter:title',
         property: 'twitter:title',
-        // content: config.siteName,
+        content: 'ChecklHQ',
       },
       {
         key: 'twitter:description',
         property: 'twitter:description',
-        // content: config.siteDescription,
+        content:
+          'Checkly is the API & E2E monitoring platform for the modern stack: programmable, flexible and loving JavaScript.',
       },
       {
         key: 'twitter:image',
@@ -85,7 +89,7 @@ export default {
       {
         key: 'twitter:domain',
         property: 'twitter:domain',
-        // content: config.siteUrl,
+        content: 'https://checklyhq.com',
       },
       {
         key: 'twitter:site',
@@ -105,31 +109,7 @@ export default {
         href: 'https://ajax.googleapis.com',
       },
     ],
-    script: [
-      // {
-      //   src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js',
-      //   integrity:
-      //     'sha512-tqkUb/44CjLInUi6+QDdXjRrDWA7ivz60HCXDla9x0ToqLBTwu+KMQf0o8K90R7kcOBVV/VC/+3l/1RGjuGGxA==',
-      //   crossorigin: 'anonymous',
-      // },
-      // {
-      //   src: 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js',
-      //   integrity:
-      //     'sha512-HsZ1i9vlo01lbae+KIl//6KPxkOO6xSPI2PefsZiC8LmSW9KDWMYK9jhNqE9XsbjGyrnQAZ6sSHvtnR12sJPjA==',
-      //   crossorigin: 'anonymous',
-      // },
-      // {
-      //   src: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js',
-      //   integrity:
-      //     'sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn',
-      //   crossorigin: 'anonymous',
-      // },
-    ],
   },
-  ssr: false,
-  plugins: ['~/plugins/bootstrap-vue'],
-  css: ['~/assets/styles/style.scss', '~/assets/styles/prismjs/prism-nord.css'],
-  components: true,
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxt/image',
@@ -156,6 +136,10 @@ export default {
   content: {
     liveEdit: false,
   },
+  ssr: false,
+  plugins: ['~/plugins/bootstrap-vue'],
+  css: ['~/assets/styles/style.scss', '~/assets/styles/prismjs/prism-nord.css'],
+  components: true,
   axios: {},
   build: {},
 }

@@ -10,10 +10,6 @@ This is a repo containing the [Nuxt.js](https://nuxtjs.org/) rewrite of the [che
 2. `cd checklyhq-nuxt && npm install`
 3. `npm run dev`
 
-Then you'll have access to two separate instances:
-
-1. Development server available at [`localhost:8080`](http://localhost:8080)
-
 ## 🚀 Deploying
 
 The marketing site gets built into a statically generated webpage and hydrated with Vue by Vercel. Preview deploys available at https://checklyhq-com-nuxt.vercel.app.

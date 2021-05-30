@@ -228,16 +228,16 @@ export default {
     async getChecklyStatus() {
       const statusUrl = 'https://nq8lf8mrmvw6.statuspage.io/api/v2/status.json'
       const response = await fetch(statusUrl)
-      const res = await response.json()
-      if (res.status.indicator === 'none') {
+      const data = await response.json()
+      if (data.status.indicator === 'none') {
         this.statusClass = 'dot--green'
       }
-      if (res.status.indicator === 'minor') {
+      if (data.status.indicator === 'minor') {
         this.statusClass = 'dot--yellow'
       }
       if (
-        res.status.indicator === 'major' ||
-        res.status.indicator === 'critical'
+        data.status.indicator === 'major' ||
+        data.status.indicator === 'critical'
       ) {
         this.statusClass = 'dot--red'
       }

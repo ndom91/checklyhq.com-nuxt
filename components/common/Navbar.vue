@@ -193,7 +193,7 @@
                 rel="noopener"
               >
                 Dashboard
-                <!-- <div class="ion-arrow-right-c d-inline ml-2" /> -->
+                <div class="ion-arrow-right-c d-inline ml-2" />
               </a>
               <a
                 v-else
