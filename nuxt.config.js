@@ -132,8 +132,6 @@ export default {
   components: true,
   buildModules: [
     '@nuxtjs/eslint-module',
-    // https://go.nuxtjs.dev/stylelint
-    // '@nuxtjs/stylelint-module',
     '@nuxt/image',
     '@nuxtjs/svg',
     [
