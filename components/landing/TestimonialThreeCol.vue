@@ -74,7 +74,7 @@
               <div class="testimonial-portrait">
                 <nuxt-picture
                   alt="customer portrait"
-                  src="/images/testimonials/conner_hicks.png"
+                  src="/images/testimonials/conner_hicks.webp"
                   width="55"
                   height="55"
                 />

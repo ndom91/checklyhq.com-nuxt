@@ -26,7 +26,7 @@ export default {
     format: {
       type: String,
       required: false,
-      default: 'png',
+      default: 'webp',
     },
     className: {
       type: String,
