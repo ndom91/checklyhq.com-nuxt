@@ -1,6 +1,6 @@
-body {
-  overflow-x: visible;
-}
+// body {
+//   overflow-x: visible;
+// }
 
 .docs {
   $top: 1rem;
@@ -43,14 +43,13 @@ body {
       padding: 20px 0 20px 20px;
       // overflow-x: hidden;
       // overflow-y: auto;
-      
+
       border: 1px solid $gray-light;
       border-radius: 5px;
       ul {
         list-style: none;
         font-size: 14px;
       }
-
     }
     .right-transform {
       transform: none;
@@ -105,7 +104,7 @@ body {
     &-sub {
       list-style-type: none;
       padding-left: 0;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
       display: none;
 
       &.active {
@@ -131,14 +130,14 @@ body {
 
     &-item {
       padding-left: 0;
-      margin-bottom: .75rem;
+      margin-bottom: 0.75rem;
       h3 {
         color: $gray-dark;
         font-size: $font-size-base;
         font-weight: 500;
         display: block;
         margin-top: 2rem;
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
       }
       .collapsing {
         transition: none !important;
@@ -157,13 +156,13 @@ body {
 
       &:hover {
         text-decoration: none;
-        color: $brand-primary
+        color: $brand-primary;
       }
       &:after {
         margin-left: 1rem;
         color: $gray;
         font-family: Ionicons;
-        content: '\f39c'
+        content: '\f39c';
       }
     }
   }
@@ -202,11 +201,11 @@ body {
         left: 10px;
       }
       input {
-       width: 100%;
-       height: 100%;
-       background: none;
-       border: 1px solid $gray-light;
-       padding-left: 30px;
+        width: 100%;
+        height: 100%;
+        background: none;
+        border: 1px solid $gray-light;
+        padding-left: 30px;
       }
     }
   }
@@ -214,7 +213,7 @@ body {
   &-toc {
     position: relative;
     flex: 0 0 $toc-width;
-    font-size: .875rem;
+    font-size: 0.875rem;
     margin-right: auto;
     width: 232px;
     padding-top: 8rem;
@@ -229,14 +228,14 @@ body {
       padding: 1rem 0 1rem 0;
       bottom: 0;
       overflow-x: hidden;
-      overflow-y: auto
+      overflow-y: auto;
     }
     // hacky way to hide 3rd level heading in little page TOC because Hugo does not allow filtering the TOC by level
 
     nav#TableOfContents {
       ul {
         border-left: 2px solid $brand-primary;
-        padding-left: .5rem;
+        padding-left: 0.5rem;
 
         li {
           margin-bottom: 10px;
@@ -276,7 +275,11 @@ body {
     transition-property: transform, margin-left, opacity;
     will-change: transform, margin-left;
 
-    h1, h2, h3, h4, h5 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
       color: $black;
     }
     code {
@@ -302,7 +305,7 @@ body {
       position: absolute;
       bottom: 53px;
       left: 38px;
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(0, 0, 0, 0.5);
       color: #fff;
       width: 100%;
       padding: 10px;
@@ -315,7 +318,7 @@ body {
     }
     // Add a question mark behind/above jargon terms
     .jargon-term::after {
-      content: "?";
+      content: '?';
       font-weight: bold;
       display: inline-block;
       transform: translate(0, -0.5em);
@@ -331,7 +334,7 @@ body {
     }
     // Hide info by default
     .jargon-term .jargon-info {
-      display: none
+      display: none;
     }
     // Show info on hover
     .jargon-term:hover .jargon-info {
@@ -339,8 +342,8 @@ body {
       position: absolute;
       top: 1.5em;
       left: 0;
-      background: #F8F8F8;
-      border: 1px solid #DCDCDC;
+      background: #f8f8f8;
+      border: 1px solid #dcdcdc;
       padding: 1rem;
       border-radius: 4px;
       font-size: 90%;
@@ -355,7 +358,7 @@ body {
       padding: 0;
       background: none;
       font-size: 14px;
-      
+
       & a {
         color: $gray;
         &:hover {
@@ -376,7 +379,7 @@ body {
     nav#TableOfContents {
       ul {
         border-left: 2px solid $brand-primary;
-        padding-left: .5rem;
+        padding-left: 0.5rem;
       }
     }
     .cards-list {
@@ -423,7 +426,7 @@ body {
         justify-content-space: space-between;
       }
       .three-column-card {
-        width: calc((100% - 50px)/3);
+        width: calc((100% - 50px) / 3);
         display: flex;
         justify-content-space: space-between;
         padding: 20px;
@@ -438,13 +441,12 @@ body {
           }
         }
       }
-
     }
   }
 
   @include media-breakpoint-down(md) {
     .docs-page {
-      padding: .5rem;
+      padding: 0.5rem;
       margin-left: auto;
       margin-right: auto;
     }
@@ -457,7 +459,7 @@ body {
       top: 0px;
       left: -100%;
       font-size: $font-size-base;
-      background: rgba(0, 0, 0, .2);
+      background: rgba(0, 0, 0, 0.2);
 
       nav {
         border: 0;

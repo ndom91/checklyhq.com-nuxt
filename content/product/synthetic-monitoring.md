@@ -4,8 +4,6 @@ alias:
   - transaction-monitoring
 ---
 
-import { Sm4ColItem, AlternativePicture, FeatureRow, CtaLink } from '~/components/global'
-
 <h1 class="text-center hero-text width-645">Synthetic monitoring for your vital click flows</h1>
 
 <p class="text-center hero-sub hero-sub-center mb-lg-5">
@@ -17,11 +15,10 @@ correctness and performance of all your crucial click paths.
 <div class="row justify-content-center text-center">
 <alternative-picture 
     className="text-center hero-image big-drop-shadow" 
-    img="/product/transaction-monitoring/synthetic-monitoring-screenshot@2x.png" 
+    img="/product/transaction-monitoring/browser-check-editor-screenshot@2x.webp" 
     alt="synthetic monitoring" 
-    width="865" 
-    height="528" 
-  />
+    sizes="sm:600px md:820px lg:910px"
+  ></alternative-picture>
 </div>
 
 <section class="grid-section">
@@ -29,27 +26,27 @@ correctness and performance of all your crucial click paths.
     <sm-4-col-item 
       header="Real browsers" 
       body="Your checks are run in actual Chrome browsers to achieve a 100% match with real world conditions. We run each session in a sealed off sandbox for extra security." 
-    />
+    ></sm-4-col-item>
     <sm-4-col-item 
       header="Validate all the things" 
       body="In a Browser check you can check for specific content items, browser responses, visibility and error responses." 
-    />
+    ></sm-4-col-item>
     <sm-4-col-item 
       header="Screenshots" 
       body="Take a screenshot at any stage in your transaction for quick and easy reference. You can take full page shots, or just a specific page element for more focus." 
-    />
+    ></sm-4-col-item>
     <sm-4-col-item 
       header="Monitor globally" 
       body="We monitor your transactions from data center locations around the world." 
-    />
+    ></sm-4-col-item>
     <sm-4-col-item 
       header="CI/CD integration" 
       body="Integrate your Browser checks into your QA or continuous delivery process by triggering adhoc runs from GitHub or the command line." 
-    />
+    ></sm-4-col-item>
     <sm-4-col-item 
       header="Coding optional" 
       body="Use our browser plugin to record a script and import it into Checkly. Want more control? Dive into the code and tweak your script to perfection." 
-    />
+    ></sm-4-col-item>
   </div>
 </section>
 
@@ -61,11 +58,8 @@ Checkly uses the Puppeteer & Playwright frameworks to accurately simulate intera
 
 <feature-row
 header="Create a script"
-img="/product/transaction-monitoring/synthetic-howitworks-1@2x.png"
-imgWidth="610"
-imgHeight="261"
-
-> Pick one of the examples from our built-in library as your starting point. Alternatively, you can install and fire up the <g-link to="/docs/headless-recorder/">Headless Recorder</g-link> browser extension and record a script in real-time as you click through your site.
+img="/product/transaction-monitoring/synthetic-howitworks-1@2x.webp"
+format="webp"> Pick one of the examples from our built-in library as your starting point. Alternatively, you can install and fire up the <NuxtLink to="/docs/headless-recorder/">Headless Recorder</NuxtLink> browser extension and record a script in real-time as you click through your site.
 
   <div class="cta">
     <cta-link text="Learn more" link="/docs/browser-checks/" />
@@ -74,11 +68,8 @@ imgHeight="261"
 
 <feature-row
 header="Tweak it"
-img="/product/transaction-monitoring/synthetic-howitworks-2@2x.png"
-imgWidth="610"
-imgHeight="291"
-
-> Use our in app debugger to iterate on your script and directly see the results. Add extra assertions, screenshots and navigation actions. Add the industry standard <b>Mocha and Chai libraries</b> for a familiar workflow.
+img="/product/transaction-monitoring/synthetic-howitworks-2@2x.webp"
+format="webp"> Use our in app debugger to iterate on your script and directly see the results. Add extra assertions, screenshots and navigation actions. Add the industry standard <b>Mocha and Chai libraries</b> for a familiar workflow.
 
   <div class="cta">
     <cta-link text="Learn more" link="/docs/browser-checks/using-mocha/"/>
@@ -87,11 +78,8 @@ imgHeight="291"
 
 <feature-row
 header="Run it every ten minutes"
-img="/product/transaction-monitoring/synthetic-howitworks-3@2x.png"
-imgWidth="610"
-imgHeight="254"
-
-> Schedule your script to run as often as every ten minutes. A regular interval gives you an accurate insight into how your vital transactions are performing over time. We also give you <b>full access to the log files</b> for each run in case an alert is triggered.
+img="/product/transaction-monitoring/synthetic-howitworks-3@2x.webp"
+format="webp" > Schedule your script to run as often as every ten minutes. A regular interval gives you an accurate insight into how your vital transactions are performing over time. We also give you <b>full access to the log files</b> for each run in case an alert is triggered.
 
   <div class="cta">
     <cta-link text="Learn more" link="/docs/browser-checks/quickstart/" />
@@ -121,11 +109,10 @@ imgHeight="254"
   </div>
   <alternative-picture 
     className="img-440 big-drop-shadow" 
-    img="/product/transaction-monitoring/puppeteer@2x.png" 
+    img="/product/transaction-monitoring/puppeteer@2x.webp" 
     alt="puppeteer screenshot" 
-    width="440" 
-    height="270" 
-  />
+    sizes="sm:440px"
+  ></alternative-picture>
 </div>
 <div class="col-md-6">
   <div>
@@ -137,11 +124,10 @@ imgHeight="254"
   </div>
   <alternative-picture 
     className="img-440 big-drop-shadow" 
-    img="/product/transaction-monitoring/thehd@2x.png" 
+    img="/product/transaction-monitoring/thehd@2x.webp" 
     alt="thehd screenshot"
-    width="440" 
-    height="270" 
-  />
+    sizes="sm:440px"
+  ></alternative-picture>
 </div>
 </div>
 </div>
@@ -180,11 +166,10 @@ imgHeight="254"
     <div class="lead-text mt-5 text-center">
       <alternative-picture 
         className="text-center hero-image big-drop-shadow" 
-        img="/product/api-monitoring/global-coverage-screenshot@2x.png" 
+        img="/product/api-monitoring/global-coverage-screenshot@2x.webp" 
         alt="data centerlocations" 
-        width="843" 
-        height="486" 
-      />
+        sizes="sm:600px md:875px"
+      ></alternative-picture>
     </div>
   </div>
 </div>

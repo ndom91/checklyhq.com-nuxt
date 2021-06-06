@@ -1,7 +1,7 @@
-.markdown {
+.nuxt-content {
   *[id]:before {
     display: block;
-    content: " ";
+    content: ' ';
     margin-top: -90px;
     height: 90px;
     visibility: hidden;
@@ -18,7 +18,7 @@
     margin-top: 2.5rem;
     margin-bottom: 0.5rem;
     font-weight: $font-weight-seimi-bold;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
   }
 
   h3 {
@@ -26,7 +26,7 @@
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     font-weight: $font-weight-seimi-bold;
-    padding-bottom: .3em;
+    padding-bottom: 0.3em;
   }
 
   p {
@@ -40,7 +40,7 @@
     border-left: 0.25rem solid $brand-primary;
     background-color: transparentize($brand-primary, 0.95);
     p {
-      padding: .75rem
+      padding: 0.75rem;
     }
   }
 
@@ -61,12 +61,13 @@
     font-weight: 500;
   }
 
-  ul, ol {
+  ul,
+  ol {
     padding-left: 2rem;
     line-height: $line-height-pub-site;
 
     li {
-      margin-bottom: .5 * $spacer-y;
+      margin-bottom: 0.5 * $spacer-y;
       line-height: 26px;
     }
   }
@@ -78,7 +79,7 @@
   code {
     color: $gray-dark;
     font-size: 85%;
-    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
   }
 
   pre {
@@ -113,9 +114,9 @@
           list-style-type: disc;
           padding-left: 1rem;
           li {
-             ul {
-               display: none;
-             }
+            ul {
+              display: none;
+            }
           }
         }
       }
@@ -176,11 +177,11 @@
       cursor: pointer;
       margin-bottom: 0;
       text-transform: uppercase;
-      font-size: .75rem;
+      font-size: 0.75rem;
       color: $gray;
       font-weight: 500;
       line-height: 24px;
-      letter-spacing: .04rem;
+      letter-spacing: 0.04rem;
     }
 
     .markdown-tabs-content {
@@ -191,14 +192,14 @@
       display: none;
     }
 
-    input[type="radio"]:checked + label {
+    input[type='radio']:checked + label {
       border-bottom: 3px solid $brand-primary;
       color: $brand-primary;
     }
-    input[type="radio"]:checked + label + .markdown-tabs-content {
+    input[type='radio']:checked + label + .markdown-tabs-content {
       display: block;
     }
-    input[type="radio"]:focus + label {
+    input[type='radio']:focus + label {
       //@include outline
     }
 
@@ -210,5 +211,4 @@
       position: absolute;
     }
   }
-
 }

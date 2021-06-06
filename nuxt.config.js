@@ -119,6 +119,12 @@ export default {
       {
         enabled: true,
         mode: 'postcss',
+        content: [
+          './pages/**/*.vue',
+          './layouts/**/*.vue',
+          './components/**/*.vue',
+          './content/**/*.md',
+        ],
         styleExtensions: ['.css', '.scss'],
         whitelist: ['Cookie', 'Cookie__button'],
       },
@@ -141,5 +147,7 @@ export default {
   css: ['~/assets/styles/style.scss', '~/assets/styles/prismjs/prism-nord.css'],
   components: true,
   axios: {},
-  build: {},
+  build: {
+    extractCSS: true,
+  },
 }

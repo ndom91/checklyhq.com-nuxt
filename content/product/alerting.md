@@ -2,8 +2,6 @@
 title: Alerting
 ---
 
-import { Sm4ColItem, AlternativePicture, FeatureRow, CtaLink } from '~/components/global'
-
 <h1 class="text-center hero-text width-645"> We hope you'll never see this message... </h1>
 
 <p class="text-center hero-sub hero-sub-center mb-lg-5">
@@ -14,11 +12,11 @@ you want. Know when your service fails before your customers do.
 <div class="row justify-content-center text-center">
   <alternative-picture 
     className="text-center hero-image big-drop-shadow" 
-    img="/product/alerting/error-screenshot@2x.png" 
+    img="/product/alerting/error-screenshot@2x.webp" 
     alt="api error screenshot" 
-    width="676" 
-    height="474" 
-  />
+    format="webp"
+    sizes="sm:700px md:865px"
+  ></alternative-picture>
 </div>
 
 <div class="gray-section">
@@ -29,12 +27,8 @@ you want. Know when your service fails before your customers do.
 
 <feature-row
 header="Set up your thresholds"
-img="/product/alerting/error-howitworks-1@2x.png"
-imgWidth="650"
-imgHeight="288"
-
->
-
+img="/product/alerting/error-howitworks-1@2x.webp"
+format="webp">
 The internet can be flaky. Sometimes a failing service is just fine 2 seconds later. **Dodge false positives** by specifying exactly when you should be alerted and how often you want to be reminded.
 
 <div class="cta">
@@ -44,11 +38,9 @@ The internet can be flaky. Sometimes a failing service is just fine 2 seconds la
 
 <feature-row
 header="Pick your channels"
-img="/product/alerting/error-howitworks-2@2x.png"
-imgWidth="650"
-imgHeight="420"
-
-> Choose one or more of the available alerting channels. We have everything from **email, to Pagerduty, Opsgenie and SMS**. Need something custom? Use the webhooks or hook up <g-link to="/docs/integrations/prometheus/">our Prometheus integration</g-link> and roll your own alerting.
+img="/product/alerting/error-howitworks-2@2x.webp"
+format="webp">
+Choose one or more of the available alerting channels. We have everything from **email, to Pagerduty, Opsgenie and SMS**. Need something custom? Use the webhooks or hook up <NuxtLink to="/docs/integrations/prometheus/">our Prometheus integration</NuxtLink> and roll your own alerting.
 
   <div class="cta">
     <cta-link text="Learn more" link="/docs/alerting/" />
@@ -71,18 +63,18 @@ imgHeight="420"
 	<div class="img-w768">
 		<alternative-picture 
       className="big-drop-shadow" 
-      img="/product/alerting/webhooks-screenshot@2x.png" 
+      img="/product/alerting/webhooks-screenshot@2x.webp" 
       alt="webhooks editor" 
-      width="720" 
-      height="380" 
+      format="webp"
+      sizes="sm:700px"
     />
 	</div>
 </div>
 
 <section class="grid-section">
   <div class="row">
-    <sm-4-col-item header="No limits" body="We don't put any limits on the amount of email, Slack, Pagerduty or webhooks alerts you can send." />
-    <sm-4-col-item header="SSL alerting" body="We check your domain's SSL certificates for expiry and follow the exact same alerting patterns as all the other checks." />
-    <sm-4-col-item header="Double checking" body="By default, we retry any failing check from another data center location, just to be sure. " />
+    <sm-4-col-item header="No limits" body="We don't put any limits on the amount of email, Slack, Pagerduty or webhooks alerts you can send."></sm-4-col-item>
+    <sm-4-col-item header="SSL alerting" body="We check your domain's SSL certificates for expiry and follow the exact same alerting patterns as all the other checks."></sm-4-col-item>
+    <sm-4-col-item header="Double checking" body="By default, we retry any failing check from another data center location, just to be sure. "></sm-4-col-item>
   </div>
 </section>

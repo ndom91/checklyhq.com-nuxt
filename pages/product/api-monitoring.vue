@@ -1,7 +1,11 @@
 <template>
   <div>
-    <article class="container product">
-      <nuxt-content :document="page" class="my-5" />
+    <article class="main container product pt-5">
+      <div class="row">
+        <div class="col-sm-12">
+          <nuxt-content :document="page" />
+        </div>
+      </div>
     </article>
     <StartForFree />
     <Footer />

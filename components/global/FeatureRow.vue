@@ -14,7 +14,7 @@
         :format="format"
         :src="img"
         :alt="header"
-        sizes="sm:100% md:700px"
+        sizes="sm:620px"
         fit="inside"
       ></nuxt-picture>
     </div>

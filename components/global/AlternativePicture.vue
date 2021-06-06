@@ -4,7 +4,7 @@
     :src="img"
     :alt="alt"
     :format="format"
-    sizes="sm:700px"
+    :sizes="sizes"
     fit="inside"
   />
 </template>
@@ -32,6 +32,11 @@ export default {
       type: String,
       required: false,
       default: '',
+    },
+    sizes: {
+      type: String,
+      required: false,
+      default: 'sm:700px',
     },
   },
 }

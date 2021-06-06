@@ -17,6 +17,7 @@ monitoring solution to check your mobile, webapp or IoT API for performance, upt
     img="/product/api-monitoring/api-monitoring-hero@2x.png" 
     alt="api monitoring" 
     format="png"
+    sizes="sm:700px md:865px"
   ></alternative-picture>
 </div>
 
@@ -128,8 +129,7 @@ We monitor your API as often as once per minute. This gives you a consistent and
       className="text-center hero-image big-drop-shadow" 
       img="/product/api-monitoring/global-coverage-screenshot@2x.png" 
       alt="data centerlocations" 
-      :width="843" 
-      :height="486" 
+      sizes="sm:700px md:865px"
     ></alternative-picture>
 	</div>
 </div>
