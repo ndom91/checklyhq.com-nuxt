@@ -7,12 +7,7 @@
             <div class="card-block first">
               <a href="https://railway.app" target="_blank" rel="noopener">
                 <div
-                  class="
-                    d-flex
-                    align-items-center
-                    justify-content-start
-                    text-dark
-                  "
+                  class="d-flex align-items-center justify-content-start text-dark"
                 >
                   <RailwayLogo
                     class="testimonial-logo m-0"

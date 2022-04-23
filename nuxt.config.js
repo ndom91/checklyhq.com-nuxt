@@ -1,6 +1,8 @@
+import { defineNuxtConfig } from '@nuxt/bridge'
+
 const copyRightNotice = `\u00A9 ChecklyHQ ${new Date().getFullYear()}. All rights reserved`
 
-export default {
+export default defineNuxtConfig({
   target: 'static',
   head: {
     title: 'Delightful Active Monitoring for Developers',
@@ -131,7 +133,8 @@ export default {
     ],
     '@hexdigital/nuxt-intercom',
   ],
-  modules: ['@nuxtjs/axios', '@nuxt/content', 'vue-plausible'],
+  modules: ['@nuxtjs/axios', 'vue-plausible'],
+  // modules: ['@nuxtjs/axios', '@nuxt/content', 'vue-plausible'],
   plausible: {
     domain: 'checklyhq.com',
   },
@@ -150,4 +153,4 @@ export default {
   build: {
     extractCSS: true,
   },
-}
+})

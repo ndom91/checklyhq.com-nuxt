@@ -14,7 +14,7 @@ menu:
     parent: 'E2E'
 ---
 
-import { Tab, Tabs, ReadFile } from '~/components/global'
+import { Tab, Tabs, ReadFile } from '~/components/general'
 
 Most services allow users to manage their account settings. These oftentimes have far-reaching implications on how the user experiences the platform. Verifying that the account settings can be viewed and modified is key in making sure we are offering a smooth service.
 

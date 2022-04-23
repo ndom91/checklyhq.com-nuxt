@@ -4,7 +4,7 @@ description: 'Checkly is the perfect Runscope alternative for modern developers 
 hero: 'The modern alternative to Runscope for developers'
 ---
 
-import { Sm4ColItem, AlternativePicture, AlternativeFeature, CtaLink } from '~/components/global'
+import { Sm4ColItem, AlternativePicture, AlternativeFeature, CtaLink } from '~/components/general'
 
 <h2 class="text-center section-header mb-4">Why Checkly and not Runscope?</h2>
 

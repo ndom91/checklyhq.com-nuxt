@@ -14,7 +14,7 @@ menu:
     parent: 'E2E'
 ---
 
-import { Tab, Tabs, ReadFile } from '~/components/global'
+import { Tab, Tabs, ReadFile } from '~/components/general'
 
 Signups are key transactions in most web platforms, and therefore prime targets for automation.
 

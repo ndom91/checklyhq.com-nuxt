@@ -14,7 +14,7 @@ menu:
     parent: 'E2E'
 ---
 
-import { Tab, Tabs, ReadFile } from '~/components/global'
+import { Tab, Tabs, ReadFile } from '~/components/general'
 
 Websites might expose files for users to download and then access from their local machine. Common cases are downloading tickets, receipts and itineraries.
 
