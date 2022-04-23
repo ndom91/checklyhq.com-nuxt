@@ -10,6 +10,7 @@ import CtaLink from './CtaLink'
 import Tabs from './Tabs'
 import Tab from './Tab'
 
+export default {}
 export {
   Sm4ColItem,
   AlternativePicture,

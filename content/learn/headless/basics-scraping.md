@@ -17,7 +17,7 @@ menu:
     parent: 'Scraping'
 ---
 
-import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/global'
+import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/general'
 
 We call the action of extracting data from web pages _web scraping_. Scraping is useful for a variety of use cases:
 

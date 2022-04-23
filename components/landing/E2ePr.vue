@@ -66,13 +66,7 @@
       <div class="row justify-content-center text-center">
         <div class="col-sm-12">
           <div
-            class="
-              d-flex
-              flex-row
-              align-items-center
-              justify-content-center
-              pt-4
-            "
+            class="d-flex flex-row align-items-center justify-content-center pt-4"
           >
             Works out-of-the-box with
             <VercelLogo class="mx-1" alt="Vercel logo" width="20" height="20" />

@@ -15,7 +15,7 @@ menu:
     parent: 'Getting Started'
 ---
 
-import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/global'
+import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/general'
 
 Every useful script that we will write will almost certainly do three key things:
 

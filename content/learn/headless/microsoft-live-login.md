@@ -14,7 +14,7 @@ menu:
     parent: 'E2E'
 ---
 
-import { Tab, Tabs, ReadFile } from '~/components/global'
+import { Tab, Tabs, ReadFile } from '~/components/general'
 
 Puppeteer and Playwright also allow us to automate logging in to a Microsoft Live account.
 

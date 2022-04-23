@@ -14,7 +14,7 @@ menu:
     parent: 'Getting Started'
 ---
 
-import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/global'
+import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/general'
 
 Let's start by creating a new directory and navigating to it. Assuming you already have [Node.js](https://nodejs.org/) available in your local environment, installing Puppeteer or Playwright is achieved with just one instruction:
 
