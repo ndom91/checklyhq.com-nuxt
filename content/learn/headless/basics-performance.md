@@ -16,7 +16,7 @@ menu:
     parent: 'Performance'
 ---
 
-import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/global'
+import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/general'
 
 The need for fast and responsive applications has never been greater because of the move from [desktop to mobile](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide/2019). Still, web applications have been increasing in [complexity and size](https://httparchive.org/reports/page-weight), with rising load times. It is therefore clear why the topic of webpage performance is more popular today than it likely ever was.
 

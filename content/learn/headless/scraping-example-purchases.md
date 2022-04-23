@@ -13,7 +13,7 @@ menu:
     parent: 'Scraping'
 ---
 
-import { Tab, Tabs, ReadFile } from '~/components/global'
+import { Tab, Tabs, ReadFile } from '~/components/general'
 
 Puppeteer and Playwright can be particularly useful when scraping data accessible only behind a login wall. This article shows a practical example of such a case.
 

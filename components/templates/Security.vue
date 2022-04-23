@@ -7,14 +7,7 @@
         </div>
       </div>
       <div
-        class="
-          pricing__faq
-          d-flex
-          flex-column
-          justify-content-center
-          text-center
-          mx-auto
-        "
+        class="pricing__faq d-flex flex-column justify-content-center text-center mx-auto"
       >
         <h2 id="faq" class="mb-5">FAQ</h2>
 
@@ -28,14 +21,14 @@
 </template>
 
 <script>
-import { FaqToggle } from '@/components/global'
+import { FaqToggle } from '@/components/general'
 import { Footer } from '~/components/common'
 
 export default {
   name: 'Security',
   components: { Footer, FaqToggle },
   mount() {
-    console.log(this.$page.pages)
+    // console.log(this.$page.pages)
   },
 }
 </script>

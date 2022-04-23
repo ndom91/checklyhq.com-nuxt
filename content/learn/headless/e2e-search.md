@@ -15,7 +15,7 @@ menu:
     parent: 'E2E'
 ---
 
-import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/global'
+import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/general'
 
 Searching a website is an everyday action for most internet users. For most services, the speed at which their customers are able to get to the products they are looking for is directly tied to revenue. To enable that, a performant and reliable search function is needed.
 

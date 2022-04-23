@@ -14,7 +14,7 @@ menu:
     parent: 'E2E'
 ---
 
-import { Tab, Tabs, ReadFile } from '~/components/global'
+import { Tab, Tabs, ReadFile } from '~/components/general'
 
 Webshops and subscription-based services often offer discounts through coupon codes. Applying a valid coupon code during checkout might reduce the price of one, several, or all items in the shopping cart.
 
