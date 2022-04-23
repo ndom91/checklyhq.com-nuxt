@@ -20,7 +20,7 @@ menu:
     parent: 'Getting Started'
 ---
 
-import { Tab, Tabs } from '~/components/global'
+import { Tab, Tabs } from '~/components/general'
 
 Users normally access most website functionality through clicks, keystrokes etc. Puppeteer and Playwright allow us to replicate these events by referencing elements on the page using [CSS selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors).
 

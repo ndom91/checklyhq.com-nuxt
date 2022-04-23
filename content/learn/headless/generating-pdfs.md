@@ -13,7 +13,7 @@ menu:
     parent: 'Miscellaneous'
 ---
 
-import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/global'
+import { Tab, Tabs, ReadFile, RunInCheckly } from '~/components/general'
 
 import PuppeteerMinimal from '../../samples/puppeteer/pdf-minimal.js'
 import PlaywrightMinimal from '../../samples/playwright/pdf-minimal.js'
