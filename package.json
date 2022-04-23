@@ -19,19 +19,17 @@
   },
   "dependencies": {
     "@hexdigital/nuxt-intercom": "^0.0.9",
-    "@nuxtjs/axios": "^5.13.1",
     "bootstrap": "^4.0.0-alpha.6",
-    "core-js": "^3.9.1",
     "hookable": "^5.1.1",
     "medium-zoom": "^1.0.6",
-    "nuxt-edge": "^2.16.0-27358576.777a4b7f",
+    "nuxt": "^3.0.0-rc.1",
     "prismjs": "^1.28.0",
     "vue-cookie-law": "^1.13.3",
     "vue-plausible": "^1.1.4"
   },
   "devDependencies": {
-    "@nuxt/bridge": "npm:@nuxt/bridge-edge@^3.0.0-27498038.f18e68b",
     "@nuxt/image": "^0.4.12",
+    "@nuxt/vite-builder": "^3.0.0-rc.1",
     "@nuxtjs/eslint-config": "^6.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/style-resources": "^1.0.0",

@@ -11,6 +11,7 @@ import TestimonialThreeCol from './TestimonialThreeCol'
 import AllFeatures from './AllFeatures'
 import PublicStats from './PublicStats'
 
+export default {}
 export {
   Hero,
   TrustedBy,

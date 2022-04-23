@@ -126,7 +126,9 @@
               <li>
                 <NuxtLink to="/learn/headless">Puppeteer & Playwright</NuxtLink>
               </li>
-              <li><NuxtLink to="/guides">Checkly Guides</NuxtLink></li>
+              <li>
+                <NuxtLink to="/guides">Checkly Guides</NuxtLink>
+              </li>
             </ul>
           </div>
         </div>
@@ -180,7 +182,11 @@
       <div class="row footer-bottom">
         <div class="col-12 flex-wrap">
           <div class="float-left">
-            <FooterLogo class="logo" alt="checkly logo" />
+            <img
+              class="logo"
+              alt="checkly logo"
+              src="/images/footer-logo.svg?import&inline"
+            />
             <div>Copyright © 2021 Checkly Inc. All rights reserved.</div>
           </div>
           <div class="float-right">
@@ -191,7 +197,7 @@
               target="_blank"
               rel="noopener"
             >
-              <GithubLogo alt="github logo" />
+              <img alt="github logo" src="/images/github.svg?import&inline" />
             </a>
             <a
               aria-label="Twitter Link"
@@ -199,7 +205,7 @@
               target="_blank"
               rel="noopener"
             >
-              <TwitterLogo alt="twitter logo" />
+              <img alt="twitter logo" src="/images/twitter.svg?import&inline" />
             </a>
           </div>
         </div>
@@ -209,13 +215,13 @@
 </template>
 
 <script>
-import FooterLogo from '@@/static/images/footer-logo.svg?inline'
-import GithubLogo from '@@/static/images/github.svg?inline'
-import TwitterLogo from '@@/static/images/twitter.svg?inline'
+// import FooterLogo from '@@/images/footer-logo.svg?inline'
+// import GithubLogo from '@@/images/github.svg?inline'
+// import TwitterLogo from '@@/images/twitter.svg?inline'
 
 export default {
   name: 'Footer',
-  components: { FooterLogo, GithubLogo, TwitterLogo },
+  // components: { FooterLogo, GithubLogo, TwitterLogo },
   data() {
     return {
       statusClass: 'dot--green',

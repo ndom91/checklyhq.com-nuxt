@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from '@nuxt/bridge'
+import { defineNuxtConfig } from 'nuxt'
 
 const copyRightNotice = `\u00A9 ChecklyHQ ${new Date().getFullYear()}. All rights reserved`
 
@@ -131,9 +131,9 @@ export default defineNuxtConfig({
         whitelist: ['Cookie', 'Cookie__button'],
       },
     ],
-    '@hexdigital/nuxt-intercom',
+    // '@hexdigital/nuxt-intercom',
   ],
-  modules: ['@nuxtjs/axios', 'vue-plausible'],
+  // modules: ['@nuxtjs/axios', 'vue-plausible'],
   // modules: ['@nuxtjs/axios', '@nuxt/content', 'vue-plausible'],
   plausible: {
     domain: 'checklyhq.com',
